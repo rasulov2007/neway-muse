@@ -11,7 +11,7 @@ This is not a mock-up. NeWay runs the daily work of two real carriers:
 (Owner's figures. This public snapshot has no data from either company. Every person, phone,
 broker, rate and load you can see here is made up.)
 
-Video: **[link to the 3-minute demo video — TBD]**
+Video: **[3-minute demo on YouTube](https://youtu.be/ZWak2C1-mnc)**
 
 ---
 
