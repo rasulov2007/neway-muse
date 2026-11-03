@@ -144,4 +144,4 @@ Real names, phone numbers and identifiers in tests and comments were replaced wi
 
 ## License
 
-[MIT](LICENSE) © 2026 NeWay.
+[GNU AGPL-3.0](LICENSE) © 2026 NeWay. You may use, study and change this code; anyone who runs a modified version as a service must publish their full source under the same licence.
