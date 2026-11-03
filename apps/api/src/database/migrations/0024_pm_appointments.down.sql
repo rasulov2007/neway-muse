@@ -1,0 +1,14 @@
+DROP INDEX IF EXISTS "work_orders_scheduled_idx";
+ALTER TABLE "work_orders" DROP COLUMN IF EXISTS "void_reason";
+ALTER TABLE "work_orders" DROP COLUMN IF EXISTS "voided_by";
+ALTER TABLE "work_orders" DROP COLUMN IF EXISTS "voided_at";
+ALTER TABLE "work_orders" DROP COLUMN IF EXISTS "zero_reason";
+ALTER TABLE "work_orders" DROP COLUMN IF EXISTS "confirmed_at";
+ALTER TABLE "work_orders" DROP COLUMN IF EXISTS "hold_minutes";
+ALTER TABLE "work_orders" DROP COLUMN IF EXISTS "notify_dispatcher";
+ALTER TABLE "work_orders" DROP COLUMN IF EXISTS "notify_driver";
+ALTER TABLE "work_orders" DROP COLUMN IF EXISTS "note_for_shop";
+ALTER TABLE "work_orders" DROP COLUMN IF EXISTS "estimated_cost";
+ALTER TABLE "work_orders" DROP COLUMN IF EXISTS "responsible_name";
+ALTER TABLE "work_orders" DROP COLUMN IF EXISTS "responsible_user_id";
+ALTER TABLE "work_orders" DROP COLUMN IF EXISTS "scheduled_for";

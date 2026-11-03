@@ -1,0 +1,223 @@
+{
+  "cdl": {
+    "cdl-sample-jordan-sampleton.png": {
+      "legalFirstName": "JORDAN",
+      "legalMiddleName": "LEE",
+      "legalLastName": "SAMPLETON",
+      "dateOfBirth": "1988-03-14",
+      "cdlNumber": "S530-4412-8890",
+      "issuingState": "IL",
+      "cdlClass": "A",
+      "endorsements": [
+        "N",
+        "T"
+      ],
+      "restrictions": [
+        "L"
+      ],
+      "cdlIssuedOn": "2024-06-01",
+      "cdlExpiresOn": "2028-06-01"
+    },
+    "cdl-sample-alex-rivera-photo.jpg": {
+      "legalFirstName": "ALEX",
+      "legalMiddleName": "M",
+      "legalLastName": "RIVERA-DEMO",
+      "dateOfBirth": "1979-11-02",
+      "cdlNumber": "90817264",
+      "issuingState": "TX",
+      "cdlClass": "B",
+      "endorsements": [],
+      "restrictions": [],
+      "cdlIssuedOn": "2018-10-15",
+      "cdlExpiresOn": "2026-10-15"
+    },
+    "cdl-sample-jordan-sampleton.pdf": {
+      "legalFirstName": "JORDAN",
+      "legalMiddleName": "LEE",
+      "legalLastName": "SAMPLETON",
+      "dateOfBirth": "1988-03-14",
+      "cdlNumber": "S530-4412-8890",
+      "issuingState": "IL",
+      "cdlClass": "A",
+      "endorsements": [
+        "N",
+        "T"
+      ],
+      "restrictions": [
+        "L"
+      ],
+      "cdlIssuedOn": "2024-06-01",
+      "cdlExpiresOn": "2028-06-01"
+    }
+  },
+  "rc": {
+    "rc-sample-1-demo-freight.pdf": {
+      "brokerName": "Demo Freight Brokerage LLC",
+      "brokerMc": "990011",
+      "brokerLoadNumber": "DFB-240117",
+      "totalRate": 2850,
+      "linehaulRate": 2600,
+      "commodity": "Paper products",
+      "weightLbs": 38000,
+      "equipment": "dry_van",
+      "hazmat": false,
+      "temperature": null,
+      "miles": 812,
+      "stops": [
+        {
+          "kind": "pickup",
+          "facilityName": "Example Paper Mill",
+          "street": "100 Mill Road",
+          "city": "Springfield",
+          "state": "IL",
+          "zip": "62701",
+          "date": "2026-11-10",
+          "time": "08:00",
+          "endTime": null,
+          "reference": "PU-55120"
+        },
+        {
+          "kind": "delivery",
+          "facilityName": "Sample Distribution Center",
+          "street": "2500 Commerce Pkwy",
+          "city": "Columbus",
+          "state": "OH",
+          "zip": "43215",
+          "date": "2026-11-11",
+          "time": "07:00",
+          "endTime": "11:00",
+          "reference": "D-88341"
+        }
+      ]
+    },
+    "rc-sample-2-example-logistics-reefer.pdf": {
+      "brokerName": "Example Logistics Partners Inc",
+      "brokerMc": "880022",
+      "brokerLoadNumber": "77812-A",
+      "totalRate": 4125.5,
+      "linehaulRate": 3800,
+      "commodity": "Frozen vegetables",
+      "weightLbs": 41280.5,
+      "equipment": "reefer",
+      "hazmat": false,
+      "temperature": "-5°F continuous",
+      "miles": 1046,
+      "stops": [
+        {
+          "kind": "pickup",
+          "facilityName": "Demo Cold Storage",
+          "street": "9 Icebox Ct",
+          "city": "Fresno",
+          "state": "CA",
+          "zip": "93721",
+          "date": "2026-11-12",
+          "time": "13:00",
+          "endTime": "14:30",
+          "reference": "PO-4471"
+        },
+        {
+          "kind": "delivery",
+          "facilityName": "Sample Grocers DC #12",
+          "street": "700 Market St",
+          "city": "Phoenix",
+          "state": "AZ",
+          "zip": "85004",
+          "date": "2026-11-13",
+          "time": "23:30",
+          "endTime": null,
+          "reference": "A-3302"
+        },
+        {
+          "kind": "delivery",
+          "facilityName": "Sample Grocers DC #19",
+          "street": "15 Desert Loop",
+          "city": "Tucson",
+          "state": "AZ",
+          "zip": "85701",
+          "date": "2026-11-14",
+          "time": "06:00",
+          "endTime": null,
+          "reference": "A-3319"
+        }
+      ]
+    },
+    "rc-sample-3-sample-haul-flatbed.pdf": {
+      "brokerName": "Sample Haul Network",
+      "brokerMc": "770033",
+      "brokerLoadNumber": "1112247",
+      "totalRate": 1975,
+      "linehaulRate": null,
+      "commodity": "Steel coils",
+      "weightLbs": 44000,
+      "equipment": "flatbed",
+      "hazmat": false,
+      "temperature": null,
+      "miles": 389,
+      "stops": [
+        {
+          "kind": "pickup",
+          "facilityName": "Placeholder Steel Works",
+          "street": "1 Foundry Dr",
+          "city": "Birmingham",
+          "state": "AL",
+          "zip": "35203",
+          "date": "2026-11-09",
+          "time": "08:00",
+          "endTime": "14:00",
+          "reference": "R-9001"
+        },
+        {
+          "kind": "delivery",
+          "facilityName": "Demo Fabrication Yard",
+          "street": null,
+          "city": "Memphis",
+          "state": "TN",
+          "zip": "38103",
+          "date": "2026-11-10",
+          "time": null,
+          "endTime": null,
+          "reference": null
+        }
+      ]
+    },
+    "rc-sample-3-sample-haul-flatbed-photo.jpg": {
+      "brokerName": "Sample Haul Network",
+      "brokerMc": "770033",
+      "brokerLoadNumber": "1112247",
+      "totalRate": 1975,
+      "linehaulRate": null,
+      "commodity": "Steel coils",
+      "weightLbs": 44000,
+      "equipment": "flatbed",
+      "hazmat": false,
+      "temperature": null,
+      "miles": 389,
+      "stops": [
+        {
+          "kind": "pickup",
+          "facilityName": "Placeholder Steel Works",
+          "street": "1 Foundry Dr",
+          "city": "Birmingham",
+          "state": "AL",
+          "zip": "35203",
+          "date": "2026-11-09",
+          "time": "08:00",
+          "endTime": "14:00",
+          "reference": "R-9001"
+        },
+        {
+          "kind": "delivery",
+          "facilityName": "Demo Fabrication Yard",
+          "street": null,
+          "city": "Memphis",
+          "state": "TN",
+          "zip": "38103",
+          "date": "2026-11-10",
+          "time": null,
+          "endTime": null,
+          "reference": null
+        }
+      ]
+    }
+  }
+}

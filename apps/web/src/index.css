@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+@import './design-system/porcelain-theme.css';
+@import './design-system/tokens.css';
+@import './design-system/analytics-theme.css';
+@import './design-system/motion.css';
+
+/* Every live button reads as one (owner, 2026-09-22): the hand, not the arrow. */
+@layer base {
+  /*
+   * A grid with no column template is one column that never grows past its container (owner,
+   * 2026-10-15): without this a wide table inside stretches the column, and the table's own
+   * scroll never starts on a phone. Any grid-cols-* utility still wins (utilities layer).
+   */
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /*
+   * A scroll box holds its own absolutely placed children (owner, 2026-10-15): a sort button's
+   * screen-reader label inside a wide table otherwise escapes the box and widens the whole page
+   * on a phone. An absolute / sticky / fixed utility on the box itself still wins.
+   */
+  .overflow-x-auto,
+  .overflow-auto {
+    position: relative;
+  }
+
+  button:not(:disabled),
+  [role='button']:not([aria-disabled='true']) {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,10 @@
+ALTER TABLE "hiring_application_sessions" DROP COLUMN IF EXISTS "bound_at";
+ALTER TABLE "hiring_application_sessions" DROP COLUMN IF EXISTS "bound_device_hash";
+ALTER TABLE "hiring_consent_sessions" DROP COLUMN IF EXISTS "bound_at";
+ALTER TABLE "hiring_consent_sessions" DROP COLUMN IF EXISTS "bound_device_hash";
+ALTER TABLE "hiring_safety_reviews" DROP COLUMN IF EXISTS "insurance_responded_by";
+ALTER TABLE "hiring_safety_reviews" DROP COLUMN IF EXISTS "insurance_responded_at";
+ALTER TABLE "hiring_safety_reviews" DROP COLUMN IF EXISTS "insurance_requested_by";
+ALTER TABLE "hiring_safety_reviews" DROP COLUMN IF EXISTS "insurance_requested_at";
+ALTER TABLE "hiring_safety_reviews" DROP COLUMN IF EXISTS "insurance_note";
+ALTER TABLE "hiring_safety_reviews" DROP COLUMN IF EXISTS "insurance_status";

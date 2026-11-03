@@ -1,0 +1,11 @@
+ALTER TABLE "repair_tire_events" DROP COLUMN IF EXISTS "event_on";
+ALTER TABLE "repair_tire_events" DROP COLUMN IF EXISTS "recorded_on_unit_id";
+ALTER TABLE "repair_tire_events" DROP COLUMN IF EXISTS "vendor_name";
+ALTER TABLE "repair_tire_events" DROP COLUMN IF EXISTS "odometer";
+ALTER TABLE "repair_tire_events" DROP COLUMN IF EXISTS "labor_cents";
+ALTER TABLE "repair_tire_events" DROP COLUMN IF EXISTS "tire_cost_cents";
+ALTER TABLE "repair_tire_events" DROP COLUMN IF EXISTS "tread_removed_32";
+ALTER TABLE "repair_tire_events" DROP COLUMN IF EXISTS "reason";
+ALTER TABLE "repair_tire_events" DROP COLUMN IF EXISTS "model";
+ALTER TABLE "repair_tire_events" DROP COLUMN IF EXISTS "brand";
+ALTER TABLE "repair_tire_events" DROP COLUMN IF EXISTS "action";

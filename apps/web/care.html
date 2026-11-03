@@ -1,0 +1,104 @@
+<!doctype html>
+<!--
+  NORTHWIND FREIGHT Driver Care (/care/<slug>): the owner's approved design
+  (Northwind Freight-Driver-Care.html, 2026-10-06), connected to Driver Relations. Its own Vite entry
+  like apply.html; navy/gold, exempt from Porcelain by the owner's decision (src/care/care.css).
+  Nothing is stored in the browser, no credentials are sent, and "received" is shown only after
+  the server saved the request. Removed from the design on purpose: the "My drafts" tab, local
+  drafts and the "not connected" wording (the page is connected now).
+
+  A copy hosted on another site sets <html data-care-api="https://neway.example.com" data-care-slug="nwf">.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <title>NORTHWIND FREIGHT Driver Care</title>
+    <link rel="icon" type="image/png" href="/brand/nwf-care-logo.png" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <div class="logo"><img src="/brand/nwf-care-logo.png" alt="NORTHWIND FREIGHT logo" /></div>
+        <div><strong>NORTHWIND FREIGHT</strong><small>DRIVER CARE</small></div>
+      </div>
+    </header>
+    <main>
+      <p class="loading" id="loading" role="status">Loading…</p>
+      <div id="home" hidden>
+        <section class="hero">
+          <div class="eyebrow">HERE FOR EVERY MILE</div>
+          <h1 id="headline">A little help.<br /><em>A better road.</em></h1>
+          <p>
+            Welcome to NORTHWIND FREIGHT Driver Care. A simple place for drivers to get support, share a concern, and take the
+            next step.
+          </p>
+        </section>
+        <div class="section-head">
+          <h2>How can we help?</h2>
+          <span>Choose a service to get started</span>
+        </div>
+        <section class="grid" id="services"></section>
+        <p class="note">
+          <strong>How it works</strong> · Every request goes to the NORTHWIND FREIGHT Driver Relations team, and a real person
+          follows up. Referrals are also shared with Recruiting.
+        </p>
+      </div>
+      <section id="notice" class="notice" hidden role="status" aria-live="polite">
+        <h2 id="notice-title"></h2>
+        <p id="notice-text"></p>
+        <button type="button" class="primary" id="notice-retry" hidden>Try again</button>
+      </section>
+    </main>
+    <footer><span id="copyright">© 2026 NORTHWIND FREIGHT INC</span><span>Support for the road ahead.</span></footer>
+    <section id="modal" hidden>
+      <div class="modal-head">
+        <div>
+          <div class="eyebrow" id="destination"></div>
+          <h2 id="modalTitle" tabindex="-1"></h2>
+        </div>
+        <button class="close" id="close" aria-label="Back to overview">←</button>
+      </div>
+      <div id="formContent">
+        <p id="formIntro"></p>
+        <form id="requestForm" novalidate>
+          <div class="two">
+            <div>
+              <label for="driver">Your name</label
+              ><input id="driver" name="driver" autocomplete="name" required maxlength="100" />
+            </div>
+            <div><label for="truck">Truck number</label><input id="truck" name="truck" required maxlength="30" /></div>
+          </div>
+          <label for="phone">Phone number</label
+          ><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="25" />
+          <div id="extra"></div>
+          <label for="details">How can we help?</label
+          ><textarea
+            id="details"
+            name="details"
+            required
+            maxlength="3000"
+            placeholder="Tell us what happened or what you need…"
+          ></textarea>
+          <div id="files"></div>
+          <div class="hp" aria-hidden="true">
+            <label>Website <input name="website" tabindex="-1" autocomplete="off" /></label>
+          </div>
+          <button class="primary" type="submit" id="submit">Send request</button>
+          <p class="form-error" id="formError" role="alert"></p>
+          <p>Your request goes to the NORTHWIND FREIGHT Driver Relations team.</p>
+        </form>
+      </div>
+      <div id="saved" class="success" hidden>
+        <div class="check">✓</div>
+        <h2 tabindex="-1">Your request was received.</h2>
+        <p id="savedText"></p>
+        <p id="savedReference" class="reference"></p>
+        <button class="primary" id="viewDraft">Back to overview</button>
+      </div>
+    </section>
+    <script type="module" src="/src/care/main.ts"></script>
+  </body>
+</html>

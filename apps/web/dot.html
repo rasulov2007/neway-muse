@@ -1,0 +1,29 @@
+<!doctype html>
+<!--
+  The DOT employment application a recruiter sends to the driver (/dot/<token>). Its own Vite
+  entry like apply.html and care.html, drawn with the TMS's Porcelain tokens in the light theme
+  (a public page has no account to carry an appearance choice). The token in the address is the
+  only key: no referrer is sent anywhere, search engines are asked not to index it, and nothing is
+  stored in the browser.
+-->
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="referrer" content="no-referrer" />
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Driver employment application</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/dot/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "scene": "end-card",
+  "title": "end-card",
+  "base": "http://127.0.0.1:5180",
+  "mode": "hq",
+  "scale": 1,
+  "recordedAt": "2026-11-03T17:21:14.680Z",
+  "durationSeconds": 22,
+  "startSeconds": 0,
+  "waits": [],
+  "failed": null
+}

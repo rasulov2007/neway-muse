@@ -1,0 +1,5 @@
+<!-- NeWay status symbol: DONE (circle + check). Use inline so the theme colors apply. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+  <circle cx="8" cy="8" r="7.5" fill="var(--nw-done-icon, #238044)"/>
+  <path d="M4.6 8.3l2.3 2.3 4.5-4.6" fill="none" stroke="var(--nw-status-glyph, #FFFFFF)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

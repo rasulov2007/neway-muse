@@ -1,0 +1,5790 @@
+{
+ "POST /accounting/billing/loads/:loadId/accessorials AccountingController.allocateAccessorial": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/billing/loads/:loadId/documents/:documentId/review AccountingController.reviewBillingDocument": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/billing/loads/:loadId/exceptions AccountingController.exceptions": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/billing/loads/:loadId/rc-reading AccountingController.rcReading": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/billing/loads/:loadId/rc-replaced AccountingController.rcReplaced": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/billing/loads/:loadId/resolve AccountingController.resolve": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/billing/queue AccountingController.queue": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/bills AccountingController.bills": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/bills AccountingController.createBill": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/bills/:id AccountingController.updateBill": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/bills/:id/pay AccountingController.payBill": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/bills/from-work-orders AccountingController.billsFromWorkOrders": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/bills/work-order-candidates AccountingController.workOrderCandidates": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/completions AccountingController.completionsList": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/completions/:loadId AccountingController.completionForLoad": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/completions/:loadId/retry AccountingController.completionRetry": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/completions/backfill AccountingController.backfillDryRun": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/completions/backfill AccountingController.backfillApply": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/deliveries AccountingController.deliveries": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/deliveries/:id/retry AccountingController.retryDelivery": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/deliveries/email AccountingController.email": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/driver-transactions/:id/state AccountingController.txState": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/drivers/:driverId/account AccountingController.driverAccount": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/drivers/:driverId/charges AccountingController.manualCharge": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/drivers/:driverId/lease-week AccountingController.leaseWeek": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/drivers/:driverId/notes AccountingController.driverNote": [
+  "administrator",
+  "accounting"
+ ],
+ "PUT /accounting/drivers/:driverId/profile AccountingController.driverProfile": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/drivers/:driverId/recurring AccountingController.recurring": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/drivers/:driverId/recurring/:id/amount AccountingController.recurringAmount": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/drivers/:driverId/recurring/:id/stop AccountingController.stopRecurring": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/drivers/:driverId/recurring/:id/week AccountingController.recurringWeek": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/drivers/review AccountingController.driverReview": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/expenses AccountingController.expenses": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/expenses AccountingController.createExpense": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/expenses/:id/allocations AccountingController.allocateExpense": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/expenses/:id/void AccountingController.voidExpense": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/export/ledger.csv AccountingController.ledgerCsv": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/fundings AccountingController.recordFunding": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/imports AccountingController.imports": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/imports/:id/resolve AccountingController.resolveImport": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/imports/csv AccountingController.importCsv": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/imports/csv/preview AccountingController.importCsvPreview": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/imports/post AccountingController.postImports": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/invoices AccountingController.invoiceList": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/invoices-export/:format AccountingController.invoicesExport": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/invoices/:id AccountingController.invoice": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/invoices/:id/discard-revision AccountingController.discardRevision": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/invoices/:id/dispute AccountingController.dispute": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/invoices/:id/family AccountingController.invoiceFamily": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/invoices/:id/internal-notes AccountingController.addInternalNote": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/invoices/:id/internal-notes/:noteId AccountingController.editInternalNote": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/invoices/:id/issue AccountingController.issue": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/invoices/:id/issue-revision AccountingController.issueRevision": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/invoices/:id/note AccountingController.invoiceNote": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/invoices/:id/pdf AccountingController.invoicePdf": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/invoices/:id/revise AccountingController.revise": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/invoices/:id/revision-options AccountingController.revisionOptions": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/invoices/:id/submission AccountingController.submission": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/invoices/:id/supplements AccountingController.supplements": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/invoices/:id/supplements AccountingController.addChargeAfterInvoicing": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/invoices/:id/void AccountingController.voidInvoice": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/invoices/from-loads AccountingController.createFromLoads": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/ledger AccountingController.journal": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/ledger/entries AccountingController.postEntry": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/ledger/entries/:id/reverse AccountingController.reverse": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/ledger/periods/:id/close AccountingController.closePeriod": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/ledger/periods/:id/reopen AccountingController.reopenPeriod": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/legacy/escrow AccountingController.legacyEscrowDryRun": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/legacy/escrow/import AccountingController.legacyEscrowImport": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/loads/:loadId/pay AccountingController.loadPay": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/loads/:loadId/pay-date AccountingController.setLoadPayDate": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/payees AccountingController.payeeList": [
+  "administrator",
+  "accounting"
+ ],
+ "PUT /accounting/payees AccountingController.savePayee": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/payees/:id/verify AccountingController.verifyPayee": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/payment-batches AccountingController.paymentBatches": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/payment-batches AccountingController.prepareBatch": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/payment-batches/:id/approve AccountingController.approveBatch": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/payment-batches/:id/export.csv AccountingController.exportBatch": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/payment-batches/:id/mark AccountingController.markBatch": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/payments AccountingController.payments": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/payments AccountingController.recordPayment": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/payroll/periods AccountingController.payrollPeriods": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/payroll/periods/:id/carry-adjustment AccountingController.payrollCarry": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/payroll/periods/:id/lines AccountingController.payrollLine": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/payroll/periods/:id/recheck AccountingController.payrollRecheck": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/payroll/periods/:id/status AccountingController.payrollStatus": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/payroll/periods/generate AccountingController.payrollGenerate": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/payroll/staff AccountingController.staff": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/payroll/staff/:employeeId/plans AccountingController.savePlan": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/profitability AccountingController.profitabilityReport": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/receivables AccountingController.receivables": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/recurring AccountingController.recurringAll": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/reimbursements AccountingController.listReimbursements": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/reimbursements AccountingController.createReimbursement": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/reimbursements/:id AccountingController.reimbursement": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/reimbursements/:id/review AccountingController.reviewReimbursement": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/reimbursements/load-options AccountingController.reimbursementLoadOptions": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/reimbursements/summary AccountingController.reimbursementSummary": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/rts/batches AccountingController.rtsBatches": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/rts/batches AccountingController.createRtsBatch": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/rts/batches/:id AccountingController.rtsBatch": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/rts/batches/:id/cancel AccountingController.cancelRtsBatch": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/rts/batches/:id/export AccountingController.exportRtsBatch": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/rts/batches/:id/ftp-export AccountingController.exportRtsFtpFiles": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/rts/batches/:id/send AccountingController.sendRtsBatch": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/rts/batches/:id/submission AccountingController.recordRtsSubmission": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/rts/candidates AccountingController.rtsCandidates": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/rts/test-packets AccountingController.sendRtsTestPackets": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/settings AccountingController.settings": [
+  "administrator",
+  "accounting"
+ ],
+ "PUT /accounting/settings AccountingController.saveSettings": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/settlements AccountingController.statements": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/settlements/:id AccountingController.statement": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/settlements/:id/approve AccountingController.approve": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/settlements/:id/email AccountingController.statementEmailOne": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/settlements/:id/loads/:loadId/pay-facts AccountingController.setStatementLoadPayFacts": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/settlements/:id/loads/:loadId/put-back AccountingController.putBackStatementLoad": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/settlements/:id/loads/:loadId/remove AccountingController.removeStatementLoad": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/settlements/:id/odometer AccountingController.statementOdometer": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/settlements/:id/paid AccountingController.paid": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/settlements/:id/pdf AccountingController.statementPdf": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/settlements/:id/reopen AccountingController.reopenStatement": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/settlements/:id/status AccountingController.statementStatus": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/settlements/arrangements AccountingController.arrangements": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/settlements/arrangements AccountingController.saveArrangement": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/settlements/batches AccountingController.batches": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/settlements/batches/:id/close AccountingController.closeBatch": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/settlements/batches/:id/email AccountingController.statementEmailPreview": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/settlements/batches/:id/email AccountingController.statementEmailBatch": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/settlements/email-status AccountingController.statementEmailStatus": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/settlements/export/:format AccountingController.statementsExport": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /accounting/settlements/generate AccountingController.generate": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/settlements/preview AccountingController.settlementPreview": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/settlements/vendors/:vendorId/annual AccountingController.annual": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /accounting/vendors AccountingController.vendors": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /admin/application-templates ApplicationTemplatesController.overview": [
+  "administrator"
+ ],
+ "POST /admin/application-templates ApplicationTemplatesController.create": [
+  "administrator"
+ ],
+ "GET /admin/application-templates/:id ApplicationTemplatesController.one": [
+  "administrator"
+ ],
+ "POST /admin/application-templates/:id/approve ApplicationTemplatesController.approve": [
+  "administrator"
+ ],
+ "POST /admin/application-templates/:id/retire ApplicationTemplatesController.retire": [
+  "administrator"
+ ],
+ "POST /admin/application-templates/approve-drafts ApplicationTemplatesController.approveAll": [
+  "administrator"
+ ],
+ "POST /admin/application-templates/import ApplicationTemplatesController.importSet": [
+  "administrator"
+ ],
+ "GET /admin/audit AdminSystemController.listAudit": [
+  "administrator"
+ ],
+ "GET /admin/audit/:id AdminSystemController.getAudit": [
+  "administrator"
+ ],
+ "GET /admin/audit/export AdminSystemController.exportAudit": [
+  "administrator"
+ ],
+ "GET /admin/audit/facets AdminSystemController.auditFacets": [
+  "administrator"
+ ],
+ "GET /admin/departments AdminController.listDepartments": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /admin/departments AdminController.createDepartment": [
+  "administrator"
+ ],
+ "PATCH /admin/departments/:id AdminController.updateDepartment": [
+  "administrator"
+ ],
+ "GET /admin/departments/tree AdminController.departmentTree": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /admin/email EmailAdminController.status": [
+  "administrator"
+ ],
+ "POST /admin/email/test EmailAdminController.test": [
+  "administrator"
+ ],
+ "GET /admin/integrations AdminSystemController.listIntegrations": [
+  "administrator"
+ ],
+ "GET /admin/integrations/accounts/:id AdminSystemController.getIntegration": [
+  "administrator"
+ ],
+ "PATCH /admin/integrations/accounts/:id AdminSystemController.renameIntegration": [
+  "administrator"
+ ],
+ "POST /admin/integrations/accounts/:id/archive AdminSystemController.archiveIntegration": [
+  "administrator"
+ ],
+ "POST /admin/integrations/accounts/:id/credentials AdminSystemController.replaceCredential": [
+  "administrator"
+ ],
+ "POST /admin/integrations/accounts/:id/disconnect AdminSystemController.disconnect": [
+  "administrator"
+ ],
+ "GET /admin/integrations/accounts/:id/runs AdminSystemController.syncRuns": [
+  "administrator"
+ ],
+ "PATCH /admin/integrations/accounts/:id/status AdminSystemController.setIntegrationStatus": [
+  "administrator"
+ ],
+ "POST /admin/integrations/accounts/:id/sync AdminSystemController.syncIntegration": [
+  "administrator"
+ ],
+ "POST /admin/integrations/accounts/:id/test AdminSystemController.testIntegration": [
+  "administrator"
+ ],
+ "POST /admin/integrations/accounts/:id/unarchive AdminSystemController.unarchiveIntegration": [
+  "administrator"
+ ],
+ "POST /admin/integrations/connect AdminSystemController.connect": [
+  "administrator"
+ ],
+ "GET /admin/me AdminSystemController.me": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /admin/notifications AdminSystemController.notificationList": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /admin/notifications/:id/read AdminSystemController.markRead": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /admin/notifications/read-all AdminSystemController.markAllRead": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /admin/notifications/unread-count AdminSystemController.unreadCount": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /admin/permissions AdminController.permissionMatrix": [
+  "administrator"
+ ],
+ "GET /admin/roles AdminController.listRoles": [
+  "administrator"
+ ],
+ "POST /admin/roles AdminController.createRole": [
+  "administrator"
+ ],
+ "GET /admin/roles/:id AdminController.getRole": [
+  "administrator"
+ ],
+ "PATCH /admin/roles/:id AdminController.updateRole": [
+  "administrator"
+ ],
+ "POST /admin/roles/:id/archive AdminController.archiveRole": [
+  "administrator"
+ ],
+ "GET /admin/settings AdminSystemController.listSettings": [
+  "administrator"
+ ],
+ "PATCH /admin/settings AdminSystemController.updateSettings": [
+  "administrator"
+ ],
+ "GET /admin/users AdminController.listUsers": [
+  "administrator"
+ ],
+ "POST /admin/users AdminController.createUser": [
+  "administrator"
+ ],
+ "GET /admin/users/:membershipId AdminController.getUser": [
+  "administrator"
+ ],
+ "GET /admin/users/:membershipId/activity AdminController.userActivity": [
+  "administrator"
+ ],
+ "PATCH /admin/users/:membershipId/email AdminController.changeUserEmail": [
+  "administrator"
+ ],
+ "PATCH /admin/users/:membershipId/employee AdminController.setUserEmployee": [
+  "administrator"
+ ],
+ "POST /admin/users/:membershipId/password AdminController.setUserPassword": [
+  "administrator"
+ ],
+ "GET /admin/users/:membershipId/permissions AdminController.effectivePermissions": [
+  "administrator"
+ ],
+ "PATCH /admin/users/:membershipId/roles AdminController.setUserRoles": [
+  "administrator"
+ ],
+ "PATCH /admin/users/:membershipId/status AdminController.setUserStatus": [
+  "administrator"
+ ],
+ "POST /admin/users/:membershipId/temporary-password AdminController.issueTemporaryPassword": [
+  "administrator"
+ ],
+ "GET /admin/users/invitation-delivery AdminController.invitationDelivery": [
+  "administrator"
+ ],
+ "GET /admin/users/linkable-employees AdminController.linkableEmployees": [
+  "administrator"
+ ],
+ "GET /admin/users/summary AdminController.userSummary": [
+  "administrator"
+ ],
+ "GET /admin/workflows AdminSystemController.listWorkflows": [
+  "administrator"
+ ],
+ "POST /admin/workflows AdminSystemController.createWorkflow": [
+  "administrator"
+ ],
+ "GET /admin/workflows/:id AdminSystemController.getWorkflow": [
+  "administrator"
+ ],
+ "PATCH /admin/workflows/:id AdminSystemController.updateWorkflow": [
+  "administrator"
+ ],
+ "GET /admin/workflows/catalog AdminSystemController.workflowCatalog": [
+  "administrator"
+ ],
+ "GET /admin/workflows/runs AdminSystemController.allRuns": [
+  "administrator"
+ ],
+ "GET /admin/workflows/summary AdminSystemController.workflowSummary": [
+  "administrator"
+ ],
+ "POST /ai/brief AiBriefController.run": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager"
+ ],
+ "GET /ai/brief/latest AiBriefController.latest": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager"
+ ],
+ "GET /ai/conversations AiAssistantController.conversations": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager"
+ ],
+ "POST /ai/conversations AiAssistantController.create": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager"
+ ],
+ "PATCH /ai/conversations/:id AiAssistantController.update": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager"
+ ],
+ "POST /ai/conversations/:id/archive AiAssistantController.archive": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager"
+ ],
+ "POST /ai/conversations/:id/client-results AiAssistantController.clientResults": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager"
+ ],
+ "GET /ai/conversations/:id/messages AiAssistantController.messages": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager"
+ ],
+ "POST /ai/conversations/:id/messages AiAssistantController.send": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager"
+ ],
+ "POST /ai/proposals/:id/cancel AiAssistantController.cancel": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager"
+ ],
+ "POST /ai/proposals/:id/confirm AiAssistantController.confirm": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager"
+ ],
+ "POST /ai/tts AiAssistantController.speak": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager"
+ ],
+ "GET /ai/usage AiAssistantController.usage": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager"
+ ],
+ "GET /analytics/accessorials ReportsController.accessorials": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "GET /analytics/cost-drivers ReportsController.costDrivers": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "GET /analytics/drivers ReportsController.drivers": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "GET /analytics/executive ReportsController.executive": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "GET /analytics/fuel ReportsController.fuel": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "GET /analytics/operations ReportsController.operations": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "GET /analytics/trucks ReportsController.trucks": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "GET /analytics/vendors ReportsController.vendors": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "GET /analytics/workforce ReportsController.workforce": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "POST /auth/login AuthController.login": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /auth/logout AuthController.logout": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /auth/me AuthController.me": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "PATCH /auth/me/preferences AuthController.updatePreferences": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /auth/password AuthController.changePassword": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /auth/password/temporary AuthController.replaceTemporaryPassword": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /auth/switch-company AuthController.switchCompany": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /company/documents CompanyProfileController.addDocument": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "accounting"
+ ],
+ "POST /company/documents/:id/void CompanyProfileController.voidDocument": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "accounting"
+ ],
+ "POST /company/packet CompanyProfileController.packet": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "accounting"
+ ],
+ "GET /company/profile CompanyProfileController.view": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "accounting"
+ ],
+ "PATCH /company/profile CompanyProfileController.update": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "accounting"
+ ],
+ "GET /compliance/audit ComplianceController.auditList": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /compliance/consents ComplianceController.consentList": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /compliance/consents ComplianceController.createConsent": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /compliance/consents/:id/cancel ComplianceController.cancelConsent": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /compliance/consents/:id/respond ComplianceController.respondConsent": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /compliance/consents/:id/send ComplianceController.sendConsent": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /compliance/documents ComplianceController.documents": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /compliance/documents ComplianceController.upload": [
+  "administrator",
+  "safety_manager",
+  "maintenance"
+ ],
+ "DELETE /compliance/documents/:id ComplianceController.remove": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /compliance/documents/:id/file ComplianceController.file": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /compliance/documents/:id/reject ComplianceController.reject": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /compliance/documents/:id/verify ComplianceController.verify": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /compliance/items ComplianceController.items": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /compliance/items/:id/waive ComplianceController.waive": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /compliance/items/not-applicable ComplianceController.notApplicable": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /compliance/requirements ComplianceController.requirements": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /compliance/verification ComplianceController.verificationList": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /compliance/verification/:id ComplianceController.verificationCase": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /compliance/verification/:id/decision ComplianceController.decision": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /compliance/verification/:id/start-review ComplianceController.startReview": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /conversations MessagesController.list": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /conversations MessagesController.start": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "driver_relations",
+  "read_only"
+ ],
+ "GET /conversations/:id/files/:fileId/link MessagesController.fileLink": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "driver_relations",
+  "read_only"
+ ],
+ "GET /conversations/:id/messages MessagesController.thread": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /conversations/:id/messages MessagesController.post": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /conversations/:id/read MessagesController.read": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "driver_relations",
+  "read_only"
+ ],
+ "GET /dashboard/data-health DashboardController.dataHealth": [
+  "administrator"
+ ],
+ "GET /dashboard/dispatch-performance DashboardController.dispatchPerformance": [
+  "administrator"
+ ],
+ "GET /dashboard/drilldown DashboardController.drilldown": [
+  "administrator"
+ ],
+ "GET /dashboard/fuel DashboardController.fuel": [
+  "administrator"
+ ],
+ "GET /dashboard/ops-net DashboardController.opsNet": [
+  "administrator"
+ ],
+ "GET /dashboard/overview DashboardController.overview": [
+  "administrator"
+ ],
+ "GET /dashboard/trends DashboardController.trends": [
+  "administrator"
+ ],
+ "GET /dashboard/truck-pnl DashboardController.truckPnl": [
+  "administrator"
+ ],
+ "GET /dashboard/vendors DashboardController.vendors": [
+  "administrator"
+ ],
+ "GET /dispatch/board/at-home DispatchBoardController.atHome": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "read_only"
+ ],
+ "PUT /dispatch/board/cells DispatchBoardController.cells": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "PUT /dispatch/board/commission/flags DispatchBoardController.flags": [
+  "administrator"
+ ],
+ "PUT /dispatch/board/commission/override DispatchBoardController.override": [
+  "administrator"
+ ],
+ "GET /dispatch/board/daily DispatchBoardController.daily": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "read_only"
+ ],
+ "GET /dispatch/board/driver-trailer DispatchBoardController.driverTrailer": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "PUT /dispatch/board/fills DispatchBoardController.fills": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "GET /dispatch/board/history DispatchBoardController.history": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "accounting",
+  "read_only"
+ ],
+ "GET /dispatch/board/team-order DispatchBoardController.teamOrderView": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "accounting",
+  "read_only"
+ ],
+ "PUT /dispatch/board/team-order DispatchBoardController.saveTeamOrder": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "GET /dispatch/board/units-off DispatchBoardController.unitsOff": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "GET /dispatch/board/weekly DispatchBoardController.weekly": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "accounting",
+  "read_only"
+ ],
+ "GET /dispatch/claims DispatchBoardController.claimsList": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "read_only"
+ ],
+ "POST /dispatch/claims DispatchBoardController.claimCreate": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "PUT /dispatch/claims/:id DispatchBoardController.claimUpdate": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "POST /dispatch/claims/:id/void DispatchBoardController.claimVoid": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "GET /dispatch/performance DispatchBoardController.performance": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "read_only"
+ ],
+ "GET /dispatch/performance/targets DispatchBoardController.performanceTargets": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "read_only"
+ ],
+ "POST /dispatch/performance/targets DispatchBoardController.savePerformanceTargets": [
+  "administrator"
+ ],
+ "GET /dispatch/policy DispatchBoardController.policy": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /dispatch/policy DispatchBoardController.policyCreate": [
+  "administrator"
+ ],
+ "GET /dispatch/policy/drafts DispatchBoardController.policyDrafts": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /dispatch/policy/drafts/:version/activate DispatchBoardController.activateDraft": [
+  "administrator"
+ ],
+ "POST /dispatch/policy/preview DispatchBoardController.policyPreview": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /dispatch/roster DispatchBoardController.rosterList": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "read_only"
+ ],
+ "POST /dispatch/roster DispatchBoardController.rosterAdd": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "PUT /dispatch/roster/:id DispatchBoardController.rosterUpdate": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "POST /dispatch/roster/:id/link DispatchBoardController.rosterLink": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "GET /dispatch/roster/:id/merge-preview DispatchBoardController.rosterMergePreview": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "POST /dispatch/roster/:id/remove-from-board DispatchBoardController.rosterRemoveFromBoard": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "POST /dispatch/roster/:id/restore DispatchBoardController.rosterRestore": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "POST /dispatch/roster/:id/separate DispatchBoardController.rosterSeparate": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "POST /dispatch/roster/:id/unassign DispatchBoardController.rosterUnassign": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "POST /dispatch/roster/assign DispatchBoardController.rosterAssign": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "POST /dispatch/roster/import DispatchBoardController.rosterImport": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "GET /dispatch/roster/match DispatchBoardController.rosterMatch": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "GET /dispatch/roster/off-board DispatchBoardController.rosterOffBoard": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "GET /dispatch/rotation DispatchBoardController.rotation": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "GET /dispatch/salary DispatchBoardController.salaryReport": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /dispatch/salary/adjustments DispatchBoardController.addAdjustment": [
+  "administrator"
+ ],
+ "POST /dispatch/salary/adjustments/:id/void DispatchBoardController.voidAdjustment": [
+  "administrator"
+ ],
+ "GET /dispatch/salary/allocations DispatchBoardController.allocations": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /dispatch/salary/allocations DispatchBoardController.writeAllocation": [
+  "administrator"
+ ],
+ "GET /dispatch/salary/export.csv DispatchBoardController.salaryCsv": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /dispatch/salary/export.xlsx DispatchBoardController.salaryXlsx": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /dispatch/salary/run DispatchBoardController.salaryRun": [
+  "administrator"
+ ],
+ "GET /dispatch/teams/:dispatcherId/members DispatchBoardController.teamMembers": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "POST /dispatch/teams/:dispatcherId/separate DispatchBoardController.separateDispatchers": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead"
+ ],
+ "GET /driver-relations/assignees DriverRelationsController.assignees": [
+  "administrator",
+  "driver_relations"
+ ],
+ "GET /driver-relations/care-links DriverRelationsController.careLinks": [
+  "administrator",
+  "driver_relations"
+ ],
+ "POST /driver-relations/care-links DriverRelationsController.createCareLink": [
+  "administrator"
+ ],
+ "PATCH /driver-relations/care-links/:id DriverRelationsController.updateCareLink": [
+  "administrator"
+ ],
+ "GET /driver-relations/counts DriverRelationsController.counts": [
+  "administrator",
+  "driver_relations"
+ ],
+ "GET /driver-relations/integration DriverRelationsController.integration": [
+  "administrator",
+  "driver_relations"
+ ],
+ "GET /driver-relations/requests DriverRelationsController.list": [
+  "administrator",
+  "driver_relations"
+ ],
+ "GET /driver-relations/requests/:id DriverRelationsController.detail": [
+  "administrator",
+  "driver_relations"
+ ],
+ "PATCH /driver-relations/requests/:id/assignment DriverRelationsController.assign": [
+  "administrator",
+  "driver_relations"
+ ],
+ "GET /driver-relations/requests/:id/attachments/:attachmentId DriverRelationsController.attachment": [
+  "administrator",
+  "driver_relations"
+ ],
+ "POST /driver-relations/requests/:id/attempts DriverRelationsController.attempt": [
+  "administrator",
+  "driver_relations"
+ ],
+ "POST /driver-relations/requests/:id/contact DriverRelationsController.contact": [
+  "administrator",
+  "driver_relations"
+ ],
+ "POST /driver-relations/requests/:id/driver-messages DriverRelationsController.driverMessage": [
+  "administrator",
+  "driver_relations"
+ ],
+ "PATCH /driver-relations/requests/:id/links DriverRelationsController.link": [
+  "administrator",
+  "driver_relations"
+ ],
+ "POST /driver-relations/requests/:id/notes DriverRelationsController.note": [
+  "administrator",
+  "driver_relations"
+ ],
+ "POST /driver-relations/requests/:id/reopen DriverRelationsController.reopen": [
+  "administrator",
+  "driver_relations"
+ ],
+ "POST /driver-relations/requests/:id/resolve DriverRelationsController.resolve": [
+  "administrator",
+  "driver_relations"
+ ],
+ "GET /driver-relations/roster-options DriverRelationsController.rosterOptions": [
+  "administrator",
+  "driver_relations"
+ ],
+ "POST /driver/assistant/ask DriverAssistantController.askQuestion": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/assistant/transcribe DriverAssistantController.transcribe": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/assistant/voice DriverAssistantController.voice": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/breakdowns DriverRecordsController.myBreakdowns": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/breakdowns DriverRecordsController.reportBreakdown": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/breakdowns/:id DriverRecordsController.myBreakdown": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/care DriverRecordsController.myCare": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/care DriverRecordsController.sendCare": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/care/:id DriverRecordsController.myCareOne": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/conversations DriverMessagesController.list": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/conversations DriverMessagesController.start": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/conversations/:id/files/:fileId/link DriverMessagesController.fileLink": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/conversations/:id/messages DriverMessagesController.thread": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/conversations/:id/messages DriverMessagesController.post": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/conversations/:id/read DriverMessagesController.read": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/documents DriverRecordsController.myDocuments": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/documents DriverRecordsController.sendDocument": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/files DriverController.uploadFile": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/files/:id/link DriverController.fileLink": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/loads DriverController.list": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/loads/:id DriverController.detail": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/loads/:id/ack DriverController.acknowledge": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/loads/:id/documents DriverController.uploadDocument": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/loads/:id/stop-event DriverController.stopEvent": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/me DriverController.me": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/pti DriverController.ptiSubmit": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/pti/current DriverController.ptiCurrent": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/referrals DriverRecordsController.myReferrals": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/referrals DriverRecordsController.refer": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/reimbursements DriverRecordsController.myReceipts": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/reimbursements DriverRecordsController.fileReceipt": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/reimbursements/:id DriverRecordsController.myReceipt": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/safety-reports DriverRecordsController.mySafetyReports": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/safety-reports DriverRecordsController.reportSafety": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/safety-reports/:id DriverRecordsController.mySafetyReport": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/settlements DriverRecordsController.mySettlements": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/settlements/:id DriverRecordsController.mySettlement": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/settlements/:id/pdf DriverRecordsController.mySettlementPdf": [
+  "administrator",
+  "driver"
+ ],
+ "GET /driver/vacations DriverRecordsController.myVacations": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/vacations DriverRecordsController.requestVacation": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/vacations/:id/cancel DriverRecordsController.cancelVacation": [
+  "administrator",
+  "driver"
+ ],
+ "POST /driver/vacations/:id/parked DriverRecordsController.truckParked": [
+  "administrator",
+  "driver"
+ ],
+ "GET /drivers RosterController.listDrivers": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /drivers RosterController.createDriver": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "GET /drivers/:idOrNumber RosterController.getDriver": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "PATCH /drivers/:idOrNumber RosterController.updateDriver": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "GET /drivers/:idOrNumber/app-access AppAccessController.status": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /drivers/:idOrNumber/app-access AppAccessController.give": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /drivers/:idOrNumber/app-access/revoke AppAccessController.revoke": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "GET /drivers/:idOrNumber/payment RosterController.driverPayment": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "PUT /drivers/:idOrNumber/payment RosterController.saveDriverPayment": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /drivers/:idOrNumber/restore RosterController.restoreDriver": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /drivers/:idOrNumber/status RosterController.setDriverStatus": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager"
+ ],
+ "GET /drivers/:idOrNumber/team RosterController.driverTeam": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /drivers/:idOrNumber/team RosterController.pairDriver": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager"
+ ],
+ "POST /drivers/:idOrNumber/team/:pairId/end RosterController.unpairDriver": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager"
+ ],
+ "POST /drivers/:idOrNumber/truck RosterController.assignDriverTruck": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "GET /drivers/:idOrNumber/vacations RosterController.driverVacationHistory": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /drivers/:idOrNumber/vacations RosterController.startVacation": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager"
+ ],
+ "PATCH /drivers/:idOrNumber/vacations/:vacationId RosterController.updateVacation": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager"
+ ],
+ "POST /drivers/:idOrNumber/vacations/:vacationId/cancel RosterController.cancelVacation": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager"
+ ],
+ "POST /drivers/:idOrNumber/vacations/:vacationId/return RosterController.recordVacationReturn": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager"
+ ],
+ "GET /drivers/teams RosterController.driverTeams": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "GET /drivers/vacation-requests RosterController.vacationRequests": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /drivers/vacation-requests/:id/decision RosterController.decideVacationRequest": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager"
+ ],
+ "POST /drivers/vacation-requests/:id/parked RosterController.confirmTruckParked": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager"
+ ],
+ "GET /drivers/vacations RosterController.driverVacations": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "GET /employees EmployeesController.list": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "POST /employees EmployeesController.create": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /employees/:id EmployeesController.get": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "PATCH /employees/:id EmployeesController.update": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /employees/:id/activity EmployeesController.activity": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "GET /employees/:id/compensation EmployeesController.compensation": [
+  "administrator",
+  "accounting",
+  "hr_manager"
+ ],
+ "POST /employees/:id/compensation EmployeesController.setCompensation": [
+  "administrator",
+  "accounting",
+  "hr_manager"
+ ],
+ "GET /employees/:id/employment EmployeesController.employment": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "POST /employees/:id/reassign EmployeesController.reassign": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /employees/:id/reports EmployeesController.reports": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "POST /employees/:id/status EmployeesController.changeStatus": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /employees/dispatchers EmployeesController.dispatchers": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "GET /employees/summary EmployeesController.summary": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "POST /files FilesController.upload": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations"
+ ],
+ "GET /files/:id FilesController.read": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /files/:id/delete FilesController.softDelete": [
+  "administrator"
+ ],
+ "GET /files/:id/link FilesController.link": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /files/:id/restore FilesController.restore": [
+  "administrator"
+ ],
+ "GET /files/deleted FilesController.listDeleted": [
+  "administrator"
+ ],
+ "POST /files/raw FilesController.uploadRaw": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations"
+ ],
+ "GET /files/sign FilesController.sign": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /files/signed FilesController.readSigned": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /fleet/breakdowns FleetBreakdownsController.list": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/breakdowns/:id FleetBreakdownsController.detail": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "POST /fleet/breakdowns/:id/assign FleetBreakdownsController.assign": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /fleet/breakdowns/:id/notes FleetBreakdownsController.note": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /fleet/breakdowns/:id/shop FleetBreakdownsController.shop": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "PATCH /fleet/breakdowns/:id/status FleetBreakdownsController.status": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /fleet/breakdowns/:id/work-order FleetBreakdownsController.workOrder": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "GET /fleet/breakdowns/people FleetBreakdownsController.people": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/breakdowns/shops FleetBreakdownsController.shops": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/expense-summary FleetExpenseController.summary": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager"
+ ],
+ "GET /fleet/expenses FleetExpensesController.list": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "accounting"
+ ],
+ "POST /fleet/expenses FleetExpensesController.create": [
+  "administrator",
+  "fleet_manager",
+  "maintenance",
+  "accounting"
+ ],
+ "GET /fleet/expenses/:id FleetExpensesController.detail": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "accounting"
+ ],
+ "PATCH /fleet/expenses/:id FleetExpensesController.update": [
+  "administrator",
+  "fleet_manager",
+  "maintenance",
+  "accounting"
+ ],
+ "POST /fleet/expenses/:id/files FleetExpensesController.addFile": [
+  "administrator",
+  "fleet_manager",
+  "maintenance",
+  "accounting"
+ ],
+ "POST /fleet/expenses/:id/files/:fileRowId/remove FleetExpensesController.removeFile": [
+  "administrator",
+  "fleet_manager",
+  "maintenance",
+  "accounting"
+ ],
+ "GET /fleet/expenses/:id/pdf FleetExpensesController.expensePdf": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "accounting"
+ ],
+ "POST /fleet/expenses/:id/post FleetExpensesController.post": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /fleet/expenses/:id/recovery FleetExpensesController.recovery": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /fleet/expenses/:id/resolve-investigation FleetExpensesController.resolveInvestigation": [
+  "administrator",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /fleet/expenses/:id/void FleetExpensesController.void": [
+  "administrator",
+  "fleet_manager",
+  "maintenance",
+  "accounting"
+ ],
+ "GET /fleet/expenses/dashboard FleetExpensesController.dashboard": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "accounting"
+ ],
+ "GET /fleet/expenses/duplicate-check FleetExpensesController.duplicates": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "accounting"
+ ],
+ "GET /fleet/expenses/investigations FleetExpensesController.investigations": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager",
+  "accounting"
+ ],
+ "GET /fleet/expenses/options FleetExpensesController.options": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "accounting"
+ ],
+ "GET /fleet/expenses/report.pdf FleetExpensesController.report": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "accounting"
+ ],
+ "POST /fleet/pm/appointments PmBoardController.schedule": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "GET /fleet/pm/board PmBoardController.list": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "POST /fleet/pm/completions PmBoardController.complete": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /fleet/pm/completions/:id/correct PmBoardController.correct": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /fleet/pm/completions/:id/void PmBoardController.void": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "GET /fleet/pm/coverage PmController.coverage": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/pm/plans PmController.plans": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "POST /fleet/pm/plans PmController.setPlan": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "POST /fleet/pm/plans/:id/void PmController.voidPlan": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/pm/readings PmController.readings": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "POST /fleet/pm/readings PmController.addReading": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/pm/readings/conflicts PmController.conflicts": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "POST /fleet/pm/recompute PmController.recompute": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "GET /fleet/pm/services PmController.services": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/pm/shops PmBoardController.shops": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "POST /fleet/pm/shops PmBoardController.addShop": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "PATCH /fleet/pm/shops/:id PmBoardController.renameShop": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "GET /fleet/pm/status PmController.statuses": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/pm/status/:unitId PmController.status": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/pm/units/:unitId PmBoardController.unit": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "POST /fleet/pm/units/:unitId/group PmController.setUnitGroup": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/pm/units/:unitId/reading-near PmBoardController.readingNear": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/pti/assignees PtiController.assignees": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/pti/board PtiController.board": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/pti/defects PtiController.defects": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "POST /fleet/pti/defects PtiController.createDefect": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/pti/defects/:id PtiController.defect": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "PATCH /fleet/pti/defects/:id PtiController.updateDefect": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "POST /fleet/pti/defects/:id/transition PtiController.transition": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/pti/inspections/:id PtiController.inspection": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "POST /fleet/pti/inspections/:id/lock PtiController.lock": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "POST /fleet/pti/inspections/:id/receipt PtiController.receive": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "POST /fleet/pti/inspections/:id/request-correction PtiController.requestCorrection": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "POST /fleet/pti/inspections/:id/review PtiController.review": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "POST /fleet/pti/inspections/:id/unlock PtiController.unlock": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/pti/unit-issues PtiController.unitIssues": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /fleet/pti/units/:unitId/dispatch-override PtiController.dispatchOverride": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "driver_relations",
+  "read_only"
+ ],
+ "GET /fleet/pti/units/:unitId/inspections PtiController.unitHistory": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/pti/units/:unitId/status PtiController.unitStatus": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /fleet/pti/work-orders/:workOrderId/closed PtiController.workOrderClosed": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/tire-positions TirePositionsController.list": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager"
+ ],
+ "PUT /fleet/tire-positions/:kind/:recordId TirePositionsController.tag": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "GET /fleet/tire-positions/report TirePositionsController.report": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager"
+ ],
+ "GET /fleet/today WorkOrdersController.today": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/units WorkOrdersController.units": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/units/:truckId/hooked-trailer WorkOrdersController.hookedTrailer": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/work-orders WorkOrdersController.list": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "GET /fleet/work-orders/lease-operator-units WorkOrdersController.leaseOperatorUnits": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "GET /fleet/work-orders/in-shop-units WorkOrdersController.inShopUnits": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /fleet/work-orders WorkOrdersController.create": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "GET /fleet/work-orders/:id WorkOrdersController.detail": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance",
+  "read_only"
+ ],
+ "PATCH /fleet/work-orders/:id WorkOrdersController.update": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /fleet/work-orders/:id/charge WorkOrdersController.setCharge": [
+  "administrator",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /fleet/work-orders/:id/check-in WorkOrdersController.checkIn": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /fleet/work-orders/:id/complete WorkOrdersController.complete": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /fleet/work-orders/:id/invoice WorkOrdersController.attachInvoice": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /fleet/work-orders/:id/note WorkOrdersController.addNote": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /fleet/work-orders/:id/reopen WorkOrdersController.reopen": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /fleet/work-orders/:id/stage WorkOrdersController.changeStage": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /fleet/work-orders/:id/void WorkOrdersController.voidOrder": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /fleet/work-orders/merge-vendor WorkOrdersController.mergeVendor": [
+  "administrator",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "GET /health HealthController.getHealth": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /hiring/analytics HiringController.analyticsFor": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/apply-links HiringController.listApplyLinks": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/apply-links HiringController.createApplyLink": [
+  "administrator",
+  "hr_manager"
+ ],
+ "PATCH /hiring/apply-links/:id HiringController.updateApplyLink": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/calendar HiringController.calendar": [
+  "administrator",
+  "hr_manager"
+ ],
+ "PATCH /hiring/campaign-spend/:id HiringController.updateSpend": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/campaign-spend/:id/void HiringController.voidSpend": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/campaigns HiringController.listCampaigns": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/campaigns HiringController.createCampaign": [
+  "administrator",
+  "hr_manager"
+ ],
+ "PATCH /hiring/campaigns/:id HiringController.updateCampaign": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/campaigns/:id/spend HiringController.listSpend": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/campaigns/:id/spend HiringController.addSpend": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/cases HiringController.list": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/cases/:id HiringController.get": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/cases/:id/activity HiringController.activity": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/cases/:id/costs HiringController.caseCosts": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/cases/:id/documents HiringController.documents": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/cases/:id/documents HiringController.uploadDocument": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/cases/:id/documents/read-cdl HiringController.readCdl": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/cases/:id/documents/:documentId/file HiringController.documentFile": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/cases/:id/dot-application HiringController.getApplication": [
+  "administrator",
+  "hr_manager"
+ ],
+ "PUT /hiring/cases/:id/dot-application HiringController.saveApplication": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/cases/:id/dot-application/accept HiringController.acceptDotApplication": [
+  "administrator",
+  "hr_manager"
+ ],
+ "DELETE /hiring/cases/:id/dot-application/link HiringController.revokeDotLink": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/cases/:id/dot-application/link HiringController.dotLink": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/cases/:id/dot-application/link HiringController.createDotLink": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/cases/:id/dot-application/link/files HiringController.dotLinkFiles": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/cases/:id/dot-application/link/files/:fileId HiringController.dotLinkFile": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/cases/:id/dot-application/return HiringController.returnDotApplication": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/cases/:id/dot-application/submit HiringController.submitApplication": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/cases/:id/drop HiringController.drop": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/cases/:id/follow-ups HiringController.caseFollowUp": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/cases/:id/hire HiringController.hire": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/cases/:id/offer HiringController.createOffer": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/cases/:id/offer/status HiringController.setOfferStatus": [
+  "administrator",
+  "hr_manager"
+ ],
+ "PUT /hiring/cases/:id/orientation HiringController.recordOrientation": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/cases/:id/pipeline HiringController.pipelineFor": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/cases/:id/recruiter HiringController.assignRecruiter": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/cases/:id/ticket HiringController.bookTicket": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/cases/summary HiringController.summary": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/costs HiringController.listCosts": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/costs HiringController.createCost": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/costs/:id/accounting HiringController.postCostToAccounting": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /hiring/costs/:id/void HiringController.voidCost": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/follow-ups/latest HiringController.latestFollowUps": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/lead-rotation HiringController.leadRotation": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/leads HiringController.listLeads": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/leads HiringController.createLead": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/leads/:id HiringController.getLead": [
+  "administrator",
+  "hr_manager"
+ ],
+ "PATCH /hiring/leads/:id HiringController.updateLead": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/leads/:id/applications HiringController.leadApplications": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/leads/:id/contacted HiringController.markContacted": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/leads/:id/convert HiringController.convert": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/leads/:id/disqualify HiringController.disqualify": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/leads/:id/follow-ups HiringController.leadFollowUp": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/leads/:id/no-answer HiringController.markNoAnswer": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/leads/:id/notes HiringController.leadNotes": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/leads/:id/notes HiringController.addLeadNote": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/leads/:id/prequalify HiringController.prequalify": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/leads/:id/reopen HiringController.reopenLead": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/leads/rules HiringController.leadRules": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/leads/summary HiringController.leadSummary": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/my-leads HiringController.myLeads": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/analytics RecruitController.analytics": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/board RecruitController.board": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/calendar RecruitController.calendar": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/candidates RecruitController.list": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/candidates/:key RecruitController.candidate": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/application-link RecruitController.applicationLink": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/application-link/mark-sent RecruitController.markSent": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/candidates/:key/dot-application RecruiterDotApplicationController.view": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/dot-application/link RecruiterDotApplicationController.issue": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/dot-application/link/copied RecruiterDotApplicationController.copied": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/dot-application/link/revoke RecruiterDotApplicationController.revoke": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/candidates/:key/driver-application RecruitController.driverApplication": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/candidates/:key/driver-application/authorizations/:authId/pdf RecruitController.driverApplicationAuthorizationPdf": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/candidates/:key/driver-application/authorizations/:authId/signature RecruitController.driverApplicationSignature": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/candidates/:key/driver-application/files/:fileId RecruitController.driverApplicationFile": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/candidates/:key/driver-application/pdf RecruitController.driverApplicationPdf": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/driver-application/session RecruitController.issueDriverApplication": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/driver-application/session/copied RecruitController.driverApplicationCopied": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/driver-application/session/mark-sent RecruitController.driverApplicationSent": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/driver-application/session/revoke RecruitController.driverApplicationRevoke": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/driver-application/ssn RecruitController.driverApplicationSsn": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/follow-up/done RecruitController.followUpDone": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/candidates/:key/journey CandidateJourneyController.read": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/application/reviewed CandidateJourneyController.applicationReviewed": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/consent/copied CandidateJourneyController.consentCopied": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/candidates/:key/journey/consent/documents/:documentId/pdf CandidateJourneyController.consentPdf": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/consent/email CandidateJourneyController.consentEmail": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/candidates/:key/journey/consent/files/:fileId CandidateJourneyController.consentFile": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/consent/link CandidateJourneyController.consentLink": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/consent/mark-sent CandidateJourneyController.consentMarkSent": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/consent/revoke CandidateJourneyController.consentRevoke": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/candidates/:key/journey/consent/signature CandidateJourneyController.consentSignature": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/costs CandidateJourneyController.addCost": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/costs/:id/agreement CandidateJourneyController.costAgreement": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/costs/:id/decision CandidateJourneyController.decideCost": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/costs/:id/payment CandidateJourneyController.costPayment": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/costs/:id/refund CandidateJourneyController.costRefund": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/deliveries CandidateJourneyController.sendLink": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/deliveries/:id/refresh CandidateJourneyController.refreshLink": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/deliveries/:id/resend CandidateJourneyController.resendLink": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/hire CandidateJourneyController.hire": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/hold CandidateJourneyController.hold": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/onboarding/start CandidateJourneyController.startOnboarding": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/onboarding/tasks CandidateJourneyController.addTask": [
+  "administrator",
+  "hr_manager"
+ ],
+ "PATCH /hiring/recruiting/candidates/:key/journey/onboarding/tasks/:taskId CandidateJourneyController.updateTask": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/safety CandidateJourneyController.sendToSafety": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/safety/checks CandidateJourneyController.safetyCheckRequest": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/safety/checks/:kind/pending CandidateJourneyController.safetyCheckPending": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/safety/decision CandidateJourneyController.safetyDecision": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/safety/full-query CandidateJourneyController.safetyFullQuery": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/safety/reports CandidateJourneyController.safetyUpload": [
+  "administrator",
+  "hr_manager"
+ ],
+ "PATCH /hiring/recruiting/candidates/:key/journey/safety/reports/:reportId CandidateJourneyController.safetyReview": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/candidates/:key/journey/safety/reports/:reportId/file CandidateJourneyController.safetyReportFile": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/sms-consent CandidateJourneyController.smsConsent": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/travel CandidateJourneyController.addTravel": [
+  "administrator",
+  "hr_manager"
+ ],
+ "PATCH /hiring/recruiting/candidates/:key/journey/travel/:id CandidateJourneyController.updateTravel": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/travel/:id/cancel CandidateJourneyController.cancelTravel": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/journey/withdraw CandidateJourneyController.withdraw": [
+  "administrator",
+  "hr_manager"
+ ],
+ "PATCH /hiring/recruiting/candidates/:key/name RecruitController.rename": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/candidates/:key/notes RecruitController.notes": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/notes RecruitController.addNote": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/recruiter RecruitController.reassign": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/reopen RecruitController.reopen": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/candidates/:key/send-to-safety RecruitController.sendToSafety": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/dashboard RecruitController.dashboard": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/drivers/:driverId/candidate RecruitController.driverCandidate": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/leads RecruitController.addLead": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/metrics RecruitController.metrics": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/recruiters RecruitController.recruiters": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/rotation RecruitController.rotationSettings": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hiring/recruiting/rotation/members/:userId/excluded RecruitController.exclude": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/recruiting/rotation/next RecruitController.rotationNext": [
+  "administrator",
+  "hr_manager"
+ ],
+ "PUT /hiring/recruiting/rotation/order RecruitController.reorder": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hiring/safety-desk SafetyDeskController.list": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /hiring/safety-desk/:caseId SafetyDeskController.detail": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /hiring/safety-desk/:caseId/checks SafetyDeskController.requestCheck": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /hiring/safety-desk/:caseId/checks/:kind/pending SafetyDeskController.pending": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /hiring/safety-desk/:caseId/consent/documents/:documentId/pdf SafetyDeskController.consentPdf": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /hiring/safety-desk/:caseId/consent/files/:fileId SafetyDeskController.consentFile": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /hiring/safety-desk/:caseId/decision SafetyDeskController.decide": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /hiring/safety-desk/:caseId/full-query SafetyDeskController.fullQuery": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /hiring/safety-desk/:caseId/insurance SafetyDeskController.insurance": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /hiring/safety-desk/:caseId/insurance/response SafetyDeskController.insuranceResponse": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /hiring/safety-desk/:caseId/reports SafetyDeskController.upload": [
+  "administrator",
+  "safety_manager"
+ ],
+ "PATCH /hiring/safety-desk/:caseId/reports/:reportId SafetyDeskController.review": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /hiring/safety-desk/:caseId/reports/:reportId/file SafetyDeskController.reportFile": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /hr/attendance HrController.listAttendance": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "POST /hr/attendance HrController.createAttendance": [
+  "administrator",
+  "hr_manager"
+ ],
+ "PATCH /hr/attendance/:id HrController.updateAttendance": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hr/attendance/:id/approve HrController.approveAttendance": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "POST /hr/attendance/:id/resolve HrController.resolveAttendance": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hr/attendance/summary HrController.attendanceSummary": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "GET /hr/onboarding HrController.listOnboarding": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "POST /hr/onboarding HrController.createOnboarding": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hr/onboarding/:id HrController.getOnboarding": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "GET /hr/onboarding/:id/items HrController.onboardingItems": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "POST /hr/onboarding/:id/items HrController.addOnboardingItem": [
+  "administrator",
+  "hr_manager"
+ ],
+ "PATCH /hr/onboarding/items/:itemId HrController.updateOnboardingItem": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hr/onboarding/summary HrController.onboardingSummary": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "GET /hr/onboarding/templates HrController.onboardingTemplates": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "GET /hr/performance/action-plans HrController.listActionPlans": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "POST /hr/performance/action-plans HrController.createActionPlan": [
+  "administrator",
+  "hr_manager"
+ ],
+ "PATCH /hr/performance/action-plans/:id HrController.updateActionPlan": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hr/performance/cycles HrController.listCycles": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "POST /hr/performance/cycles HrController.createCycle": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hr/performance/feedback HrController.addFeedback": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hr/performance/feedback/:employeeId HrController.listFeedback": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "GET /hr/performance/goals HrController.listGoals": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "POST /hr/performance/goals HrController.createGoal": [
+  "administrator",
+  "hr_manager"
+ ],
+ "PATCH /hr/performance/goals/:id HrController.updateGoal": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hr/performance/reviews HrController.listReviews": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "POST /hr/performance/reviews HrController.createReview": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hr/performance/reviews/:id HrController.getReview": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "PATCH /hr/performance/reviews/:id HrController.updateReview": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hr/performance/reviews/:id/status HrController.changeReviewStatus": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hr/performance/summary HrController.performanceSummary": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "GET /hr/pto/balances/:employeeId HrController.ptoBalances": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "POST /hr/pto/balances/adjust HrController.adjustPto": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hr/pto/me HrController.ptoMine": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /hr/pto/policies HrController.listPolicies": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "POST /hr/pto/policies HrController.createPolicy": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hr/pto/requests HrController.listPto": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "POST /hr/pto/requests HrController.createPto": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hr/pto/requests/:id HrController.getPto": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "POST /hr/pto/requests/:id/decide HrController.decidePto": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "GET /hr/pto/summary HrController.ptoSummary": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "GET /hr/pto/transactions/:employeeId HrController.ptoTransactions": [
+  "administrator",
+  "operations_manager",
+  "hr_manager"
+ ],
+ "GET /hr/recruiting/candidates HrController.listCandidates": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hr/recruiting/candidates HrController.createCandidate": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hr/recruiting/candidates/:id HrController.getCandidate": [
+  "administrator",
+  "hr_manager"
+ ],
+ "PATCH /hr/recruiting/candidates/:id HrController.updateCandidate": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hr/recruiting/candidates/:id/hire HrController.hire": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hr/recruiting/candidates/:id/interviews HrController.listInterviews": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hr/recruiting/candidates/:id/interviews HrController.scheduleInterview": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hr/recruiting/candidates/:id/offers HrController.listOffers": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hr/recruiting/candidates/:id/offers HrController.createOffer": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hr/recruiting/candidates/:id/stage HrController.moveStage": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hr/recruiting/interviews/:id/outcome HrController.recordOutcome": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hr/recruiting/jobs HrController.listJobs": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hr/recruiting/jobs HrController.createJob": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hr/recruiting/jobs/:id/status HrController.setJobStatus": [
+  "administrator",
+  "hr_manager"
+ ],
+ "POST /hr/recruiting/offers/:id/status HrController.setOfferStatus": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /hr/recruiting/summary HrController.recruitingSummary": [
+  "administrator",
+  "hr_manager"
+ ],
+ "GET /load-problems LoadProblemsController.list": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "accounting",
+  "read_only"
+ ],
+ "POST /load-rate-confirmations/read RateConfirmationReaderController.read": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "GET /loads LoadsController.list": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "accounting",
+  "read_only"
+ ],
+ "POST /loads LoadsController.create": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "GET /loads/:id LoadsController.get": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "accounting",
+  "read_only"
+ ],
+ "PATCH /loads/:id LoadsController.patch": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "POST /loads/:id/assignment LoadsController.assign": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "POST /loads/:id/cancel LoadsController.cancel": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "POST /loads/:id/check-call LoadsController.checkCall": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "POST /loads/:id/confirm LoadsController.confirmUpload": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "POST /loads/:id/documents LoadsController.attachDocument": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "accounting",
+  "dispatch_lead"
+ ],
+ "POST /loads/:id/charges/:chargeId/decide LoadsController.decideCharge": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "accounting",
+  "dispatch_lead"
+ ],
+ "POST /loads/:id/documents/:documentId/remove LoadsController.removeDocument": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "accounting",
+  "dispatch_lead"
+ ],
+ "POST /loads/:id/documents/:documentId/review LoadsController.reviewDocument": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "POST /loads/:id/notes LoadsController.addNote": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "POST /loads/:id/notes/pin LoadsController.pinNote": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "GET /loads/:id/problems LoadProblemsController.forLoad": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "accounting",
+  "read_only"
+ ],
+ "POST /loads/:id/problems LoadProblemsController.flag": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "POST /loads/:id/problems/:problemId/close LoadProblemsController.close": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "POST /loads/:id/route LoadsController.chooseRoute": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "POST /loads/:id/route-options LoadsController.routeOptions": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "POST /loads/:id/route/clear LoadsController.clearRoute": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "POST /loads/:id/status LoadsController.changeStatus": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "POST /loads/:id/stop-event LoadsController.stopEvent": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead"
+ ],
+ "GET /loads/driver-last-drop LoadsController.driverLastDrop": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "accounting",
+  "read_only"
+ ],
+ "GET /loads/highest-number LoadsController.highestNumber": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "accounting",
+  "read_only"
+ ],
+ "GET /loads/me/lead LoadsController.lead": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "accounting",
+  "read_only"
+ ],
+ "GET /me/profile SelfProfileController.read": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "PUT /me/profile SelfProfileController.submit": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /mobile/devices MobileController.devices": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /mobile/devices MobileController.register": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /mobile/devices/:id/revoke MobileController.revoke": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /mobile/notifications MobileController.list": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /mobile/notifications/:id/read MobileController.read": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /mobile/notifications/read-all MobileController.readAll": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /office/approvals OfficeController.approvals": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager"
+ ],
+ "GET /office/dispatch OfficeController.dispatch": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "GET /office/me OfficeController.me": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /office/my-work OfficeController.myWork": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /office/today OfficeController.today": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /platform/companies PlatformController.list": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /platform/companies PlatformController.create": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "PATCH /platform/companies/:id PlatformController.rename": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /platform/companies/:id/admin-password PlatformController.issueAdminPassword": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /platform/companies/:id/deactivate PlatformController.deactivate": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /platform/companies/:id/reactivate PlatformController.reactivate": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /public/apply/:slug PublicApplyController.config": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "OPTIONS /public/apply/:slug PublicApplyController.preflight": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/apply/:slug PublicApplyController.submit": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/consent/form PublicConsentController.form": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/consent/submit PublicConsentController.submit": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /public/dot-application/:token PublicDotLinkController.read": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "OPTIONS /public/dot-application/:token PublicDotLinkController.preflight": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "PUT /public/dot-application/:token PublicDotLinkController.save": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "OPTIONS /public/dot-application/:token/documents PublicDotLinkController.preflight": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/dot-application/:token/documents PublicDotLinkController.upload": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "OPTIONS /public/dot-application/:token/submit PublicDotLinkController.preflight": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/dot-application/:token/submit PublicDotLinkController.submit": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/driver-application PublicDriverApplicationController.submit": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /public/driver-application-v2/:token PublicDotApplicationController.gate": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /public/driver-application-v2/:token/application PublicDotApplicationController.state": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "PUT /public/driver-application-v2/:token/application PublicDotApplicationController.save": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/driver-application-v2/:token/code PublicDotApplicationController.code": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/driver-application-v2/:token/signatures PublicDotApplicationController.sign": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /public/driver-application-v2/:token/signatures/:key/image PublicDotApplicationController.signatureImage": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/driver-application-v2/:token/submit PublicDotApplicationController.submit": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /public/driver-application-v2/:token/uploads/:fileId PublicDotApplicationController.file": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/driver-application-v2/:token/uploads/:fileId/remove PublicDotApplicationController.remove": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/driver-application-v2/:token/uploads/:slot PublicDotApplicationController.upload": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/driver-application-v2/:token/verify PublicDotApplicationController.verify": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/driver-application/context PublicDriverApplicationController.context": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/driver-application/forwarded PublicDriverApplicationController.forwarded": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /public/driver-care/:slug PublicCareController.config": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "OPTIONS /public/driver-care/:slug PublicCareController.preflight": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/driver-care/:slug PublicCareController.submit": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/email/resend/webhook ResendWebhookController.webhook": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /public/external-application/:token PublicExternalApplicationController.prefill": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "OPTIONS /public/external-application/:token PublicExternalApplicationController.preflight": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/external-application/:token PublicExternalApplicationController.submit": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/sms/twilio/inbound/:accountId PublicSmsStatusController.inbound": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "POST /public/sms/twilio/status/:deliveryId PublicSmsStatusController.status": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /reports/catalog ReportsController.catalog": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "POST /reports/run ReportsController.run": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "GET /reports/saved ReportsController.listSaved": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "POST /reports/saved ReportsController.save": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "DELETE /reports/saved/:id ReportsController.remove": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "accounting",
+  "hr_manager",
+  "read_only"
+ ],
+ "GET /safety/accidents SafetyController.listAccidents": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "POST /safety/accidents SafetyController.createAccident": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/accidents-v2 AccidentsV2Controller.board": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "POST /safety/accidents-v2 AccidentsV2Controller.report": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "GET /safety/accidents-v2/:id AccidentsV2Controller.detail": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "PATCH /safety/accidents-v2/:id AccidentsV2Controller.patch": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/ap-bills AccidentsV2Controller.addBill": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "accounting"
+ ],
+ "PUT /safety/accidents-v2/:id/claim-decision AccidentsV2Controller.claimDecision": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/close-administratively AccidentsV2Controller.closeAdministratively": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/corrective-actions AccidentsV2Controller.createCorrectiveAction": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "PUT /safety/accidents-v2/:id/determinations/:kind AccidentsV2Controller.determination": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/discard AccidentsV2Controller.discard": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "GET /safety/accidents-v2/:id/events AccidentsV2Controller.events": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "POST /safety/accidents-v2/:id/events AccidentsV2Controller.logEvent": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "GET /safety/accidents-v2/:id/evidence AccidentsV2Controller.evidenceList": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "POST /safety/accidents-v2/:id/evidence AccidentsV2Controller.evidenceUpload": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting"
+ ],
+ "POST /safety/accidents-v2/:id/factors AccidentsV2Controller.addFactor": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "PATCH /safety/accidents-v2/:id/factors/:fid AccidentsV2Controller.factorLevel": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/facts AccidentsV2Controller.addFact": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "PATCH /safety/accidents-v2/:id/investigation AccidentsV2Controller.patchInvestigation": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/investigation/:action AccidentsV2Controller.investigation": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/legal-hold AccidentsV2Controller.legalHold": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/owner AccidentsV2Controller.owner": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/questions AccidentsV2Controller.addQuestion": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/questions/:qid/resolve AccidentsV2Controller.resolveQuestion": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/reopen AccidentsV2Controller.reopen": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/requests AccidentsV2Controller.request": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "PUT /safety/accidents-v2/:id/review-items/:key AccidentsV2Controller.reviewItem": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/severity AccidentsV2Controller.severity": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/stage AccidentsV2Controller.stage": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/statements AccidentsV2Controller.addStatement": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/submit AccidentsV2Controller.submit": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "PUT /safety/accidents-v2/:id/summary-override AccidentsV2Controller.summaryOverride": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "GET /safety/accidents-v2/:id/tasks AccidentsV2Controller.caseTasks": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "PUT /safety/accidents-v2/:id/tests/:substance AccidentsV2Controller.test": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "PATCH /safety/accidents-v2/:id/units/:unitId AccidentsV2Controller.unit": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /safety/accidents-v2/:id/vehicles AccidentsV2Controller.addVehicle": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/void AccidentsV2Controller.void": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/witnesses AccidentsV2Controller.addWitness": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/:id/work-orders AccidentsV2Controller.createWorkOrder": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager"
+ ],
+ "GET /safety/accidents-v2/analytics AccidentsV2Controller.analytics": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "GET /safety/accidents-v2/assignment AccidentsV2Controller.assignment": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "PATCH /safety/accidents-v2/corrective-actions/:actionId AccidentsV2Controller.patchCorrectiveAction": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "GET /safety/accidents-v2/counts AccidentsV2Controller.counts": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "PATCH /safety/accidents-v2/downtime/:downtimeId AccidentsV2Controller.patchDowntime": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager"
+ ],
+ "POST /safety/accidents-v2/downtime/:downtimeId/verify AccidentsV2Controller.verifyDowntime": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager"
+ ],
+ "GET /safety/accidents-v2/evidence/:docId/download AccidentsV2Controller.evidenceDownload": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "POST /safety/accidents-v2/evidence/:docId/remove AccidentsV2Controller.evidenceRemove": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/accidents-v2/evidence/:docId/versions AccidentsV2Controller.evidenceVersion": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting"
+ ],
+ "GET /safety/accidents-v2/pickers AccidentsV2Controller.pickers": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "GET /safety/accidents-v2/profiles/:kind/:unitId AccidentsV2Controller.profile": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "GET /safety/accidents-v2/register AccidentsV2Controller.register": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "POST /safety/accidents-v2/report-preview AccidentsV2Controller.preview": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "GET /safety/accidents-v2/settings AccidentsV2Controller.getSettings": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "PUT /safety/accidents-v2/settings AccidentsV2Controller.putSettings": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/accidents-v2/summary AccidentsV2Controller.summary": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "GET /safety/accidents-v2/tasks AccidentsV2Controller.listTasks": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "POST /safety/accidents-v2/tasks AccidentsV2Controller.createTask": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "PATCH /safety/accidents-v2/tasks/:taskId AccidentsV2Controller.patchTask": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "POST /safety/accidents-v2/tasks/:taskId/confirm AccidentsV2Controller.confirm": [
+  "administrator",
+  "dispatch_lead"
+ ],
+ "POST /safety/accidents-v2/tasks/:taskId/updates AccidentsV2Controller.taskUpdate": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "GET /safety/accidents-v2/vendors AccidentsV2Controller.vendors": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager",
+  "accounting"
+ ],
+ "GET /safety/accidents-v2/work-orders/:woId/accident-link AccidentsV2Controller.accidentLink": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "POST /safety/accidents-v2/work-orders/:woId/approve AccidentsV2Controller.approve": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager"
+ ],
+ "POST /safety/accidents-v2/work-orders/:woId/complete AccidentsV2Controller.complete": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager"
+ ],
+ "POST /safety/accidents-v2/work-orders/:woId/estimates AccidentsV2Controller.addEstimate": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager"
+ ],
+ "POST /safety/accidents-v2/work-orders/:woId/link-accident AccidentsV2Controller.linkWorkOrder": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager"
+ ],
+ "POST /safety/accidents-v2/work-orders/:woId/start AccidentsV2Controller.start": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "fleet_manager"
+ ],
+ "GET /safety/accidents/:id SafetyController.accident": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "PATCH /safety/accidents/:id SafetyController.updateAccident": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/accidents/:id/advance SafetyController.advanceAccident": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/accidents/:id/claim SafetyController.accidentClaim": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/accidents/:id/close SafetyController.closeAccident": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/accidents/:id/void SafetyController.voidAccident": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/accidents/:id/work-order SafetyController.accidentWorkOrder": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/accounting-entries SafetyController.accountingEntries": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "accounting",
+  "read_only"
+ ],
+ "POST /safety/accounting-entries/:id/confirm SafetyController.confirmEntry": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /safety/accounting-entries/:id/reject SafetyController.rejectEntry": [
+  "administrator",
+  "accounting"
+ ],
+ "GET /safety/claims SafetyController.listClaims": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "POST /safety/claims SafetyController.createClaim": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/claims-v2 ClaimsV2Controller.list": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "POST /safety/claims-v2 ClaimsV2Controller.create": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "GET /safety/claims-v2/:id ClaimsV2Controller.detail": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "PATCH /safety/claims-v2/:id ClaimsV2Controller.patch": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "accounting"
+ ],
+ "PATCH /safety/claims-v2/:id/documents/:docId ClaimsV2Controller.document": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "accounting"
+ ],
+ "POST /safety/claims-v2/:id/link-accident ClaimsV2Controller.link": [
+  "administrator",
+  "operations_manager",
+  "safety_manager"
+ ],
+ "POST /safety/claims-v2/:id/log ClaimsV2Controller.log": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "accounting"
+ ],
+ "POST /safety/claims-v2/:id/payments ClaimsV2Controller.payment": [
+  "administrator",
+  "safety_manager",
+  "accounting"
+ ],
+ "POST /safety/claims-v2/:id/payments/:paymentId/void ClaimsV2Controller.voidPayment": [
+  "administrator",
+  "safety_manager",
+  "accounting"
+ ],
+ "GET /safety/claims-v2/summary ClaimsV2Controller.summary": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "read_only"
+ ],
+ "GET /safety/claims/:id SafetyController.claim": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "PATCH /safety/claims/:id SafetyController.updateClaim": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/claims/:id/advance SafetyController.advanceClaim": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/claims/:id/close SafetyController.closeClaim": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/claims/:id/driver-charges SafetyController.applyCharge": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/claims/:id/liability SafetyController.setLiability": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/claims/:id/payments SafetyController.recordPayment": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/claims/:id/payments/:paymentId/void SafetyController.voidPayment": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/claims/:id/updates SafetyController.logUpdate": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/claims/:id/void SafetyController.voidClaim": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/compliance/company SafetyController.complianceCompany": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/compliance/drivers SafetyController.complianceDrivers": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/compliance/testing SafetyController.complianceTesting": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "GET /safety/compliance/vehicles SafetyController.complianceVehicles": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /safety/documents SafetyController.attach": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/documents/:id/void SafetyController.voidDocument": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/dot-applications SafetyDotApplicationController.queue": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/dot-applications/:id SafetyDotApplicationController.detail": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/dot-applications/:id/approve SafetyDotApplicationController.approve": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/dot-applications/:id/bank SafetyDotApplicationController.bank": [
+  "administrator",
+  "safety_manager"
+ ],
+ "PUT /safety/dot-applications/:id/employer-forms SafetyDotApplicationController.employerForms": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/dot-applications/:id/files/:fileId SafetyDotApplicationController.file": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/dot-applications/:id/hire SafetyDotApplicationController.hire": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/dot-applications/:id/note SafetyDotApplicationController.note": [
+  "administrator",
+  "safety_manager"
+ ],
+ "PUT /safety/dot-applications/:id/onboarding SafetyDotApplicationController.onboarding": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/dot-applications/:id/pdf SafetyDotApplicationController.pdf": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/dot-applications/:id/reject SafetyDotApplicationController.reject": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/dot-applications/:id/request-changes SafetyDotApplicationController.requestChanges": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/dot-applications/:id/signatures SafetyDotApplicationController.sign": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/dot-applications/:id/signatures/:key/image SafetyDotApplicationController.signature": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/dot-applications/:id/ssn SafetyDotApplicationController.ssn": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/driver-charges SafetyController.listCharges": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "accounting",
+  "read_only"
+ ],
+ "GET /safety/driver-charges/:id SafetyController.charge": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "accounting",
+  "read_only"
+ ],
+ "POST /safety/driver-charges/:id/approve SafetyController.approveCharge": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /safety/driver-charges/:id/change-request SafetyController.changeRequest": [
+  "administrator",
+  "safety_manager",
+  "accounting"
+ ],
+ "POST /safety/driver-charges/:id/change-request/approve SafetyController.approveChange": [
+  "administrator"
+ ],
+ "POST /safety/driver-charges/:id/change-request/decline SafetyController.declineChange": [
+  "administrator"
+ ],
+ "POST /safety/driver-charges/:id/dispute SafetyController.disputeCharge": [
+  "administrator",
+  "safety_manager",
+  "accounting"
+ ],
+ "POST /safety/driver-charges/:id/notify SafetyController.notifyCharge": [
+  "administrator",
+  "safety_manager",
+  "accounting"
+ ],
+ "POST /safety/driver-charges/:id/pause SafetyController.pauseCharge": [
+  "administrator",
+  "safety_manager",
+  "accounting"
+ ],
+ "POST /safety/driver-charges/:id/payments SafetyController.chargePayment": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /safety/driver-charges/:id/reject SafetyController.rejectCharge": [
+  "administrator",
+  "accounting"
+ ],
+ "POST /safety/driver-charges/:id/resolve SafetyController.resolveCharge": [
+  "administrator"
+ ],
+ "POST /safety/driver-charges/:id/resume SafetyController.resumeCharge": [
+  "administrator",
+  "safety_manager",
+  "accounting"
+ ],
+ "POST /safety/driver-charges/:id/send-to-accounting SafetyController.sendCharge": [
+  "administrator",
+  "safety_manager",
+  "accounting"
+ ],
+ "GET /safety/inspections/pretrip SafetyController.pretrip": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "GET /safety/overview SafetyController.overview": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "GET /safety/people SafetyController.people": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "GET /safety/pickers SafetyController.pickers": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "driver_relations",
+  "read_only"
+ ],
+ "GET /safety/reviews SafetyController.listReviews": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "POST /safety/reviews SafetyController.createReview": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/reviews/:id SafetyController.review": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "PATCH /safety/reviews/:id SafetyController.updateReview": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/reviews/:id/complete SafetyController.completeReview": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/reviews/:id/void SafetyController.voidReview": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/roadside SafetyController.listRoadside": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /safety/roadside SafetyController.createRoadside": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/roadside/:id SafetyController.roadside": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "driver_relations",
+  "read_only"
+ ],
+ "PATCH /safety/roadside/:id SafetyController.updateRoadside": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/roadside/:id/stage SafetyController.roadsideStage": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/roadside/:id/violations SafetyController.roadsideViolation": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/roadside/:id/void SafetyController.voidRoadside": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/roadside/:id/work-order SafetyController.roadsideWorkOrder": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/tests SafetyController.listTests": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "POST /safety/tests SafetyController.createTest": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/tests/:id SafetyController.test": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "PATCH /safety/tests/:id SafetyController.updateTest": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/tests/:id/exception-review SafetyController.reviewTestException": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/tests/:id/void SafetyController.voidTest": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/tests/random SafetyController.recordRandomTest": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/vacation-returns SafetyController.vacationReturnList": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "GET /safety/vacation-returns/:vacationId SafetyController.vacationReturnDetail": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "POST /safety/vacation-returns/:vacationId/approve SafetyController.vacationReturnApprove": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/vacation-returns/:vacationId/expense SafetyController.vacationReturnExpense": [
+  "administrator"
+ ],
+ "POST /safety/vacation-returns/:vacationId/test SafetyController.vacationReturnTest": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/violation-cases SafetyController.listViolationCases": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "POST /safety/violation-cases SafetyController.createViolationCase": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/violation-cases/:key SafetyController.violationCase": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "POST /safety/violation-cases/:key/void SafetyController.voidViolationCase": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/violations SafetyController.listViolations": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "POST /safety/violations SafetyController.createViolation": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /safety/violations/:id SafetyController.violation": [
+  "administrator",
+  "operations_manager",
+  "safety_manager",
+  "read_only"
+ ],
+ "PATCH /safety/violations/:id SafetyController.updateViolation": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/violations/:id/close SafetyController.closeViolation": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/violations/:id/money SafetyController.violationMoney": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/violations/:id/notes SafetyController.violationNote": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/violations/:id/status SafetyController.violationStatus": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/violations/:id/training SafetyController.violationTraining": [
+  "administrator",
+  "safety_manager"
+ ],
+ "POST /safety/violations/:id/void SafetyController.voidViolation": [
+  "administrator",
+  "safety_manager"
+ ],
+ "GET /state StateController.index": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /state/:key StateController.get": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "PUT /state/:key StateController.put": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only",
+  "driver"
+ ],
+ "GET /trailers RosterController.listTrailers": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /trailers RosterController.createTrailer": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager"
+ ],
+ "GET /trailers/:idOrUnit RosterController.getTrailer": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "PATCH /trailers/:idOrUnit RosterController.updateTrailer": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager"
+ ],
+ "POST /trailers/:idOrUnit/status RosterController.setTrailerStatus": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager"
+ ],
+ "GET /truck-vendors RosterController.truckVendors": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager"
+ ],
+ "POST /truck-vendors/:vendorId/rename RosterController.renameTruckVendor": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager"
+ ],
+ "GET /trucks RosterController.listTrucks": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /trucks RosterController.createTruck": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "GET /trucks/:idOrUnit RosterController.getTruck": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "accounting",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "PATCH /trucks/:idOrUnit RosterController.updateTruck": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager"
+ ],
+ "POST /trucks/:idOrUnit/archive RosterController.archiveTruck": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager"
+ ],
+ "GET /trucks/:idOrUnit/assignment RosterController.truckAssignment": [
+  "administrator",
+  "operations_manager",
+  "dispatcher",
+  "dispatch_lead",
+  "safety_manager",
+  "fleet_manager",
+  "maintenance",
+  "hr_manager",
+  "driver_relations",
+  "read_only"
+ ],
+ "POST /trucks/:idOrUnit/assignment RosterController.assignDriver": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "PATCH /trucks/:idOrUnit/assignment/:id RosterController.updateAssignment": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /trucks/:idOrUnit/assignment/:id/end RosterController.endAssignment": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /trucks/:idOrUnit/assignment/:id/void RosterController.voidAssignment": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /trucks/:idOrUnit/assignment/photos RosterController.uploadAssignmentPhoto": [
+  "administrator",
+  "operations_manager",
+  "dispatch_lead",
+  "fleet_manager",
+  "maintenance"
+ ],
+ "POST /trucks/:idOrUnit/restore RosterController.restoreTruck": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager"
+ ],
+ "POST /trucks/:idOrUnit/status RosterController.setTruckStatus": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager"
+ ],
+ "POST /trucks/:idOrUnit/vendor RosterController.moveTruckToVendor": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager"
+ ],
+ "POST /trucks/:idOrUnit/vendor/end RosterController.endTruckVendor": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager"
+ ],
+ "POST /trucks/:idOrUnit/vendor/percent RosterController.changeTruckVendorPercent": [
+  "administrator",
+  "operations_manager",
+  "fleet_manager"
+ ]
+}

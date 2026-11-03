@@ -1,0 +1,21 @@
+{
+  "scene": "ai-morning-brief",
+  "title": "Morning brief",
+  "base": "http://127.0.0.1:5180",
+  "mode": "hq",
+  "scale": 2,
+  "recordedAt": "2026-11-03T17:10:07.126Z",
+  "durationSeconds": 53.89,
+  "startSeconds": 0,
+  "waits": [
+    {
+      "from": 2.63,
+      "to": 15.67
+    },
+    {
+      "from": 32.27,
+      "to": 44.51
+    }
+  ],
+  "failed": null
+}

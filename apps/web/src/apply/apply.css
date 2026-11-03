@@ -1,0 +1,818 @@
+/*
+ * The public driver application (/apply/<slug>) — the owner's design, verbatim.
+ *
+ * EXEMPT FROM PORCELAIN (owner decision, 2026-10-04): this page is a public, NWF-branded page with
+ * its own look. Its hex colours, Arial and Georgia fonts, sizes, radii and shadows are kept
+ * exactly as designed; it does not use the --nw-* tokens and does not import porcelain-theme.css.
+ * Porcelain still applies to every HR screen. Source: design/apply/Driver-Application-Mobile.html.
+ *
+ * Everything down to "NeWay additions" is the design's <style> block, character for character.
+ */
+      [hidden] {
+        display: none !important;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        /* PHONE: no grey flash on tap (iOS / Android) */
+        -webkit-tap-highlight-color: transparent;
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+        background: #fafbfc;
+        color: #142137;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+      button,
+      input,
+      select {
+        font: inherit;
+      }
+      header {
+        max-width: 1120px;
+        margin: auto;
+        padding: 32px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .mark {
+        background: #142137;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        font-weight: 800;
+        font-size: 20px;
+        letter-spacing: -1px;
+      }
+      .brand strong {
+        font-size: 14px;
+        letter-spacing: 1.3px;
+      }
+      .brand small {
+        display: block;
+        font-size: 12px;
+        color: #748093;
+        margin-top: 5px;
+        letter-spacing: 1px;
+      }
+      .header-note {
+        color: #788292;
+        font-size: 14px;
+      }
+      main {
+        max-width: 1010px;
+        margin: 65px auto 70px;
+        display: grid;
+        grid-template-columns: 1fr 1.12fr;
+        gap: 90px;
+        align-items: start;
+        padding: 0 32px;
+      }
+      .intro {
+        padding-top: 44px;
+        animation: enter 0.6s ease both;
+      }
+      .eyebrow {
+        font-size: 13px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        color: #8d7343;
+        margin-bottom: 25px;
+      }
+      h1 {
+        font-size: 64px;
+        line-height: 1.06;
+        letter-spacing: -3.4px;
+        margin: 0 0 25px;
+        font-weight: 600;
+      }
+      h1 span {
+        color: #9ca5b2;
+      }
+      .intro p {
+        color: #718093;
+        line-height: 1.7;
+        max-width: 310px;
+      }
+      .time {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        margin-top: 42px;
+        font-size: 14px;
+        color: #536277;
+      }
+      .time svg {
+        width: 19px;
+        height: 19px;
+      }
+      .rule {
+        width: 48px;
+        height: 3px;
+        background: #b39968;
+        margin-top: 60px;
+        border-radius: 3px;
+      }
+      .card {
+        background: white;
+        padding: 36px;
+        border: 1px solid #e6e9ee;
+        border-radius: 20px;
+        box-shadow: 0 12px 48px #14213705;
+        animation: enter 0.7s 0.1s ease both;
+      }
+      .card-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 28px;
+      }
+      .card h2 {
+        font-size: 22px;
+        letter-spacing: -0.6px;
+        margin: 0;
+      }
+      .count {
+        font-size: 13px;
+        color: #8591a1;
+      }
+      .progress {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 28px;
+      }
+      .progress i {
+        height: 3px;
+        background: #edf0f4;
+        border-radius: 3px;
+        flex: 1;
+        transition: background 0.3s;
+      }
+      .progress i.done {
+        background: #ad9361;
+      }
+      label,
+      .legend {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 9px;
+      }
+      .field {
+        margin-bottom: 22px;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 14px 15px;
+        background: #fff;
+        border: 1px solid #dfe4eb;
+        border-radius: 9px;
+        outline: none;
+        color: #142137;
+        min-height: 50px;
+        transition:
+          border 0.2s,
+          box-shadow 0.2s;
+        /* PHONE: iOS draws its own inner shadow and rounding on text fields without this */
+        -webkit-appearance: none;
+        appearance: none;
+      }
+      input[type="checkbox"] {
+        -webkit-appearance: auto;
+        appearance: auto;
+      }
+      input::placeholder {
+        color: #a0a8b4;
+      }
+      input:focus,
+      select:focus {
+        border-color: #9b8255;
+        box-shadow: 0 0 0 3px #b3996818;
+      }
+      fieldset.field {
+        border: 0;
+        padding: 0;
+        margin: 0 0 22px;
+        min-width: 0;
+      }
+      fieldset.field .legend {
+        padding: 0;
+      }
+      .positions {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+      }
+      .positions label {
+        position: relative;
+        cursor: pointer;
+        margin: 0;
+      }
+      .positions input {
+        position: absolute;
+        opacity: 0;
+        width: 1px;
+        height: 1px;
+        min-height: 0;
+      }
+      .positions span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 4px 6px;
+        text-align: center;
+        line-height: 1.25;
+        font-size: 13px;
+        font-weight: 500;
+        border: 1px solid #dfe4eb;
+        border-radius: 9px;
+        transition: 0.2s;
+      }
+      .positions input:checked + span {
+        border-color: #142137;
+        background: #142137;
+        color: #fff;
+      }
+      .positions input:focus-visible + span {
+        outline: 3px solid #b39968;
+      }
+      .consent {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        font-size: 12px;
+        font-weight: 400;
+        color: #7a8696;
+        line-height: 1.5;
+        margin: 25px 0 20px;
+      }
+      .consent input {
+        width: 16px;
+        height: 16px;
+        min-height: 16px;
+        flex-shrink: 0;
+        margin-top: 1px;
+        accent-color: #142137;
+      }
+      .submit {
+        border: 0;
+        background: #142137;
+        color: white;
+        width: 100%;
+        padding: 17px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition:
+          background 0.2s,
+          transform 0.2s;
+        font-weight: 600;
+      }
+      /* PHONE: hover only for a real mouse — on touch screens it stayed stuck after a tap */
+      @media (hover: hover) and (pointer: fine) {
+        .submit:hover {
+          background: #253a58;
+          transform: translateY(-1px);
+        }
+      }
+      .submit:active {
+        transform: scale(0.99);
+      }
+      .foot {
+        text-align: center;
+        color: #939caa;
+        font-size: 12px;
+        margin: 15px 0 0;
+      }
+      .demo {
+        font-size: 12px;
+        color: #8d7343;
+        background: #faf7f0;
+        border: 1px solid #ede5d6;
+        border-radius: 7px;
+        padding: 10px 12px;
+        margin-top: 18px;
+        line-height: 1.5;
+      }
+      #result {
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #785f30;
+      }
+      footer {
+        max-width: 1120px;
+        margin: auto;
+        padding: 24px 32px;
+        border-top: 1px solid #e9ecf0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: #939caa;
+      }
+      @keyframes enter {
+        from {
+          opacity: 0;
+          transform: translateY(14px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      @media (max-width: 760px) {
+        header {
+          padding: 23px 22px;
+        }
+        .header-note {
+          display: none;
+        }
+        main {
+          display: block;
+          margin: 23px auto 35px;
+          padding: 0 22px;
+        }
+        .intro {
+          padding: 12px 0 25px;
+        }
+        .eyebrow {
+          margin-bottom: 15px;
+          font-size: 12px;
+        }
+        h1 {
+          font-size: 44px;
+          letter-spacing: -2px;
+          margin-bottom: 13px;
+        }
+        /* PHONE: the line break stays — hiding it ran the lines together ("road.A") on wide phones */
+        .intro p {
+          max-width: 100%;
+          margin: 0;
+          font-size: 15px;
+        }
+        .time {
+          margin-top: 17px;
+        }
+        .rule {
+          display: none;
+        }
+        .card {
+          padding: 25px 22px;
+          border-radius: 15px;
+        }
+        .card-head {
+          margin-bottom: 20px;
+        }
+        .field {
+          margin-bottom: 18px;
+        }
+        footer {
+          padding: 22px;
+          gap: 20px;
+          /* PHONE: room for the home indicator on iPhones */
+          padding-bottom: max(22px, env(safe-area-inset-bottom));
+        }
+        .positions span {
+          font-size: 12px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+
+      .submit:disabled {
+        cursor: wait;
+        opacity: 0.8;
+        transform: none;
+      }
+      .spinner {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border: 2px solid #ffffff50;
+        border-top-color: white;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 10px;
+        animation: spin 0.75s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .success {
+        text-align: center;
+        padding: 50px 0 38px;
+        animation: enter 0.4s ease both;
+      }
+      .success-icon {
+        width: 76px;
+        height: 76px;
+        margin: 0 auto 25px;
+        border-radius: 50%;
+        background: #e9f6ee;
+        color: #25824c;
+        display: grid;
+        place-items: center;
+        animation: pop 0.45s ease both;
+      }
+      .success-icon svg {
+        width: 36px;
+        height: 36px;
+      }
+      .success-icon path {
+        stroke-dasharray: 40;
+        stroke-dashoffset: 40;
+        animation: check 0.45s 0.2s ease forwards;
+      }
+      .success h2 {
+        font-size: 27px;
+        line-height: 1.3;
+      }
+      .success p {
+        color: #718093;
+        line-height: 1.6;
+      }
+      .preview-label {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 6px;
+        background: #faf7f0;
+        color: #8d7343;
+        font-size: 12px;
+        margin-bottom: 22px;
+      }
+      .again {
+        border: 1px solid #dfe4eb;
+        background: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 20px;
+        color: #142137;
+      }
+      @keyframes pop {
+        from {
+          opacity: 0;
+          transform: scale(0.75);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      @keyframes check {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      h1 {
+        animation: none;
+        position: relative;
+      }
+      h1 .headline-line {
+        position: relative;
+        display: inline-block;
+        color: transparent;
+        -webkit-text-stroke: 1px #142137;
+        background: linear-gradient(
+          110deg,
+          #142137 0%,
+          #142137 39%,
+          #fff 49%,
+          #fff 51%,
+          #142137 61%,
+          #142137 100%
+        );
+        background-size: 300% 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: outline-shine 4.5s ease-in-out infinite;
+      }
+      h1 .headline-line:last-child {
+        animation-delay: 0.35s;
+        -webkit-text-stroke-color: #8995a6;
+        background-image: linear-gradient(
+          110deg,
+          #9ca5b2 0%,
+          #9ca5b2 39%,
+          #fff 49%,
+          #fff 51%,
+          #9ca5b2 61%,
+          #9ca5b2 100%
+        );
+      }
+      @keyframes outline-shine {
+        0%,
+        15% {
+          background-position: 100% 0;
+          opacity: 0.55;
+        }
+        50% {
+          opacity: 1;
+        }
+        85%,
+        100% {
+          background-position: 0% 0;
+          opacity: 0.55;
+        }
+      }
+      #duration {
+        font-size: 15px;
+        color: #536277;
+        font-weight: 600;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        h1 .headline-line {
+          animation: none;
+          opacity: 1;
+          background-position: 100% 0;
+        }
+      }
+      .brand-logo {
+        width: 64px;
+        height: 64px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        background: #fff;
+        flex-shrink: 0;
+        border: 1px solid #e8ebee;
+      }
+      .brand-logo img {
+        /* PHONE: the image is now cropped to the circle the old offsets showed (5 KB, was 256 KB x2) */
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .card {
+        position: relative;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.3s ease,
+          border-color 0.3s ease;
+        transform: perspective(1000px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+        isolation: isolate;
+      }
+      .card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        pointer-events: none;
+        z-index: -1;
+        background: radial-gradient(
+          300px circle at var(--pointer-x, 50%) var(--pointer-y, 50%),
+          #fff 0%,
+          #f3f6fa55 45%,
+          transparent 75%
+        );
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      @media (hover: hover) and (pointer: fine) {
+        .card:hover {
+          box-shadow: 0 20px 55px #14213712;
+          border-color: #d3dce8;
+        }
+        .card:hover::before {
+          opacity: 1;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .card {
+          transform: none !important;
+          transition: none !important;
+        }
+        .card::before {
+          display: none;
+        }
+      }
+      @media (max-width: 760px) {
+        .brand-logo {
+          width: 54px;
+          height: 54px;
+        }
+        .card {
+          transform: none !important;
+        }
+      }
+      h1 .headline-line:last-child {
+        color: #8d7343;
+        -webkit-text-stroke: 0;
+        background: none;
+        animation: none;
+        opacity: 1;
+        font-family: Georgia, "Times New Roman", serif;
+        font-style: italic;
+        font-weight: 400;
+        letter-spacing: -2.5px;
+      }
+      h1 .headline-line:first-child {
+        color: #142137;
+        -webkit-text-stroke: 0;
+        background: none;
+        animation: none;
+        opacity: 1;
+        font-family: Georgia, "Times New Roman", serif;
+        font-style: italic;
+        font-weight: 400;
+        letter-spacing: -2.5px;
+      }
+      h1 .headline-line .word {
+        display: inline-block;
+        color: inherit;
+        animation: word-float 3.6s ease-in-out infinite;
+        animation-delay: var(--delay);
+        will-change: transform;
+      }
+      @keyframes word-float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-6px);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        h1 .headline-line .word {
+          animation: none;
+          transform: none;
+          will-change: auto;
+        }
+      }
+
+      h1 .letter-word {
+        display: inline-block;
+        white-space: nowrap;
+        color: inherit;
+      }
+      h1 .letter {
+        position: relative;
+        display: inline-block;
+        color: inherit;
+        animation: letter-hop 0.6s cubic-bezier(0.36, 0, 0.32, 1) var(--letter-delay) 1 both;
+      }
+      @keyframes letter-hop {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        45% {
+          transform: translateY(-11px);
+        }
+        68% {
+          transform: translateY(-9px);
+        }
+      }
+      .finale {
+        width: 0.38em;
+        text-align: center;
+      }
+      .finale .dot,
+      .finale .bang {
+        color: inherit;
+      }
+      .finale .dot {
+        animation: dot-out 0.01s linear calc(var(--letter-delay) + 0.27s) forwards;
+      }
+      .finale .bang {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        animation: bang-in 0.01s linear calc(var(--letter-delay) + 0.27s) forwards;
+      }
+      .finale .ring {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 1.1em;
+        height: 0.9em;
+        pointer-events: none;
+        opacity: 0;
+        animation: ring-pulse 0.65s ease-out calc(var(--letter-delay) + 0.6s) 1 both;
+      }
+      .ring svg {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+      }
+      @keyframes dot-out {
+        to {
+          opacity: 0;
+        }
+      }
+      @keyframes bang-in {
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes ring-pulse {
+        0% {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0.65);
+        }
+        20% {
+          opacity: 0.85;
+        }
+        50% {
+          opacity: 0.55;
+        }
+        100% {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(1.25);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        h1 .letter,
+        .finale .dot,
+        .finale .bang,
+        .finale .ring {
+          animation: none;
+        }
+        .finale .dot {
+          opacity: 0;
+        }
+        .finale .bang {
+          opacity: 1;
+        }
+        .finale .ring {
+          display: none;
+        }
+      }
+      /* ---------------------------------------------------------------- PHONE pass */
+      /* Very narrow phones: the footer stacks instead of wrapping into two ragged columns */
+      @media (max-width: 339px) {
+        footer {
+          flex-direction: column;
+          gap: 4px;
+        }
+      }
+      /* Privacy policy link at the end of the consent sentence, in the sentence's own style */
+      .consent a {
+        color: inherit;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+      .consent a:focus-visible {
+        outline: 3px solid #b39968;
+        outline-offset: 2px;
+        border-radius: 2px;
+      }
+      /* Honeypot: hidden from people and screen readers, filled by bots */
+      .hp {
+        position: absolute;
+        left: -10000px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+
+/* ------------------------------------------------------------------------- NeWay additions */
+/* A link with no logo: the company's initials in the same circle, navy, bold, centred. */
+.brand-logo .initials {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #142137;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+}
+@media (max-width: 760px) {
+  .brand-logo .initials {
+    font-size: 17px;
+  }
+}
+/* The notice card (link switched off, or the page could not load): one card under the header. */
+main.notice {
+  display: block;
+  max-width: 560px;
+}
+@media (max-width: 760px) {
+  main.notice {
+    margin-top: 23px;
+  }
+}

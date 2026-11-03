@@ -1,0 +1,10 @@
+{
+  "scene": "placeholder",
+  "title": "Placeholder: dashboard, Daily board, a load",
+  "base": "http://127.0.0.1:5180",
+  "mode": "hq",
+  "recordedAt": "2026-11-03T14:15:42.667Z",
+  "durationSeconds": 20.32,
+  "startSeconds": 0,
+  "failed": null
+}

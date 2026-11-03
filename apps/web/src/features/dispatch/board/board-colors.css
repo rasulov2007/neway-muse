@@ -1,0 +1,318 @@
+/*
+ * The dispatch boards' own palette (owner's screenshots, 2026-09-22): the sheet's status colours
+ * and its chips, as tokens. Components reference these variables only; the values live here once,
+ * with a dark reading, so no colour is written inside a component. Statuses keep symbol + word
+ * next to the colour on every screen.
+ */
+:root {
+  --bd-navy: #1f2a49;
+  --bd-navy-text: #ffffff;
+  --bd-grand: #1e293b;
+  --bd-band: #f3f5f9;
+  --bd-summary: #f6f7fa;
+  --bd-border: #b6c5da;
+  --bd-grid: #dde4ee;        /* the fine inner rule between cells */
+  /*
+   * The weekly board's lines (owner, 2026-10-01): lighter, and ONE colour everywhere - the driver
+   * block, the day cells, the totals and the Comment column alike. The line that closes a driver's
+   * block keeps its 2px weight but takes the same colour, so structure shows by weight, not by hue.
+   */
+  --bd-week-grid: #c9d1dc;
+  --bd-week-rule: #000000;  /* owner, 2026-10-02: the line between two drivers is black */
+  --bd-blue: #1479b8;
+  --bd-blue-bg: #e3f0ff;
+  --bd-green: #2e8b57;
+  --bd-red: #e53935;
+  --bd-amber: #f59e0b;
+  --bd-amber-bg: #fff4d6;
+  --bd-amber-text: #7a4b00;
+  --bd-red-bg: #fde2e1;
+  --bd-red-text: #9b1c1c;
+  --bd-green-bg: #dff5e6;
+  --bd-green-text: #1f6b3a;
+  --bd-chip: #eef1f6;
+  --bd-chip-text: #4b5b73;
+  /*
+   * The Weekly Board's grand-total band (owner's mockup, 2026-10-01): it sits on --bd-grand in both
+   * themes, so its figures are light in both - white, a muted label, a blue for the average, and a
+   * red / green readable on the dark band for Plan Reach and Plan Adj.
+   */
+  --bd-grand-muted: #a9b7ca;
+  --bd-grand-accent: #8ab4f8;
+  --bd-grand-neg: #ff8a80;
+  --bd-grand-pos: #6ee7a0;
+  --bd-grand-line: #334155;
+
+  /*
+   * Status fills are the sheet's own colours, the owner's applyConditionalFormattingOnDashTabs values for ENROUTE, SHOP,
+   * HOME and VACATION, letter for letter; the rest from the running board. They are
+   * data, not chrome: a dispatcher reads COVERED by its yellow, so the value has
+   * to be the one they have used for years. That is why the dark blocks below
+   * do NOT re-tint them — only the surrounding chrome adapts to the theme.
+   */
+  /* Daily board status fills from the owner's screenshot, 2026-09-30 (sampled): */
+  --bd-enroute: #0b5394; /* the owner's value: blue fill, white word */
+  --bd-enroute-text: #ffffff;
+  --bd-dispatched: #ffe5b4;
+  --bd-dispatched-text: #000000;
+  /* AT PU (2026-10-13): no sheet colour from the owner yet - it wears DISPATCHED's until one is chosen. */
+  --bd-at-pu: var(--bd-dispatched);
+  --bd-at-pu-text: var(--bd-dispatched-text);
+  --bd-covered: #ffff00;
+  --bd-covered-text: #000000;
+  --bd-reserved: #d9d2e9;
+  --bd-reserved-text: #000000;
+  --bd-re-update: #a2c4c9;
+  --bd-re-update-text: #000000;
+  --bd-hold-for-load: #e06666;
+  --bd-hold-for-load-text: #ffffff;
+  --bd-unloading: #d9d9d9;
+  --bd-unloading-text: #000000;
+  --bd-ready: #000000;
+  --bd-ready-text: #ffffff;
+  --bd-no-answer: #cc0000;
+  --bd-no-answer-text: #ffffff;
+  --bd-stop: #ff0000;
+  --bd-stop-text: #ffffff;
+  --bd-home: #e06666; /* whenTextEqualTo('HOME') */
+  --bd-home-text: #000000;
+  --bd-rest: #f4cccc;
+  --bd-rest-text: #660000;
+  --bd-vacation: #e06666; /* whenTextEqualTo('VACATION') */
+  --bd-vacation-text: #000000;
+  --bd-shop: #fce8b2; /* whenTextEqualTo('SHOP') */
+  --bd-new-driver: var(--bd-covered); /* NEW DRIVER (owner, 2026-10-19) */
+  --bd-new-driver-text: var(--bd-covered-text);
+  --bd-shop-text: #000000;
+  /* INACTIVE (owner, 2026-10-28): off the plan like HOME, and wears HOME's fill until it has its own. */
+  --bd-inactive: var(--bd-home);
+  --bd-inactive-text: var(--bd-home-text);
+
+  /*
+   * The weekly / gross tabs' own fills for the dispatcher row and Plan Reach / Adj.
+   * Source: the company's Apps Script `applyConditionalFormattingOnDashTabs`.
+   */
+  --bd-wk-divider: #cfe2f3;        /* the dispatcher row: =AND($A3<>"",$B3="") */
+  --bd-wk-divider-text: #000000;
+  --bd-wk-plan-neg: #f4c7c3;       /* Plan Reach < 0  */
+  --bd-wk-plan-pos: #b7e1cd;       /* Plan Reach >= 0 */
+  --bd-wk-plan-text: #000000;
+  /* The weekly status words take the Daily Board's fills above (STATUS_CELL), not a softer copy (owner, 2026-10-01). */
+  /*
+   * The Fill palette (owner, 2026-11-02: the soft tints barely showed): Google Sheets' "light 1"
+   * row, the colours the dispatchers painted with in the sheet. Text stays the ink on top.
+   */
+  --bd-fill-1: #b6d7a8;
+  --bd-fill-2: #ffd966;
+  --bd-fill-3: #ea9999;
+  --bd-fill-4: #9fc5e8;
+  --bd-fill-5: #a2c4c9;
+  --bd-fill-6: #b7b7b7;
+  --bd-fill-7: #d9d9d9;
+  --bd-fill-8: #b4a7d6;
+  --bd-fill-9: #d9ead3;
+  --bd-fill-10: #fff2cc;
+}
+
+:root:not([data-theme='light']) {
+  @media (prefers-color-scheme: dark) {
+    --bd-navy: #0f1a33;
+    --bd-grand: #0b1220;
+    --bd-band: #182234;
+    --bd-summary: #141c2b;
+    --bd-border: #34435c;
+    --bd-grid: #263349;
+    --bd-week-grid: #3a475d;
+    --bd-week-rule: #000000;
+    --bd-blue-bg: #14304d;
+    --bd-amber-bg: #3d2c08;
+    --bd-amber-text: #ffd27a;
+    --bd-red-bg: #4a1a1a;
+    --bd-red-text: #ff9a9a;
+    --bd-green-bg: #123322;
+    --bd-green-text: #8ee0a8;
+    --bd-chip: #22304a;
+    --bd-chip-text: #c3cfe0;
+    --bd-grand-line: #1f2a3d;
+    --bd-fill-1: #38593a;
+    --bd-fill-2: #6b5a1e;
+    --bd-fill-3: #6e2b2b;
+    --bd-fill-4: #24476b;
+    --bd-fill-5: #2c5558;
+    --bd-fill-6: #4a4f57;
+    --bd-fill-7: #3a3f47;
+    --bd-fill-8: #463d66;
+    --bd-fill-9: #2a3d2c;
+    --bd-fill-10: #4a4020;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bd-fill-1: #38593a;
+  --bd-fill-2: #6b5a1e;
+  --bd-fill-3: #6e2b2b;
+  --bd-fill-4: #24476b;
+  --bd-fill-5: #2c5558;
+  --bd-fill-6: #4a4f57;
+  --bd-fill-7: #3a3f47;
+  --bd-fill-8: #463d66;
+  --bd-fill-9: #2a3d2c;
+  --bd-fill-10: #4a4020;
+  --bd-week-grid: #3a475d;
+  --bd-week-rule: #000000;  /* owner, 2026-10-02: the line between two drivers is black */
+  --bd-navy: #0f1a33;
+  --bd-grand: #0b1220;
+  --bd-band: #182234;
+  --bd-summary: #141c2b;
+  --bd-border: #34435c;
+  --bd-grid: #263349;
+  --bd-blue-bg: #14304d;
+  --bd-amber-bg: #3d2c08;
+  --bd-amber-text: #ffd27a;
+  --bd-red-bg: #4a1a1a;
+  --bd-red-text: #ff9a9a;
+  --bd-green-bg: #123322;
+  --bd-green-text: #8ee0a8;
+  --bd-chip: #22304a;
+  --bd-chip-text: #c3cfe0;
+  --bd-grand-line: #1f2a3d;
+}
+
+/*
+ * The boards' typography, copied from the sheet the company already reads.
+ *
+ * Porcelain sets Manrope everywhere else and that stays; these two grids are the
+ * exception, because they are a replica of a spreadsheet a dispatcher scans for
+ * eight hours and compares against the real sheet side by side. Its rule is
+ * ONE face, ONE size, ONE weight down every column - Roboto 13/1.35 at 400 -
+ * so nothing in a cell claims more attention than the number beside it.
+ *
+ * Children are deliberately NOT forced to inherit: a chip or a badge that sets
+ * its own size keeps it, exactly as the sheet's small functional badges do.
+ */
+.nw-board thead th,
+.nw-board tbody td {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.35;
+  letter-spacing: normal;
+}
+.nw-board tbody td {
+  font-size: 13px;
+}
+.nw-board thead th {
+  font-size: 13px;
+}
+
+/*
+ * A driver's four rows (Amount / Miles / RPM / Load #) read as one block, so the
+ * line that closes the block is the firm rule and the three inside it are the
+ * fine one. Without this every row weighs the same and the week turns into mesh.
+ */
+.nw-board tr[data-driver-end] > td {
+  border-bottom-color: var(--bd-border);
+}
+
+/*
+ * The weekly board's rules (owner, 2026-10-01): one light colour for every line, the driver part
+ * and the totals part alike; every line 1px (owner, 2026-10-02); the line between two drivers is
+ * black and unbroken from the Driver
+ * column to the Comment column. The daily board keeps its own finer sheet rules.
+ */
+.nw-board-week tbody td {
+  border-right: 1px solid var(--bd-week-grid);
+  border-bottom: 1px solid var(--bd-week-grid);
+}
+/*
+ * The pinned header draws its lines as inset shadows instead of borders. A collapsed border
+ * belongs to the table, not to the sticky cell, so it scrolled away and left a see-through strip
+ * under the header (owner, 2026-10-01). With no border the header is opaque edge to edge.
+ */
+.nw-board-week thead th {
+  border-width: 0;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  box-shadow:
+    inset -1px 0 0 var(--bd-week-grid),
+    inset 0 -1px 0 var(--bd-week-grid);
+}
+.nw-board-week thead tr > th:last-child {
+  box-shadow: inset 0 -1px 0 var(--bd-week-grid);
+}
+/* The grand total: the first body row, on its dark band, with its own darker separators. */
+.nw-board-week tbody tr.nw-week-grand > td {
+  height: 46px;
+  border-width: 0;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  box-shadow: inset -1px 0 0 var(--bd-grand-line);
+}
+.nw-board-week tbody tr.nw-week-grand > td:last-child {
+  box-shadow: none;
+}
+/* Bigger cells (owner, 2026-10-01): 32px rows and a little more room either side. Weekly only. */
+.nw-board-week tbody td {
+  height: 32px;
+}
+.nw-board-week tbody td[data-cell] {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.nw-board-week tr[data-driver-end] > td,
+.nw-board-week tbody tr:last-child > td,
+/* The cells that span a driver's four rows (name, totals, commission, comment) end on the block's
+   last line, so they close it too: before, the totals side drew a thinner, different line there. */
+.nw-board-week tbody td[rowspan] {
+  border-bottom: 1px solid var(--bd-week-rule);
+}
+/*
+ * The pinned Driver column in the body: same reason as the pinned rows. Its collapsed right border
+ * stayed behind when the sheet scrolled sideways, and through that 1-2px strip the neighbouring
+ * day cell's status fill showed as a thin blue or pink bar (owner's screenshots, 2026-10-01). The
+ * line is drawn inside the cell instead, so the pinned cell covers everything that passes under it.
+ */
+.nw-board-week tbody td.sticky {
+  border-right-width: 0;
+  box-shadow: inset -1px 0 0 var(--bd-week-grid);
+}
+/* The frame round the weekly sheet takes the same line colour as everything inside it, and keeps
+   room under the last row so a horizontal scrollbar never sits on it. */
+.nw-board-week-frame {
+  border-color: var(--bd-week-grid);
+  padding-bottom: 14px;
+  scroll-snap-type: x mandatory;
+}
+/* Every column after the pinned Driver column is a snap point (see WeeklyBoardPage). */
+.nw-board-week thead th:not(:first-child) {
+  scroll-snap-align: start;
+}
+/* Plan Reach and Plan Adj (owner, 2026-10-02): their column lines are black, like the line between
+   two drivers; every line on the weekly sheet is 1px (owner, 2026-10-02). */
+.nw-board-week tbody td.nw-week-plan {
+  border-left: 1px solid var(--bd-week-rule);
+  border-right: 1px solid var(--bd-week-rule);
+}
+/* The team row (owner, 2026-10-02): taller and a size up, so each team reads as a heading. */
+.nw-board-week tbody tr.nw-week-team > td {
+  height: 44px;
+  font-size: 13px;
+}
+/* Only the bordered pills - the Efficiency bar is also rounded-full and must keep its 3px height. */
+.nw-board-week tbody tr.nw-week-team .rounded-full.border {
+  height: 28px;
+  padding: 0 11px;
+  font-size: 12px;
+}
+/* The grand total is one even dark band (owner, 2026-10-02): no cell may paint a different shade,
+   and its separators are the band colour itself, so the row reads as one piece. */
+/* ...in the Daily Board header teal (owner, 2026-10-02), white figures; the muted, accent and
+   signed colours are re-set for the teal so they keep their contrast. */
+.nw-board-week tbody tr.nw-week-grand {
+  --bd-grand-muted: rgba(255, 255, 255, 0.82);
+  --bd-grand-accent: #ffffff;
+  --bd-grand-neg: #ffd9d4;
+  --bd-grand-pos: #c9f7d9;
+  --bd-navy-text: var(--nw-on-accent);
+}
+.nw-board-week tbody tr.nw-week-grand > td {
+  background-color: var(--nw-accent) !important;
+  color: var(--nw-on-accent);
+  box-shadow: none !important;
+}

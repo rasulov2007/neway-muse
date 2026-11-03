@@ -1,0 +1,6 @@
+<!-- NeWay status symbol: WARNING (diamond + !). Use inline so the theme colors apply. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+  <path fill="var(--nw-warning-icon, #B86E00)" d="M8 .3l7.7 7.7L8 15.7.3 8z"/>
+  <rect x="7.15" y="4.2" width="1.7" height="4.8" rx=".85" fill="var(--nw-status-glyph, #FFFFFF)"/>
+  <circle cx="8" cy="11.1" r="1.05" fill="var(--nw-status-glyph, #FFFFFF)"/>
+</svg>

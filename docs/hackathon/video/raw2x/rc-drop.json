@@ -1,0 +1,17 @@
+{
+  "scene": "rc-drop",
+  "title": "Rate confirmation read by Muse",
+  "base": "http://127.0.0.1:5180",
+  "mode": "hq",
+  "scale": 2,
+  "recordedAt": "2026-11-03T17:07:16.549Z",
+  "durationSeconds": 25.19,
+  "startSeconds": 0,
+  "waits": [
+    {
+      "from": 5.92,
+      "to": 12.39
+    }
+  ],
+  "failed": null
+}

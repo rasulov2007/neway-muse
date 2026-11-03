@@ -1,0 +1,12 @@
+{
+  "scene": "architecture",
+  "title": "Architecture",
+  "base": "http://127.0.0.1:5180",
+  "mode": "hq",
+  "scale": 1,
+  "recordedAt": "2026-11-03T17:19:30.730Z",
+  "durationSeconds": 9.17,
+  "startSeconds": 0,
+  "waits": [],
+  "failed": null
+}

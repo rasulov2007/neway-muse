@@ -1,0 +1,6 @@
+<!-- NeWay status symbol: URGENT (octagon + !). Use inline so the theme colors apply. 13px in pills, 14px in text and lists. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+  <path fill="var(--nw-urgent-icon, #C8321F)" d="M5.1 .8h5.8l4.3 4.3v5.8l-4.3 4.3H5.1L.8 10.9V5.1z"/>
+  <rect x="7.1" y="3.7" width="1.8" height="5.4" rx=".9" fill="var(--nw-status-glyph, #FFFFFF)"/>
+  <circle cx="8" cy="11.6" r="1.1" fill="var(--nw-status-glyph, #FFFFFF)"/>
+</svg>

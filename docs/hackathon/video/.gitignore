@@ -1,0 +1,10 @@
+# Recorded clips and rendered videos stay out of git (large binaries).
+*.webm
+*.mp4
+*.wav
+*.m4a
+*.mp3
+raw-hq/
+.frames-*/
+.tmp-*/
+.work/

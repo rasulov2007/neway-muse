@@ -1,0 +1,19 @@
+node_modules/
+dist/
+coverage/
+storage/
+package-lock.json
+# maintained separately
+/ARCHITECTURE.md
+/ROADMAP.md
+/docs/
+
+apps/web/src/routeTree.gen.ts
+apps/web/playwright-report/
+apps/web/test-results/
+
+# The owner's apply-page design and its verbatim port (see apps/web/src/apply/apply.css)
+/design/apply/
+apps/web/apply.html
+apps/web/src/apply/apply.css
+apps/web/src/apply/phone-message.ts

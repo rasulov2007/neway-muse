@@ -1,0 +1,2138 @@
+{
+ "clock": "2026-10-19T17:00:00.000Z",
+ "cases": {
+  "ACC-2026-008": {
+   "stage": "closed",
+   "severity": "serious",
+   "suggested": {
+    "value": "serious",
+    "why": "Disabling damage — tow-away"
+   },
+   "dot": {
+    "value": "yes",
+    "reasons": [
+     "A vehicle was towed away with disabling damage"
+    ],
+    "missing": []
+   },
+   "testing": {
+    "alcohol": {
+     "required": "yes",
+     "reason": "Disabling-damage tow-away and our driver was cited within 8 hours",
+     "documented": true,
+     "deadline": "2026-05-09T21:15:00.000Z"
+    },
+    "drug": {
+     "required": "yes",
+     "reason": "Disabling-damage tow-away and our driver was cited within 32 hours",
+     "documented": true,
+     "deadline": "2026-05-10T21:15:00.000Z"
+    }
+   },
+   "money": {
+    "actual": 6460,
+    "recovered": 0,
+    "netToDate": 6460,
+    "estimate": 0,
+    "expected": 0,
+    "projectedNet": 6460,
+    "exposure": 0,
+    "finalized": true,
+    "lostRevenue": {
+     "days": 0.17708333333333334,
+     "perDay": 690,
+     "amount": 122
+    }
+   },
+   "ledger": [
+    {
+     "group": "actual",
+     "category": "Trailer repair",
+     "amount": 3960,
+     "label": "Bensenville Trailer Service — Trailer T-5321 side panel & lights",
+     "source": "AP bill AP-90098 · RO-2026-9041"
+    },
+    {
+     "group": "actual",
+     "category": "Deductible",
+     "amount": 2500,
+     "label": "Deductible reimbursement — Auto liability",
+     "source": "Claim CLM-2026-0019 · Jun 30"
+    }
+   ],
+   "downtime": {
+    "truckDays": 0.18,
+    "trailerDays": 4.07,
+    "truckOngoing": false,
+    "truckLabel": "4h 15m",
+    "trailerLabel": "4.1 days"
+   },
+   "advanceBlockers": [],
+   "closeBlockers": [],
+   "tracks": [
+    {
+     "label": "Investigation",
+     "status": "Complete",
+     "tone": "done",
+     "detail": "Approved May 20"
+    },
+    {
+     "label": "Tractor 109",
+     "status": "Operational",
+     "tone": "done",
+     "detail": "Out of service 4h 15m"
+    },
+    {
+     "label": "Trailer T-5321",
+     "status": "Returned to service",
+     "tone": "done",
+     "detail": "Out of service 4.1 days"
+    },
+    {
+     "label": "Cargo",
+     "status": "No damage",
+     "tone": "done",
+     "detail": "Delivered as is"
+    },
+    {
+     "label": "Claims",
+     "status": "All settled",
+     "tone": "done",
+     "detail": "Auto: Closed"
+    },
+    {
+     "label": "Driver follow-up",
+     "status": "Completed",
+     "tone": "done"
+    },
+    {
+     "label": "DOT & testing",
+     "status": "DOT recordable",
+     "tone": "done",
+     "detail": "Tests documented"
+    },
+    {
+     "label": "Costs",
+     "status": "Final",
+     "tone": "done",
+     "detail": "$6.5K actual · $6.5K projected net"
+    }
+   ],
+   "nextAction": null,
+   "expectedEvidence": [
+    {
+     "label": "Scene or damage photos",
+     "ok": true
+    },
+    {
+     "label": "Driver statement",
+     "ok": true
+    },
+    {
+     "label": "Police report",
+     "ok": true
+    },
+    {
+     "label": "Dashcam / video",
+     "ok": true
+    },
+    {
+     "label": "Repair estimate",
+     "ok": true
+    }
+   ],
+   "summaryForAuthorized": [
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "On May 9, 2026 at 8:15 AM CDT, Truck 109 (driver Viktor Hale, trailer T-5321, load L-46210) was involved in a sideswipe collision during a lane change on I-294 NB MM 30 near Hillside, IL."
+    },
+    {
+     "prov": "preliminary",
+     "restricted": false,
+     "text": "The tractor was not damaged; the trailer had left side panel and marker light damage."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "No injuries were reported."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "Our driver was cited (improper lane usage); post-accident tests were completed and documented."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "The tractor remained drivable and is back in operation (4h 15m out of service); the trailer remained drivable and returned to service May 13 after 4.1 days out of service."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "Cargo on load L-46210 was not damaged; delivered 4 hours late."
+    },
+    {
+     "prov": "system",
+     "restricted": false,
+     "text": "1 claim is linked: auto liability (closed)."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "Investigation complete (May 20): at fault, preventable."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "Case closed Jul 2 by Rachel Moore."
+    }
+   ],
+   "summaryRestrictedSentenceForOthers": [],
+   "repeatSignals": {
+    "sameDriver": [],
+    "sameTruck": []
+   },
+   "claims": [
+    "CLM-2026-0019"
+   ]
+  },
+  "ACC-2026-015": {
+   "stage": "closed",
+   "severity": "serious",
+   "suggested": {
+    "value": "serious",
+    "why": "Disabling damage — tow-away"
+   },
+   "dot": {
+    "value": "yes",
+    "reasons": [
+     "A vehicle was towed away with disabling damage"
+    ],
+    "missing": []
+   },
+   "testing": {
+    "alcohol": {
+     "required": "no",
+     "reason": "Tow-away, but our driver was not cited",
+     "documented": false,
+     "deadline": "2026-09-22T11:10:00.000Z"
+    },
+    "drug": {
+     "required": "no",
+     "reason": "Tow-away, but our driver was not cited",
+     "documented": false,
+     "deadline": "2026-09-23T11:10:00.000Z"
+    }
+   },
+   "money": {
+    "actual": 26140,
+    "recovered": 15890,
+    "netToDate": 10250,
+    "estimate": 5000,
+    "expected": 0,
+    "projectedNet": 15250,
+    "exposure": 40000,
+    "finalized": false,
+    "lostRevenue": {
+     "days": 1.4930555555555556,
+     "perDay": 600,
+     "amount": 896
+    }
+   },
+   "ledger": [
+    {
+     "group": "actual",
+     "category": "Tractor repair",
+     "amount": 2140,
+     "label": "Keystone Diesel & Collision — Tractor 156 fairing & bracket",
+     "source": "AP bill AP-90193 · RO-2026-9108"
+    },
+    {
+     "group": "actual",
+     "category": "Trailer repair",
+     "amount": 18750,
+     "label": "Keystone Diesel & Collision — Trailer T-5342 side wall & axle",
+     "source": "AP bill AP-90204 · RO-2026-9112"
+    },
+    {
+     "group": "actual",
+     "category": "Towing",
+     "amount": 3400,
+     "label": "Blue Mountain Heavy Recovery — Tow trailer T-5342 from I-81 Exit 52 ramp",
+     "source": "AP bill AP-90188"
+    },
+    {
+     "group": "actual",
+     "category": "Transload / recovery",
+     "amount": 1850,
+     "label": "Keystone Diesel & Collision — Transload 22 pallets, yard & forklift",
+     "source": "AP bill AP-90190"
+    },
+    {
+     "group": "recovered",
+     "category": "Insurance payment",
+     "amount": 15890,
+     "label": "Harborline Insurance — Physical damage",
+     "source": "Claim CLM-2026-0035 · Oct 9"
+    },
+    {
+     "group": "estimate",
+     "category": "Deductible",
+     "amount": 2500,
+     "label": "Our deductible — Cargo",
+     "source": "Claim CLM-2026-0036 · Negotiating"
+    },
+    {
+     "group": "exposure",
+     "category": "Insurer reserve",
+     "amount": 32700,
+     "label": "Ironclad Cargo Underwriters reserve above our deductible — Cargo",
+     "source": "Claim CLM-2026-0036"
+    },
+    {
+     "group": "estimate",
+     "category": "Deductible",
+     "amount": 2500,
+     "label": "Our deductible — Auto liability",
+     "source": "Claim CLM-2026-0037 · Awaiting documents"
+    },
+    {
+     "group": "exposure",
+     "category": "Insurer reserve",
+     "amount": 7300,
+     "label": "Harborline Insurance reserve above our deductible — Auto liability",
+     "source": "Claim CLM-2026-0037"
+    }
+   ],
+   "downtime": {
+    "truckDays": 1.49,
+    "trailerDays": 14.62,
+    "truckOngoing": false,
+    "truckLabel": "1.5 days",
+    "trailerLabel": "15 days"
+   },
+   "advanceBlockers": [],
+   "closeBlockers": [],
+   "tracks": [
+    {
+     "label": "Investigation",
+     "status": "Complete",
+     "tone": "done",
+     "detail": "Approved Oct 8"
+    },
+    {
+     "label": "Tractor 156",
+     "status": "Returned to service",
+     "tone": "done",
+     "detail": "Out of service 1.5 days"
+    },
+    {
+     "label": "Trailer T-5342",
+     "status": "Returned to service",
+     "tone": "done",
+     "detail": "Out of service 15 days"
+    },
+    {
+     "label": "Cargo",
+     "status": "Damaged",
+     "tone": "urgent",
+     "detail": "Transload to another trailer"
+    },
+    {
+     "label": "Claims",
+     "status": "2 open",
+     "tone": "moving",
+     "detail": "Physical: Settled · Cargo: Negotiating · Auto: Awaiting documents"
+    },
+    {
+     "label": "Driver follow-up",
+     "status": "None required",
+     "tone": "neutral"
+    },
+    {
+     "label": "DOT & testing",
+     "status": "DOT recordable",
+     "tone": "done",
+     "detail": "Testing not required"
+    },
+    {
+     "label": "Costs",
+     "status": "Partly invoiced",
+     "tone": "neutral",
+     "detail": "$26.1K actual · $15.3K projected net"
+    }
+   ],
+   "nextAction": null,
+   "expectedEvidence": [
+    {
+     "label": "Scene or damage photos",
+     "ok": true
+    },
+    {
+     "label": "Driver statement",
+     "ok": true
+    },
+    {
+     "label": "Police report",
+     "ok": true
+    },
+    {
+     "label": "Dashcam / video",
+     "ok": true
+    },
+    {
+     "label": "Repair estimate",
+     "ok": true
+    },
+    {
+     "label": "Towing invoice",
+     "ok": true
+    }
+   ],
+   "summaryForAuthorized": [
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "On Sep 21, 2026 at 11:10 PM EDT, Truck 156 (driver Ruslan Tursunov, trailer T-5342, load L-47790) struck a fixed object on I-81 SB Exit 52 ramp near Carlisle, PA."
+    },
+    {
+     "prov": "preliminary",
+     "restricted": false,
+     "text": "The tractor had minor right-front fairing damage; the trailer had a torn right side wall and axle damage."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "No injuries were reported."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "The tractor remained drivable and returned to service Sep 23 after 1.5 days out of service; the trailer was towed by Blue Mountain Heavy Recovery to Keystone Diesel & Collision, Carlisle and returned to service Oct 6 after 15 days out of service."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "Cargo on load L-47790 was damaged (9 of 22 pallets); 13 pallets delivered Sep 24, 9 pallets rejected and sold for salvage."
+    },
+    {
+     "prov": "system",
+     "restricted": false,
+     "text": "3 claims are linked: physical damage (settled), cargo (negotiating), auto liability (awaiting documents) — the accident is closed while these claims continue."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "Investigation complete (Oct 8): not at fault, non-preventable."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "Case closed Oct 12 by Rachel Moore."
+    }
+   ],
+   "summaryRestrictedSentenceForOthers": [],
+   "repeatSignals": {
+    "sameDriver": [],
+    "sameTruck": []
+   },
+   "claims": [
+    "CLM-2026-0035",
+    "CLM-2026-0036",
+    "CLM-2026-0037"
+   ]
+  },
+  "ACC-2026-016": {
+   "stage": "investigation",
+   "severity": "serious",
+   "suggested": {
+    "value": "serious",
+    "why": "Disabling damage — tow-away"
+   },
+   "dot": {
+    "value": "yes",
+    "reasons": [
+     "A vehicle was towed away with disabling damage"
+    ],
+    "missing": []
+   },
+   "testing": {
+    "alcohol": {
+     "required": "yes",
+     "reason": "Disabling-damage tow-away and our driver was cited within 8 hours",
+     "documented": true,
+     "deadline": "2026-10-03T04:45:00.000Z"
+    },
+    "drug": {
+     "required": "yes",
+     "reason": "Disabling-damage tow-away and our driver was cited within 32 hours",
+     "documented": true,
+     "deadline": "2026-10-04T04:45:00.000Z"
+    }
+   },
+   "money": {
+    "actual": 2850,
+    "recovered": 0,
+    "netToDate": 2850,
+    "estimate": 40950,
+    "expected": 33450,
+    "projectedNet": 10350,
+    "exposure": 13500,
+    "finalized": false,
+    "lostRevenue": {
+     "days": 16.84375,
+     "perDay": 630,
+     "amount": 10612
+    }
+   },
+   "ledger": [
+    {
+     "group": "actual",
+     "category": "Towing",
+     "amount": 2850,
+     "label": "Lakeshore Towing & Recovery — Heavy tow, tractor 118 from I-80 MM 127 to Joliet",
+     "source": "AP bill AP-90241"
+    },
+    {
+     "group": "estimate",
+     "category": "Tractor repair",
+     "amount": 38450,
+     "label": "Tractor 118 repair — Prairie State Truck & Body, Joliet",
+     "source": "Work order RO-2026-9131"
+    },
+    {
+     "group": "expected",
+     "category": "Insurance payment",
+     "amount": 33450,
+     "label": "Harborline Insurance — Physical damage (claimed $38,450 less $5,000 deductible)",
+     "source": "Claim CLM-2026-0040 · Under review"
+    },
+    {
+     "group": "estimate",
+     "category": "Deductible",
+     "amount": 2500,
+     "label": "Our deductible — Auto liability",
+     "source": "Claim CLM-2026-0041 · Open"
+    },
+    {
+     "group": "exposure",
+     "category": "Insurer reserve",
+     "amount": 13500,
+     "label": "Harborline Insurance reserve above our deductible — Auto liability",
+     "source": "Claim CLM-2026-0041"
+    }
+   ],
+   "downtime": {
+    "truckDays": 16.84,
+    "trailerDays": 0,
+    "truckOngoing": true,
+    "truckLabel": "17 days",
+    "trailerLabel": "None"
+   },
+   "advanceBlockers": [
+    "Investigation is not complete and approved"
+   ],
+   "closeBlockers": [
+    "Investigation is not complete and approved",
+    "Driver fault is not determined",
+    "Preventability is not determined",
+    "Tractor has not returned to service",
+    "5 tasks still open",
+    "1 work order not completed/invoiced"
+   ],
+   "tracks": [
+    {
+     "label": "Investigation",
+     "status": "In progress",
+     "tone": "moving",
+     "detail": "Timur Aliev · 2 open questions"
+    },
+    {
+     "label": "Tractor 118",
+     "status": "At shop — awaiting repair",
+     "tone": "urgent",
+     "detail": "Out of service 17 days so far"
+    },
+    {
+     "label": "Trailer T-5310",
+     "status": "Operational",
+     "tone": "done",
+     "detail": "Drivable"
+    },
+    {
+     "label": "Cargo",
+     "status": "No damage",
+     "tone": "done",
+     "detail": "Repower with another truck"
+    },
+    {
+     "label": "Claims",
+     "status": "2 open",
+     "tone": "moving",
+     "detail": "Physical: Under review · Auto: Open"
+    },
+    {
+     "label": "Driver follow-up",
+     "status": "Pending investigation",
+     "tone": "neutral"
+    },
+    {
+     "label": "DOT & testing",
+     "status": "DOT recordable",
+     "tone": "done",
+     "detail": "Tests documented"
+    },
+    {
+     "label": "Costs",
+     "status": "Partly invoiced",
+     "tone": "neutral",
+     "detail": "$2.9K actual · $10.3K projected net"
+    }
+   ],
+   "nextAction": {
+    "title": "Request ECM / engine data download from Prairie State",
+    "dept": "Fleet",
+    "assignee": "Dmitri Volkov",
+    "due": "2026-10-16T22:00:00.000Z"
+   },
+   "expectedEvidence": [
+    {
+     "label": "Scene or damage photos",
+     "ok": true
+    },
+    {
+     "label": "Driver statement",
+     "ok": true
+    },
+    {
+     "label": "Police report",
+     "ok": true
+    },
+    {
+     "label": "Dashcam / video",
+     "ok": true
+    },
+    {
+     "label": "Repair estimate",
+     "ok": true
+    },
+    {
+     "label": "Towing invoice",
+     "ok": true
+    }
+   ],
+   "summaryForAuthorized": [
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "On Oct 2, 2026 at 3:45 PM CDT, Truck 118 (driver Andre Lewis, trailer T-5310, load L-47982) struck the rear of the vehicle ahead on I-80 EB near MM 127 (Houbolt Rd) near Channahon, IL."
+    },
+    {
+     "prov": "preliminary",
+     "restricted": false,
+     "text": "The tractor has heavy front-end damage (bumper, hood, radiator) and could not be driven; the trailer was inspected and not damaged."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "No injuries were reported."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "Our driver was cited (following too closely); post-accident tests were completed and documented."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "The tractor was towed by Lakeshore Towing & Recovery to Prairie State Truck & Body, Joliet and remains out of service (17 days so far)."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "Cargo on load L-47982 was not damaged; repowered with Truck 131 and delivered 1 day late."
+    },
+    {
+     "prov": "system",
+     "restricted": false,
+     "text": "2 claims are linked: physical damage (under review), auto liability (open)."
+    },
+    {
+     "prov": "unresolved",
+     "restricted": false,
+     "text": "Investigation is in progress; fault and preventability are not yet determined."
+    },
+    {
+     "prov": "system",
+     "restricted": false,
+     "text": "Next: Request ECM / engine data download from Prairie State — Fleet, Dmitri Volkov, due Oct 16."
+    }
+   ],
+   "summaryRestrictedSentenceForOthers": [],
+   "repeatSignals": {
+    "sameDriver": [
+     "ACC-2026-005"
+    ],
+    "sameTruck": [
+     "ACC-2026-005"
+    ]
+   },
+   "claims": [
+    "CLM-2026-0040",
+    "CLM-2026-0041"
+   ]
+  },
+  "ACC-2026-017": {
+   "stage": "resolution",
+   "severity": "minor",
+   "suggested": {
+    "value": "minor",
+    "why": "No injuries, no tow-away, low damage"
+   },
+   "dot": {
+    "value": "no",
+    "reasons": [
+     "Not on a road open to public travel"
+    ],
+    "missing": []
+   },
+   "testing": {
+    "alcohol": {
+     "required": "no",
+     "reason": "Not on a road open to public travel — 382.303 does not apply (company policy may still call for a test)",
+     "documented": false,
+     "deadline": "2026-10-14T19:20:00.000Z"
+    },
+    "drug": {
+     "required": "no",
+     "reason": "Not on a road open to public travel — 382.303 does not apply (company policy may still call for a test)",
+     "documented": false,
+     "deadline": "2026-10-15T19:20:00.000Z"
+    }
+   },
+   "money": {
+    "actual": 1840,
+    "recovered": 0,
+    "netToDate": 1840,
+    "estimate": 0,
+    "expected": 0,
+    "projectedNet": 1840,
+    "exposure": 0,
+    "finalized": true,
+    "lostRevenue": {
+     "days": 0.3541666666666667,
+     "perDay": 600,
+     "amount": 213
+    }
+   },
+   "ledger": [
+    {
+     "group": "actual",
+     "category": "Tractor repair",
+     "amount": 1840,
+     "label": "I-55 Truck Service — Tractor 142 fairing & bracket",
+     "source": "AP bill AP-90266 · RO-2026-9140"
+    }
+   ],
+   "downtime": {
+    "truckDays": 0.35,
+    "trailerDays": 0,
+    "truckOngoing": false,
+    "truckLabel": "8h 30m",
+    "trailerLabel": "None"
+   },
+   "advanceBlockers": [
+    "1 corrective action still open",
+    "1 task still open"
+   ],
+   "closeBlockers": [
+    "1 corrective action still open",
+    "1 task still open"
+   ],
+   "tracks": [
+    {
+     "label": "Investigation",
+     "status": "Complete",
+     "tone": "done",
+     "detail": "Approved Oct 16"
+    },
+    {
+     "label": "Tractor 142",
+     "status": "Returned to service",
+     "tone": "done",
+     "detail": "Out of service 8h 30m"
+    },
+    {
+     "label": "Trailer T-5305",
+     "status": "Operational",
+     "tone": "done",
+     "detail": "Drivable"
+    },
+    {
+     "label": "Cargo",
+     "status": "No damage",
+     "tone": "done",
+     "detail": "Delivered as is"
+    },
+    {
+     "label": "Claims",
+     "status": "None filed",
+     "tone": "neutral",
+     "detail": "Repair ($1,840) is below the $5,000 physical damage deductible — company paid"
+    },
+    {
+     "label": "Driver follow-up",
+     "status": "1 open",
+     "tone": "moving",
+     "detail": "Coaching · due Oct 23"
+    },
+    {
+     "label": "DOT & testing",
+     "status": "Not recordable",
+     "tone": "done",
+     "detail": "Testing not required"
+    },
+    {
+     "label": "Costs",
+     "status": "Final",
+     "tone": "done",
+     "detail": "$1.8K actual · $1.8K projected net"
+    }
+   ],
+   "nextAction": {
+    "title": "Complete backing coaching session with Carlos Mendes",
+    "dept": "Safety",
+    "assignee": "Timur Aliev",
+    "due": "2026-10-23T22:00:00.000Z"
+   },
+   "expectedEvidence": [
+    {
+     "label": "Scene or damage photos",
+     "ok": true
+    },
+    {
+     "label": "Driver statement",
+     "ok": true
+    },
+    {
+     "label": "Repair estimate",
+     "ok": true
+    }
+   ],
+   "summaryForAuthorized": [
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "On Oct 14, 2026 at 6:20 AM CDT, Truck 142 (driver Carlos Mendes, trailer T-5305, load L-48014) struck a fixed object while parking on Truck stop lot I-55 Exit 126 near Lincoln, IL."
+    },
+    {
+     "prov": "preliminary",
+     "restricted": false,
+     "text": "The tractor had a cracked right fairing and a bent bumper bracket; the trailer was not damaged."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "No injuries were reported."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "The tractor remained drivable and returned to service Oct 15 after 8h 30m out of service."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "Cargo on load L-48014 was not damaged; delivered on time."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "No insurance claim was filed: repair ($1,840) is below the $5,000 physical damage deductible — company paid."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "Investigation complete (Oct 16): at fault, preventable."
+    },
+    {
+     "prov": "system",
+     "restricted": false,
+     "text": "Next: Complete backing coaching session with Carlos Mendes — Safety, Timur Aliev, due Oct 23."
+    }
+   ],
+   "summaryRestrictedSentenceForOthers": [],
+   "repeatSignals": {
+    "sameDriver": [],
+    "sameTruck": []
+   },
+   "claims": []
+  },
+  "ACC-2026-018": {
+   "stage": "investigation",
+   "severity": "serious",
+   "suggested": {
+    "value": "serious",
+    "why": "Injury treated away from the scene"
+   },
+   "dot": {
+    "value": "yes",
+    "reasons": [
+     "2 people treated away from the scene",
+     "A vehicle was towed away with disabling damage"
+    ],
+    "missing": []
+   },
+   "testing": {
+    "alcohol": {
+     "required": "no",
+     "reason": "Injury treated away, but our driver was not cited",
+     "documented": true,
+     "deadline": "2026-10-18T06:32:00.000Z"
+    },
+    "drug": {
+     "required": "no",
+     "reason": "Injury treated away, but our driver was not cited",
+     "documented": true,
+     "deadline": "2026-10-19T06:32:00.000Z"
+    }
+   },
+   "money": {
+    "actual": 0,
+    "recovered": 0,
+    "netToDate": 0,
+    "estimate": 6400,
+    "expected": 0,
+    "projectedNet": 6400,
+    "exposure": 82500,
+    "finalized": false,
+    "lostRevenue": {
+     "days": 0.7277777777777777,
+     "perDay": 630,
+     "amount": 459
+    }
+   },
+   "ledger": [
+    {
+     "group": "estimate",
+     "category": "Tractor repair",
+     "amount": 3900,
+     "label": "Tractor 133 repair — Hoosier Fleet Repair, Merrillville",
+     "source": "Work order RO-2026-9152"
+    },
+    {
+     "group": "estimate",
+     "category": "Deductible",
+     "amount": 2500,
+     "label": "Our deductible — Auto liability",
+     "source": "Claim CLM-2026-0044 · Under review"
+    },
+    {
+     "group": "exposure",
+     "category": "Insurer reserve",
+     "amount": 82500,
+     "label": "Harborline Insurance reserve above our deductible — Auto liability",
+     "source": "Claim CLM-2026-0044"
+    }
+   ],
+   "downtime": {
+    "truckDays": 0.73,
+    "trailerDays": 0,
+    "truckOngoing": false,
+    "truckLabel": "17h 28m",
+    "trailerLabel": "None"
+   },
+   "advanceBlockers": [
+    "Investigation is not complete and approved"
+   ],
+   "closeBlockers": [
+    "Investigation is not complete and approved",
+    "Driver fault is not determined",
+    "Preventability is not determined",
+    "6 tasks still open",
+    "1 work order not completed/invoiced",
+    "Police report is not on file"
+   ],
+   "tracks": [
+    {
+     "label": "Investigation",
+     "status": "In progress",
+     "tone": "moving",
+     "detail": "Rachel Moore · 3 open questions"
+    },
+    {
+     "label": "Tractor 133",
+     "status": "Returned to service",
+     "tone": "done",
+     "detail": "Out of service 17h 28m"
+    },
+    {
+     "label": "Trailer T-5333",
+     "status": "Operational",
+     "tone": "done",
+     "detail": "Drivable"
+    },
+    {
+     "label": "Cargo",
+     "status": "No damage",
+     "tone": "done",
+     "detail": "Delivered as is"
+    },
+    {
+     "label": "Claims",
+     "status": "1 open",
+     "tone": "moving",
+     "detail": "Auto: Under review"
+    },
+    {
+     "label": "Driver follow-up",
+     "status": "Pending investigation",
+     "tone": "neutral"
+    },
+    {
+     "label": "DOT & testing",
+     "status": "DOT recordable",
+     "tone": "done",
+     "detail": "Testing not required"
+    },
+    {
+     "label": "Costs",
+     "status": "Estimates only",
+     "tone": "neutral",
+     "detail": "$0 actual · $6.4K projected net"
+    }
+   ],
+   "nextAction": {
+    "title": "Canvass businesses at US-30 & Broadway for camera footage",
+    "dept": "Safety",
+    "assignee": "Timur Aliev",
+    "due": "2026-10-18T22:00:00.000Z"
+   },
+   "expectedEvidence": [
+    {
+     "label": "Scene or damage photos",
+     "ok": true
+    },
+    {
+     "label": "Driver statement",
+     "ok": true
+    },
+    {
+     "label": "Police report",
+     "ok": false
+    },
+    {
+     "label": "Dashcam / video",
+     "ok": true
+    },
+    {
+     "label": "Repair estimate",
+     "ok": true
+    },
+    {
+     "label": "Witness statement",
+     "ok": true
+    }
+   ],
+   "summaryForAuthorized": [
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "On Oct 17, 2026 at 5:32 PM CDT, Truck 133 (driver Daniel Okafor, trailer T-5333, load L-48120) was involved in an intersection collision on US-30 WB at Broadway near Merrillville, IN."
+    },
+    {
+     "prov": "preliminary",
+     "restricted": false,
+     "text": "The tractor has front bumper and hood damage but stayed drivable; the trailer was not damaged."
+    },
+    {
+     "prov": "preliminary",
+     "restricted": false,
+     "text": "2 people treated away from the scene; our driver was not injured."
+    },
+    {
+     "prov": "system",
+     "restricted": true,
+     "text": "Medical detail: Sedan driver and passenger transported by EMS to a regional hospital; both conscious at the scene. Passenger reported neck pain. Admission status not confirmed."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "The tractor remained drivable and returned to service Oct 18 after 17h 28m out of service."
+    },
+    {
+     "prov": "verified",
+     "restricted": false,
+     "text": "Cargo on load L-48120 was not damaged; delivered 3 hours late."
+    },
+    {
+     "prov": "system",
+     "restricted": false,
+     "text": "1 claim is linked: auto liability (under review)."
+    },
+    {
+     "prov": "unresolved",
+     "restricted": false,
+     "text": "Investigation is in progress; fault and preventability are not yet determined."
+    },
+    {
+     "prov": "system",
+     "restricted": false,
+     "text": "Next: Canvass businesses at US-30 & Broadway for camera footage — Safety, Timur Aliev, due Oct 18."
+    }
+   ],
+   "summaryRestrictedSentenceForOthers": [
+    "Medical details are restricted."
+   ],
+   "repeatSignals": {
+    "sameDriver": [],
+    "sameTruck": []
+   },
+   "claims": [
+    "CLM-2026-0044"
+   ]
+  }
+ },
+ "claims": {
+  "CLM-2026-0019": {
+   "type": "auto_liability",
+   "status": "Closed",
+   "accident": "ACC-2026-008",
+   "insurer": "Harborline Insurance",
+   "claimed": 8400,
+   "reserve": 9000,
+   "deductible": 2500,
+   "settlement": 7900,
+   "toUs": 0,
+   "insurerPaid": 7900,
+   "byUs": 2500,
+   "expectedRecovery": 0,
+   "companyEstimate": 0,
+   "insurerReserve": 0,
+   "open": false
+  },
+  "CLM-2026-0035": {
+   "type": "physical_damage",
+   "status": "Settled",
+   "accident": "ACC-2026-015",
+   "insurer": "Harborline Insurance",
+   "claimed": 20890,
+   "reserve": null,
+   "deductible": 5000,
+   "settlement": 15890,
+   "toUs": 15890,
+   "insurerPaid": 0,
+   "byUs": 0,
+   "expectedRecovery": 0,
+   "companyEstimate": 0,
+   "insurerReserve": 0,
+   "open": false
+  },
+  "CLM-2026-0036": {
+   "type": "cargo",
+   "status": "Negotiating",
+   "accident": "ACC-2026-015",
+   "insurer": "Ironclad Cargo Underwriters",
+   "claimed": 41200,
+   "reserve": 35200,
+   "deductible": 2500,
+   "settlement": null,
+   "toUs": 0,
+   "insurerPaid": 0,
+   "byUs": 0,
+   "expectedRecovery": 0,
+   "companyEstimate": 2500,
+   "insurerReserve": 32700,
+   "open": true
+  },
+  "CLM-2026-0037": {
+   "type": "auto_liability",
+   "status": "Awaiting documents",
+   "accident": "ACC-2026-015",
+   "insurer": "Harborline Insurance",
+   "claimed": null,
+   "reserve": 9800,
+   "deductible": 2500,
+   "settlement": null,
+   "toUs": 0,
+   "insurerPaid": 0,
+   "byUs": 0,
+   "expectedRecovery": 0,
+   "companyEstimate": 2500,
+   "insurerReserve": 7300,
+   "open": true
+  },
+  "CLM-2026-0040": {
+   "type": "physical_damage",
+   "status": "Under review",
+   "accident": "ACC-2026-016",
+   "insurer": "Harborline Insurance",
+   "claimed": 38450,
+   "reserve": null,
+   "deductible": 5000,
+   "settlement": null,
+   "toUs": 0,
+   "insurerPaid": 0,
+   "byUs": 0,
+   "expectedRecovery": 33450,
+   "companyEstimate": 0,
+   "insurerReserve": 0,
+   "open": true
+  },
+  "CLM-2026-0041": {
+   "type": "auto_liability",
+   "status": "Open",
+   "accident": "ACC-2026-016",
+   "insurer": "Harborline Insurance",
+   "claimed": 14600,
+   "reserve": 16000,
+   "deductible": 2500,
+   "settlement": null,
+   "toUs": 0,
+   "insurerPaid": 0,
+   "byUs": 0,
+   "expectedRecovery": 0,
+   "companyEstimate": 2500,
+   "insurerReserve": 13500,
+   "open": true
+  },
+  "CLM-2026-0044": {
+   "type": "auto_liability",
+   "status": "Under review",
+   "accident": "ACC-2026-018",
+   "insurer": "Harborline Insurance",
+   "claimed": null,
+   "reserve": 85000,
+   "deductible": 2500,
+   "settlement": null,
+   "toUs": 0,
+   "insurerPaid": 0,
+   "byUs": 0,
+   "expectedRecovery": 0,
+   "companyEstimate": 2500,
+   "insurerReserve": 82500,
+   "open": true
+  },
+  "CLM-2025-0071": {
+   "type": "recovery",
+   "status": "Closed",
+   "accident": "ACC-2025-029",
+   "insurer": "Other party’s insurer",
+   "claimed": 1450,
+   "reserve": null,
+   "deductible": null,
+   "settlement": 1450,
+   "toUs": 1450,
+   "insurerPaid": 0,
+   "byUs": 0,
+   "expectedRecovery": 0,
+   "companyEstimate": 0,
+   "insurerReserve": 0,
+   "open": false
+  },
+  "CLM-2025-0079": {
+   "type": "physical_damage",
+   "status": "Closed",
+   "accident": "ACC-2025-030",
+   "insurer": "Harborline Insurance",
+   "claimed": 6800,
+   "reserve": null,
+   "deductible": 5000,
+   "settlement": 1800,
+   "toUs": 1800,
+   "insurerPaid": 0,
+   "byUs": 0,
+   "expectedRecovery": 0,
+   "companyEstimate": 0,
+   "insurerReserve": 0,
+   "open": false
+  },
+  "CLM-2025-0084": {
+   "type": "physical_damage",
+   "status": "Closed",
+   "accident": "ACC-2025-031",
+   "insurer": "Harborline Insurance",
+   "claimed": 25700,
+   "reserve": null,
+   "deductible": 5000,
+   "settlement": 20700,
+   "toUs": 20700,
+   "insurerPaid": 0,
+   "byUs": 0,
+   "expectedRecovery": 0,
+   "companyEstimate": 0,
+   "insurerReserve": 0,
+   "open": false
+  },
+  "CLM-2026-0003": {
+   "type": "recovery",
+   "status": "Closed",
+   "accident": "ACC-2026-001",
+   "insurer": "Other party’s insurer",
+   "claimed": 7450,
+   "reserve": null,
+   "deductible": null,
+   "settlement": 7450,
+   "toUs": 7450,
+   "insurerPaid": 0,
+   "byUs": 0,
+   "expectedRecovery": 0,
+   "companyEstimate": 0,
+   "insurerReserve": 0,
+   "open": false
+  },
+  "CLM-2026-0006": {
+   "type": "auto_liability",
+   "status": "Closed",
+   "accident": "ACC-2026-002",
+   "insurer": "Harborline Insurance",
+   "claimed": 4400,
+   "reserve": null,
+   "deductible": 2500,
+   "settlement": 4100,
+   "toUs": 0,
+   "insurerPaid": 4100,
+   "byUs": 2500,
+   "expectedRecovery": 0,
+   "companyEstimate": 0,
+   "insurerReserve": 0,
+   "open": false
+  },
+  "CLM-2026-0011": {
+   "type": "physical_damage",
+   "status": "Closed",
+   "accident": "ACC-2026-005",
+   "insurer": "Harborline Insurance",
+   "claimed": 24800,
+   "reserve": null,
+   "deductible": 5000,
+   "settlement": 19800,
+   "toUs": 19800,
+   "insurerPaid": 0,
+   "byUs": 0,
+   "expectedRecovery": 0,
+   "companyEstimate": 0,
+   "insurerReserve": 0,
+   "open": false
+  },
+  "CLM-2026-0012": {
+   "type": "auto_liability",
+   "status": "Closed",
+   "accident": "ACC-2026-005",
+   "insurer": "Harborline Insurance",
+   "claimed": 13100,
+   "reserve": null,
+   "deductible": 2500,
+   "settlement": 12300,
+   "toUs": 0,
+   "insurerPaid": 12300,
+   "byUs": 2500,
+   "expectedRecovery": 0,
+   "companyEstimate": 0,
+   "insurerReserve": 0,
+   "open": false
+  },
+  "CLM-2026-0022": {
+   "type": "physical_damage",
+   "status": "Closed",
+   "accident": "ACC-2026-009",
+   "insurer": "Harborline Insurance",
+   "claimed": 5900,
+   "reserve": null,
+   "deductible": 5000,
+   "settlement": 900,
+   "toUs": 900,
+   "insurerPaid": 0,
+   "byUs": 0,
+   "expectedRecovery": 0,
+   "companyEstimate": 0,
+   "insurerReserve": 0,
+   "open": false
+  },
+  "CLM-2026-0025": {
+   "type": "auto_liability",
+   "status": "Closed",
+   "accident": "ACC-2026-010",
+   "insurer": "Harborline Insurance",
+   "claimed": 6500,
+   "reserve": null,
+   "deductible": 2500,
+   "settlement": 6200,
+   "toUs": 0,
+   "insurerPaid": 6200,
+   "byUs": 2500,
+   "expectedRecovery": 0,
+   "companyEstimate": 0,
+   "insurerReserve": 0,
+   "open": false
+  },
+  "CLM-2026-0026": {
+   "type": "recovery",
+   "status": "Negotiating",
+   "accident": "ACC-2026-011",
+   "insurer": "Other party’s insurer",
+   "claimed": 14300,
+   "reserve": null,
+   "deductible": null,
+   "settlement": 9000,
+   "toUs": 9000,
+   "insurerPaid": 0,
+   "byUs": 0,
+   "expectedRecovery": 5300,
+   "companyEstimate": 0,
+   "insurerReserve": 0,
+   "open": true
+  },
+  "CLM-2026-0030": {
+   "type": "physical_damage",
+   "status": "Closed",
+   "accident": "ACC-2026-013",
+   "insurer": "Harborline Insurance",
+   "claimed": 19300,
+   "reserve": null,
+   "deductible": 5000,
+   "settlement": 14300,
+   "toUs": 14300,
+   "insurerPaid": 0,
+   "byUs": 0,
+   "expectedRecovery": 0,
+   "companyEstimate": 0,
+   "insurerReserve": 0,
+   "open": false
+  },
+  "CLM-2026-0027": {
+   "type": "cargo",
+   "status": "Closed",
+   "accident": null,
+   "insurer": "Self-handled (below deductible)",
+   "claimed": 2180,
+   "reserve": null,
+   "deductible": null,
+   "settlement": 2180,
+   "toUs": 0,
+   "insurerPaid": 0,
+   "byUs": 2180,
+   "expectedRecovery": 0,
+   "companyEstimate": 0,
+   "insurerReserve": 0,
+   "open": false
+  },
+  "CLM-2026-0031": {
+   "type": "cargo",
+   "status": "Under review",
+   "accident": null,
+   "insurer": "Ironclad Cargo Underwriters",
+   "claimed": 3640,
+   "reserve": 3640,
+   "deductible": 2500,
+   "settlement": null,
+   "toUs": 0,
+   "insurerPaid": 0,
+   "byUs": 0,
+   "expectedRecovery": 0,
+   "companyEstimate": 2500,
+   "insurerReserve": 1140,
+   "open": true
+  },
+  "CLM-2026-0038": {
+   "type": "cargo",
+   "status": "Under review",
+   "accident": null,
+   "insurer": "Ironclad Cargo Underwriters",
+   "claimed": 58900,
+   "reserve": 58900,
+   "deductible": 2500,
+   "settlement": null,
+   "toUs": 0,
+   "insurerPaid": 0,
+   "byUs": 0,
+   "expectedRecovery": 0,
+   "companyEstimate": 2500,
+   "insurerReserve": 56400,
+   "open": true
+  }
+ },
+ "board": {
+  "30d": {
+   "from": "2026-09-19T17:00:00.000Z",
+   "to": "2026-10-19T17:00:00.000Z",
+   "openCases": 3,
+   "serious": 2,
+   "awaitingInvestigation": 0,
+   "reported": 4,
+   "priorPeriod": 1,
+   "trucksDownNow": 1,
+   "truckDaysInRange": 19.42,
+   "needsAttention": 8,
+   "overdueTasks": 3,
+   "urgent": 3,
+   "openClaims": 8,
+   "ourCostToCome": 18600,
+   "insurerReserves": 193540,
+   "netCost": 33840,
+   "spent": 30830,
+   "recovered": 15890,
+   "lostRevenueNotCash": 12180,
+   "dotRegister": [
+    "ACC-2026-018",
+    "ACC-2026-016",
+    "ACC-2026-015"
+   ]
+  },
+  "90d": {
+   "from": "2026-07-21T17:00:00.000Z",
+   "to": "2026-10-19T17:00:00.000Z",
+   "openCases": 3,
+   "serious": 2,
+   "awaitingInvestigation": 0,
+   "reported": 7,
+   "priorPeriod": 4,
+   "trucksDownNow": 1,
+   "truckDaysInRange": 34.42,
+   "needsAttention": 8,
+   "overdueTasks": 3,
+   "urgent": 3,
+   "openClaims": 8,
+   "ourCostToCome": 18600,
+   "insurerReserves": 193540,
+   "netCost": 47290,
+   "spent": 58580,
+   "recovered": 30190,
+   "lostRevenueNotCash": 21180,
+   "dotRegister": [
+    "ACC-2026-018",
+    "ACC-2026-016",
+    "ACC-2026-015",
+    "ACC-2026-013"
+   ]
+  },
+  "12m": {
+   "from": "2025-10-19T17:00:00.000Z",
+   "to": "2026-10-19T17:00:00.000Z",
+   "openCases": 3,
+   "serious": 2,
+   "awaitingInvestigation": 0,
+   "reported": 21,
+   "priorPeriod": 2,
+   "trucksDownNow": 1,
+   "truckDaysInRange": 88.9,
+   "needsAttention": 8,
+   "overdueTasks": 3,
+   "urgent": 3,
+   "openClaims": 8,
+   "ourCostToCome": 18600,
+   "insurerReserves": 193540,
+   "netCost": 110550,
+   "spent": 186790,
+   "recovered": 89840,
+   "lostRevenueNotCash": 54902,
+   "dotRegister": [
+    "ACC-2026-018",
+    "ACC-2026-016",
+    "ACC-2026-015",
+    "ACC-2026-013",
+    "ACC-2026-011",
+    "ACC-2026-009",
+    "ACC-2026-008",
+    "ACC-2026-005",
+    "ACC-2026-001",
+    "ACC-2025-031",
+    "ACC-2025-030"
+   ]
+  },
+  "ytd": {
+   "from": "2026-01-01T00:00:00.000Z",
+   "to": "2026-10-19T17:00:00.000Z",
+   "openCases": 3,
+   "serious": 2,
+   "awaitingInvestigation": 0,
+   "reported": 18,
+   "priorPeriod": 5,
+   "trucksDownNow": 1,
+   "truckDaysInRange": 62.9,
+   "needsAttention": 8,
+   "overdueTasks": 3,
+   "urgent": 3,
+   "openClaims": 8,
+   "ourCostToCome": 18600,
+   "insurerReserves": 193540,
+   "netCost": 93000,
+   "spent": 146740,
+   "recovered": 67340,
+   "lostRevenueNotCash": 39002,
+   "dotRegister": [
+    "ACC-2026-018",
+    "ACC-2026-016",
+    "ACC-2026-015",
+    "ACC-2026-013",
+    "ACC-2026-011",
+    "ACC-2026-009",
+    "ACC-2026-008",
+    "ACC-2026-005",
+    "ACC-2026-001"
+   ]
+  }
+ },
+ "attention": [
+  {
+   "tone": "urgent",
+   "reason": "Overdue task",
+   "title": "CLM-2026-0038: Driver statement on parking location (theft claim)",
+   "accident": null,
+   "claim": "CLM-2026-0038",
+   "due": "2026-10-16T00:00:00.000Z"
+  },
+  {
+   "tone": "urgent",
+   "reason": "Overdue task",
+   "title": "Request ECM / engine data download from Prairie State",
+   "accident": "ACC-2026-016",
+   "claim": null,
+   "due": "2026-10-16T22:00:00.000Z"
+  },
+  {
+   "tone": "urgent",
+   "reason": "Overdue task",
+   "title": "Canvass businesses at US-30 & Broadway for camera footage",
+   "accident": "ACC-2026-018",
+   "claim": null,
+   "due": "2026-10-18T22:00:00.000Z"
+  },
+  {
+   "tone": "warning",
+   "reason": "Repair approval blocked",
+   "title": "RO-2026-9131: 2 of 3 required estimates received",
+   "accident": "ACC-2026-016",
+   "claim": null,
+   "due": null
+  },
+  {
+   "tone": "warning",
+   "reason": "Accident repair with no case",
+   "title": "RO-2026-9158: Truck 148 repaired at Midwest Truck & Trailer — no accident reported to Safety",
+   "accident": null,
+   "claim": null,
+   "due": null
+  },
+  {
+   "tone": "warning",
+   "reason": "No update ≥ 7 days",
+   "title": "CLM-2026-0037 (Auto liability) — last update Oct 5",
+   "accident": "ACC-2026-015",
+   "claim": "CLM-2026-0037",
+   "due": null
+  },
+  {
+   "tone": "warning",
+   "reason": "No update ≥ 7 days",
+   "title": "CLM-2026-0026 (Recovery (subrogation)) — last update Oct 2",
+   "accident": "ACC-2026-011",
+   "claim": "CLM-2026-0026",
+   "due": null
+  },
+  {
+   "tone": "warning",
+   "reason": "No update ≥ 7 days",
+   "title": "CLM-2026-0038 (Cargo) — last update Oct 8",
+   "accident": null,
+   "claim": "CLM-2026-0038",
+   "due": null
+  }
+ ],
+ "truthTables": {
+  "dot": [
+   {
+    "input": "Only loading/unloading (excluded), tow yes",
+    "value": "no",
+    "reasons": [
+     "Only loading or unloading cargo — excluded by definition"
+    ],
+    "missing": []
+   },
+   {
+    "input": "Fatalities 1, public road yes",
+    "value": "yes",
+    "reasons": [
+     "1 fatality"
+    ],
+    "missing": []
+   },
+   {
+    "input": "Injuries yes, treated away 2, public road yes",
+    "value": "yes",
+    "reasons": [
+     "2 people treated away from the scene"
+    ],
+    "missing": []
+   },
+   {
+    "input": "Tow-away yes, public road yes",
+    "value": "yes",
+    "reasons": [
+     "A vehicle was towed away with disabling damage"
+    ],
+    "missing": []
+   },
+   {
+    "input": "Tow-away yes, public road no",
+    "value": "no",
+    "reasons": [
+     "Not on a road open to public travel"
+    ],
+    "missing": []
+   },
+   {
+    "input": "Tow-away yes, public road unknown",
+    "value": "pending",
+    "reasons": [
+     "A vehicle was towed away with disabling damage"
+    ],
+    "missing": [
+     "Confirm it happened on a road open to public travel"
+    ]
+   },
+   {
+    "input": "Injuries no, tow no, public road yes",
+    "value": "no",
+    "reasons": [
+     "No fatality, no injury treated away from the scene, no disabling-damage tow-away"
+    ],
+    "missing": []
+   },
+   {
+    "input": "Injuries not reported, tow no",
+    "value": "pending",
+    "reasons": [],
+    "missing": [
+     "Injury status",
+     "Fatalities"
+    ]
+   },
+   {
+    "input": "Injuries yes, treated away not known, fatalities 0, tow no",
+    "value": "pending",
+    "reasons": [],
+    "missing": [
+     "Whether anyone was treated away from the scene"
+    ]
+   },
+   {
+    "input": "Injuries no, tow unknown",
+    "value": "pending",
+    "reasons": [],
+    "missing": [
+     "Whether any vehicle was towed with disabling damage"
+    ]
+   },
+   {
+    "input": "Injuries no, tow no, public road no",
+    "value": "no",
+    "reasons": [
+     "Not on a road open to public travel"
+    ],
+    "missing": []
+   },
+   {
+    "input": "Injuries yes, treated away 0, fatalities 0, tow no",
+    "value": "no",
+    "reasons": [
+     "No fatality, no injury treated away from the scene, no disabling-damage tow-away"
+    ],
+    "missing": []
+   }
+  ],
+  "testing": [
+   {
+    "input": "Fatality, no citation, 1 h ago",
+    "alcohol": {
+     "required": "yes",
+     "reason": "Fatality — test required whether or not a citation is issued",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    },
+    "drug": {
+     "required": "yes",
+     "reason": "Fatality — test required whether or not a citation is issued",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Tow-away, cited 3 h after",
+    "alcohol": {
+     "required": "yes",
+     "reason": "Disabling-damage tow-away and our driver was cited within 8 hours",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    },
+    "drug": {
+     "required": "yes",
+     "reason": "Disabling-damage tow-away and our driver was cited within 32 hours",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Tow-away, cited 10 h after",
+    "alcohol": {
+     "required": "no",
+     "reason": "Citation issued after the 8-hour window",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    },
+    "drug": {
+     "required": "yes",
+     "reason": "Disabling-damage tow-away and our driver was cited within 32 hours",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Tow-away, cited 40 h after",
+    "alcohol": {
+     "required": "no",
+     "reason": "Citation issued after the 8-hour window",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    },
+    "drug": {
+     "required": "no",
+     "reason": "Citation issued after the 32-hour window",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Tow-away, cited, citation time not recorded",
+    "alcohol": {
+     "required": "yes",
+     "reason": "Disabling-damage tow-away and our driver was cited within 8 hours",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    },
+    "drug": {
+     "required": "yes",
+     "reason": "Disabling-damage tow-away and our driver was cited within 32 hours",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Treated away 1, driver not cited",
+    "alcohol": {
+     "required": "no",
+     "reason": "Injury treated away, but our driver was not cited",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    },
+    "drug": {
+     "required": "no",
+     "reason": "Injury treated away, but our driver was not cited",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Tow-away, citation not reported, 1 h ago",
+    "alcohol": {
+     "required": "pending",
+     "reason": "Required only if our driver is cited within 8 hours — confirm citation status",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    },
+    "drug": {
+     "required": "pending",
+     "reason": "Required only if our driver is cited within 32 hours — confirm citation status",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Tow-away, citation not reported, 10 h ago",
+    "alcohol": {
+     "required": "no",
+     "reason": "No citation recorded within 8 hours — confirm none was issued",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    },
+    "drug": {
+     "required": "pending",
+     "reason": "Required only if our driver is cited within 32 hours — confirm citation status",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Injuries and tow unknown, 1 h ago",
+    "alcohol": {
+     "required": "pending",
+     "reason": "Waiting on injury status and tow-away — required if anyone died",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    },
+    "drug": {
+     "required": "pending",
+     "reason": "Waiting on injury status and tow-away — required if anyone died",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Injuries and tow unknown, 40 h ago",
+    "alcohol": {
+     "required": "no",
+     "reason": "The 8-hour limit passed before injury status and tow-away were confirmed — document why",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    },
+    "drug": {
+     "required": "no",
+     "reason": "The 32-hour limit passed before injury status and tow-away were confirmed — document why",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "No fatality, no injury away, no tow",
+    "alcohol": {
+     "required": "no",
+     "reason": "No fatality, no injury treated away from the scene and no disabling-damage tow",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    },
+    "drug": {
+     "required": "no",
+     "reason": "No fatality, no injury treated away from the scene and no disabling-damage tow",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Same, Safety marked alcohol “required”",
+    "alcohol": {
+     "required": "yes",
+     "reason": "No fatality, no injury treated away from the scene and no disabling-damage tow",
+     "overrideNote": "Marked required by Safety (company policy)",
+     "documented": false,
+     "docNote": null
+    },
+    "drug": {
+     "required": "no",
+     "reason": "No fatality, no injury treated away from the scene and no disabling-damage tow",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Injured, treated away not known, fatalities 0, tow no, cited 3 h after",
+    "alcohol": {
+     "required": "pending",
+     "reason": "Waiting on people treated away — required if it qualifies and our driver is cited within 8 hours",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    },
+    "drug": {
+     "required": "pending",
+     "reason": "Waiting on people treated away — required if it qualifies and our driver is cited within 32 hours",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Treated away 2, fatalities not known, not cited",
+    "alcohol": {
+     "required": "pending",
+     "reason": "Waiting on fatalities — required if anyone died",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    },
+    "drug": {
+     "required": "pending",
+     "reason": "Waiting on fatalities — required if anyone died",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Tow-away, cited 3 h after, road NOT open to public travel",
+    "alcohol": {
+     "required": "no",
+     "reason": "Not on a road open to public travel — 382.303 does not apply (company policy may still call for a test)",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    },
+    "drug": {
+     "required": "no",
+     "reason": "Not on a road open to public travel — 382.303 does not apply (company policy may still call for a test)",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Fatality, road open to public travel unknown",
+    "alcohol": {
+     "required": "pending",
+     "reason": "Fatality — required if it happened on a road open to public travel; confirm the location",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    },
+    "drug": {
+     "required": "pending",
+     "reason": "Fatality — required if it happened on a road open to public travel; confirm the location",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Tow-away, cited 1 h after; alcohol given 5 h after, no delay reason",
+    "alcohol": {
+     "required": "yes",
+     "reason": "Disabling-damage tow-away and our driver was cited within 8 hours",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": "Given more than 2 hours after the accident — record why it was not given sooner (382.303(d)(1))"
+    },
+    "drug": {
+     "required": "yes",
+     "reason": "Disabling-damage tow-away and our driver was cited within 32 hours",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Same, delay reason recorded",
+    "alcohol": {
+     "required": "yes",
+     "reason": "Disabling-damage tow-away and our driver was cited within 8 hours",
+     "overrideNote": null,
+     "documented": true,
+     "docNote": null
+    },
+    "drug": {
+     "required": "yes",
+     "reason": "Disabling-damage tow-away and our driver was cited within 32 hours",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   },
+   {
+    "input": "Tow-away, cited 1 h after; alcohol \"given\" 9 h after",
+    "alcohol": {
+     "required": "yes",
+     "reason": "Disabling-damage tow-away and our driver was cited within 8 hours",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": "Recorded test time is after the 8-hour limit — record why the test was not given instead"
+    },
+    "drug": {
+     "required": "yes",
+     "reason": "Disabling-damage tow-away and our driver was cited within 32 hours",
+     "overrideNote": null,
+     "documented": false,
+     "docNote": null
+    }
+   }
+  ],
+  "severity": [
+   {
+    "input": "Fatality",
+    "value": "critical",
+    "why": "Fatality"
+   },
+   {
+    "input": "Hazmat released",
+    "value": "critical",
+    "why": "Hazardous material released"
+   },
+   {
+    "input": "Treated away 1",
+    "value": "serious",
+    "why": "Injury treated away from the scene"
+   },
+   {
+    "input": "Tow-away",
+    "value": "serious",
+    "why": "Disabling damage — tow-away"
+   },
+   {
+    "input": "Driver cited (no injury, no tow)",
+    "value": "serious",
+    "why": "Our driver was cited"
+   },
+   {
+    "input": "Cargo loss",
+    "value": "serious",
+    "why": "Cargo loss"
+   },
+   {
+    "input": "Initial estimate $25,000",
+    "value": "serious",
+    "why": "Estimated damage $25,000 or more"
+   },
+   {
+    "input": "Injury status not reported",
+    "value": "moderate",
+    "why": "Injury status not confirmed yet"
+   },
+   {
+    "input": "Initial estimate $5,000",
+    "value": "moderate",
+    "why": "Estimated damage $5,000 or more"
+   },
+   {
+    "input": "Cargo damaged",
+    "value": "moderate",
+    "why": "Cargo damaged"
+   },
+   {
+    "input": "Truck not drivable",
+    "value": "moderate",
+    "why": "Truck not drivable"
+   },
+   {
+    "input": "Injuries yes, treated away and fatalities not known",
+    "value": "moderate",
+    "why": "Injuries reported — treatment and fatality details not confirmed yet"
+   },
+   {
+    "input": "None of the above",
+    "value": "minor",
+    "why": "No injuries, no tow-away, low damage"
+   }
+  ]
+ }
+}

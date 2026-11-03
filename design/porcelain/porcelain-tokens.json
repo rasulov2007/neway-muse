@@ -1,0 +1,555 @@
+{
+  "name": "NeWay Porcelain",
+  "version": "2026-09-16",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "colors": {
+    "bg": {
+      "light": "#F3F5F4",
+      "dark": "#121615",
+      "group": "Surfaces",
+      "use": "App canvas behind cards and panels"
+    },
+    "sidebar": {
+      "light": "#FAFBFA",
+      "dark": "#0F1312",
+      "group": "Surfaces",
+      "use": "Sidebar and collapsed menu"
+    },
+    "panel": {
+      "light": "#FFFFFF",
+      "dark": "#181D1C",
+      "group": "Surfaces",
+      "use": "Cards, panels, top bar, table rows"
+    },
+    "subtle": {
+      "light": "#F6F8F7",
+      "dark": "#1C2221",
+      "group": "Surfaces",
+      "use": "Table header, totals row, auto-filled fields, list section headers, notes"
+    },
+    "raised": {
+      "light": "#FFFFFF",
+      "dark": "#1F2625",
+      "group": "Surfaces",
+      "use": "Menus, dropdowns, popovers, dialogs, side panels"
+    },
+    "field": {
+      "light": "#FFFFFF",
+      "dark": "#141918",
+      "group": "Surfaces",
+      "use": "Input and checkbox fill"
+    },
+    "segment": {
+      "light": "#E9EDEB",
+      "dark": "#28302E",
+      "group": "Surfaces",
+      "use": "Segmented control track (dark value changed from the mockups so it shows inside menus)"
+    },
+    "border": {
+      "light": "#E2E7E5",
+      "dark": "#2A3230",
+      "group": "Lines",
+      "use": "Panel borders, table lines, dividers, sidebar edge"
+    },
+    "border-strong": {
+      "light": "#CCD5D2",
+      "dark": "#3A4441",
+      "group": "Lines",
+      "use": "Inputs, secondary buttons, checkboxes, menu borders, page-tab underline"
+    },
+    "text": {
+      "light": "#16201F",
+      "dark": "#E3E9E7",
+      "group": "Text",
+      "use": "Primary text and numbers"
+    },
+    "text-2": {
+      "light": "#4B5856",
+      "dark": "#AAB6B3",
+      "group": "Text",
+      "use": "Secondary text, nav items, column headers, field labels"
+    },
+    "text-3": {
+      "light": "#66736F",
+      "dark": "#8D9996",
+      "group": "Text",
+      "use": "Muted text: meta lines, hints, placeholders, captions, line icons"
+    },
+    "accent": {
+      "light": "#0B7A74",
+      "dark": "#45BDB3",
+      "group": "Accent",
+      "use": "Primary buttons, focus ring, active tab line, selected icons, checked boxes, chart highlight"
+    },
+    "accent-hover": {
+      "light": "#096660",
+      "dark": "#5CCAC0",
+      "group": "Accent",
+      "use": "Primary button hover"
+    },
+    "on-accent": {
+      "light": "#FFFFFF",
+      "dark": "#062321",
+      "group": "Accent",
+      "use": "Text and icons on an accent fill"
+    },
+    "accent-tint": {
+      "light": "#E0F1EF",
+      "dark": "#17302D",
+      "group": "Accent",
+      "use": "Selected nav item, active chip, focus halo, avatar, time-zone tag"
+    },
+    "accent-ink": {
+      "light": "#075C57",
+      "dark": "#7FD6CD",
+      "group": "Accent",
+      "use": "Text on accent-tint, links, active tab text, selected nav text"
+    },
+    "hover": {
+      "light": "#F3F7F6",
+      "dark": "#1D2423",
+      "group": "States",
+      "use": "Row and item hover"
+    },
+    "selected": {
+      "light": "#EDF7F5",
+      "dark": "#1A2E2B",
+      "group": "States",
+      "use": "Selected table row (always paired with a checked checkbox)"
+    },
+    "highlight": {
+      "light": "#EDF7F5",
+      "dark": "#253230",
+      "group": "States",
+      "use": "Highlighted item in menus, dropdowns and lists (pointer or keyboard); ghost-button hover on raised surfaces"
+    },
+    "urgent-text": {
+      "light": "#B42318",
+      "dark": "#F2A097",
+      "group": "Status: urgent",
+      "use": "Word and numbers"
+    },
+    "urgent-bg": {
+      "light": "#FDEDEB",
+      "dark": "#2C1C1A",
+      "group": "Status: urgent",
+      "use": "Pill and banner fill"
+    },
+    "urgent-border": {
+      "light": "#F5C8C2",
+      "dark": "#4E2B27",
+      "group": "Status: urgent",
+      "use": "Pill outline"
+    },
+    "urgent-icon": {
+      "light": "#C8321F",
+      "dark": "#E86B5E",
+      "group": "Status: urgent",
+      "use": "Octagon symbol"
+    },
+    "warning-text": {
+      "light": "#8A4B00",
+      "dark": "#E8C57C",
+      "group": "Status: warning",
+      "use": "Word and numbers"
+    },
+    "warning-bg": {
+      "light": "#FFF4DE",
+      "dark": "#29231A",
+      "group": "Status: warning",
+      "use": "Pill and banner fill"
+    },
+    "warning-border": {
+      "light": "#F2D7A0",
+      "dark": "#4D4020",
+      "group": "Status: warning",
+      "use": "Pill outline; required-field outline"
+    },
+    "warning-icon": {
+      "light": "#B86E00",
+      "dark": "#D8A443",
+      "group": "Status: warning",
+      "use": "Diamond symbol"
+    },
+    "done-text": {
+      "light": "#1D6A36",
+      "dark": "#92D2A8",
+      "group": "Status: done",
+      "use": "Word and numbers; good change"
+    },
+    "done-bg": {
+      "light": "#E7F5EC",
+      "dark": "#16261F",
+      "group": "Status: done",
+      "use": "Pill fill"
+    },
+    "done-border": {
+      "light": "#BCDFC8",
+      "dark": "#28453A",
+      "group": "Status: done",
+      "use": "Pill outline"
+    },
+    "done-icon": {
+      "light": "#238044",
+      "dark": "#4DB77A",
+      "group": "Status: done",
+      "use": "Check-circle symbol"
+    },
+    "moving-text": {
+      "light": "#1F4E8F",
+      "dark": "#A2C0F0",
+      "group": "Status: in motion",
+      "use": "Word"
+    },
+    "moving-bg": {
+      "light": "#E9F0FB",
+      "dark": "#172233",
+      "group": "Status: in motion",
+      "use": "Pill fill"
+    },
+    "moving-border": {
+      "light": "#C7D7F0",
+      "dark": "#2A3D5E",
+      "group": "Status: in motion",
+      "use": "Pill outline"
+    },
+    "moving-icon": {
+      "light": "#2C64B5",
+      "dark": "#6B9BE6",
+      "group": "Status: in motion",
+      "use": "Arrow-circle symbol"
+    },
+    "neutral-text": {
+      "light": "#4B5856",
+      "dark": "#AAB6B3",
+      "group": "Status: neutral",
+      "use": "Word"
+    },
+    "neutral-bg": {
+      "light": "#EEF2F1",
+      "dark": "#1F2524",
+      "group": "Status: neutral",
+      "use": "Pill fill"
+    },
+    "neutral-border": {
+      "light": "#D9E0DE",
+      "dark": "#323B39",
+      "group": "Status: neutral",
+      "use": "Pill outline"
+    },
+    "neutral-icon": {
+      "light": "#6F7C79",
+      "dark": "#8D9996",
+      "group": "Status: neutral",
+      "use": "Ring, info and wrench symbols"
+    },
+    "status-glyph": {
+      "light": "#FFFFFF",
+      "dark": "#0F1312",
+      "group": "Status: all",
+      "use": "Mark inside the solid status symbols (!, check, arrow)"
+    },
+    "chart-1": {
+      "light": "#12938A",
+      "dark": "#2FA59C",
+      "group": "Charts",
+      "use": "Gross / revenue series"
+    },
+    "chart-2": {
+      "light": "#8A63CF",
+      "dark": "#8E78DA",
+      "group": "Charts",
+      "use": "Cost series"
+    },
+    "chart-grid": {
+      "light": "#EAEFED",
+      "dark": "#252C2B",
+      "group": "Charts",
+      "use": "Grid lines"
+    },
+    "chart-band": {
+      "light": "#F1F6F5",
+      "dark": "#1C2322",
+      "group": "Charts",
+      "use": "Highlighted current period"
+    },
+    "track": {
+      "light": "#DCE5E2",
+      "dark": "#2A3230",
+      "group": "Charts",
+      "use": "Progress and utilization bar track"
+    },
+    "danger": {
+      "light": "#B42318",
+      "dark": "#E86B5E",
+      "group": "Added for the build",
+      "use": "Destructive button fill (not shown in the mockups)"
+    },
+    "danger-hover": {
+      "light": "#951D14",
+      "dark": "#F2A097",
+      "group": "Added for the build",
+      "use": "Destructive button hover"
+    },
+    "on-danger": {
+      "light": "#FFFFFF",
+      "dark": "#121615",
+      "group": "Added for the build",
+      "use": "Text on destructive button"
+    },
+    "tooltip-bg": {
+      "light": "#16201F",
+      "dark": "#E3E9E7",
+      "group": "Added for the build",
+      "use": "Tooltip fill (inverted)"
+    },
+    "tooltip-text": {
+      "light": "#FFFFFF",
+      "dark": "#181D1C",
+      "group": "Added for the build",
+      "use": "Tooltip text"
+    },
+    "backdrop": {
+      "light": "rgba(22, 32, 31, 0.40)",
+      "dark": "rgba(0, 0, 0, 0.60)",
+      "group": "Added for the build",
+      "use": "Dialog backdrop"
+    },
+    "paper": {
+      "light": "#FFFFFF",
+      "dark": "#FFFFFF",
+      "group": "Added for the build",
+      "use": "Document and PDF previews, printouts (white in both modes)"
+    },
+    "paper-text": {
+      "light": "#16201F",
+      "dark": "#16201F",
+      "group": "Added for the build",
+      "use": "Text on paper (same in both modes)"
+    },
+    "input-border-strict": {
+      "light": "#89918E",
+      "dark": "#67706D",
+      "group": "Added for the build",
+      "use": "Optional: input borders at 3:1 on panels and fields, for strict WCAG 1.4.11"
+    },
+    "shadow-menu": {
+      "light": "0 1px 2px rgba(22, 32, 31, 0.05), 0 6px 20px rgba(22, 32, 31, 0.07)",
+      "dark": "0 1px 2px rgba(0, 0, 0, 0.40), 0 8px 24px rgba(0, 0, 0, 0.28)",
+      "group": "Elevation",
+      "use": "Menus, popovers, dialogs, side panels (the only shadows)"
+    },
+    "shadow-card": {
+      "light": "0 1px 2px rgba(0, 0, 0, 0.03)",
+      "dark": "none",
+      "group": "Elevation",
+      "use": "Dashboard number cards only; other cards use a border"
+    },
+    "shadow-segment": {
+      "light": "0 1px 2px rgba(0, 0, 0, 0.08)",
+      "dark": "0 1px 2px rgba(0, 0, 0, 0.30)",
+      "group": "Elevation",
+      "use": "Active item in a segmented control"
+    }
+  },
+  "typography": {
+    "fontFamily": "'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+    "fontWeights": [
+      400,
+      500,
+      600,
+      700,
+      800
+    ],
+    "baseSize": "13px",
+    "baseLineHeight": 1.4,
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "cyrillic"
+    ],
+    "numbers": "tabular-nums; negative values use the minus sign U+2212",
+    "styles": {
+      "page-title": {
+        "fontSize": "22px",
+        "fontWeight": 700,
+        "lineHeight": "1.2",
+        "letterSpacing": "-0.015em",
+        "use": "Page titles"
+      },
+      "kpi": {
+        "fontSize": "28px",
+        "fontWeight": 700,
+        "lineHeight": "1.15",
+        "letterSpacing": "-0.02em",
+        "use": "Big numbers on dashboard cards"
+      },
+      "section-title": {
+        "fontSize": "15px",
+        "fontWeight": 700,
+        "lineHeight": "1.3",
+        "letterSpacing": "-0.005em",
+        "use": "Headings above a group of panels"
+      },
+      "panel-title": {
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": "1.3",
+        "letterSpacing": "0",
+        "use": "Card, panel and dialog titles"
+      },
+      "body": {
+        "fontSize": "13px",
+        "fontWeight": 500,
+        "lineHeight": "1.4",
+        "letterSpacing": "0",
+        "use": "Default UI text and table cells (use 400 for long paragraphs)"
+      },
+      "field": {
+        "fontSize": "13.5px",
+        "fontWeight": 500,
+        "lineHeight": "1.4",
+        "letterSpacing": "0",
+        "use": "Values inside inputs and selects"
+      },
+      "page-tab": {
+        "fontSize": "13.5px",
+        "fontWeight": 600,
+        "lineHeight": "1.3",
+        "letterSpacing": "0",
+        "use": "Page-level tabs"
+      },
+      "tab": {
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": "1.3",
+        "letterSpacing": "0",
+        "use": "Tabs inside panels"
+      },
+      "button": {
+        "fontSize": "13px",
+        "fontWeight": 600,
+        "lineHeight": "1",
+        "letterSpacing": "0",
+        "use": "Buttons"
+      },
+      "button-sm": {
+        "fontSize": "12.5px",
+        "fontWeight": 600,
+        "lineHeight": "1",
+        "letterSpacing": "0",
+        "use": "Small buttons, segmented control items"
+      },
+      "column-header": {
+        "fontSize": "12px",
+        "fontWeight": 600,
+        "lineHeight": "1.3",
+        "letterSpacing": "0",
+        "use": "Table column headers, field labels"
+      },
+      "status": {
+        "fontSize": "12px",
+        "fontWeight": 600,
+        "lineHeight": "1",
+        "letterSpacing": "0",
+        "use": "Status pills and filter chips"
+      },
+      "meta": {
+        "fontSize": "12.5px",
+        "fontWeight": 500,
+        "lineHeight": "1.4",
+        "letterSpacing": "0",
+        "use": "Secondary lines, page subtitles (12px for card footers and tooltips)"
+      },
+      "cell-second-line": {
+        "fontSize": "11.5px",
+        "fontWeight": 500,
+        "lineHeight": "1.35",
+        "letterSpacing": "0",
+        "use": "Second line inside table cells, field hints"
+      },
+      "counter": {
+        "fontSize": "11px",
+        "fontWeight": 700,
+        "lineHeight": "1",
+        "letterSpacing": "0",
+        "use": "Counts in nav items and tabs (800 in the tiny bubble on the collapsed menu)"
+      },
+      "caps-label": {
+        "fontSize": "11px",
+        "fontWeight": 700,
+        "lineHeight": "1.3",
+        "letterSpacing": "0.07em",
+        "textTransform": "uppercase",
+        "use": "Sidebar group names, list section headers"
+      }
+    }
+  },
+  "spacing": {
+    "sidebarWidth": "232px",
+    "railWidth": "64px",
+    "topbarHeight": "56px",
+    "pagePadding": "20px 24px 24px",
+    "gap": "16px",
+    "gapGroup": "10px",
+    "panelPadding": "16px",
+    "panelHeaderHeight": "48px",
+    "kpiCardPadding": "16px 18px 14px",
+    "headerRowHeight": "34px",
+    "rowHeight": "40px",
+    "rowHeight2line": "54px",
+    "cellPaddingX": "10px",
+    "controlHeight": "32px",
+    "controlHeightSm": "28px",
+    "inputHeight": "36px",
+    "searchHeight": "34px",
+    "chipHeight": "24px",
+    "pillHeight": "22px",
+    "counterHeight": "20px",
+    "checkboxSize": "16px",
+    "iconSize": "16px",
+    "avatarSize": "30px"
+  },
+  "radius": {
+    "panel": "10px",
+    "kpiCard": "12px",
+    "segment": "9px",
+    "control": "8px",
+    "controlSm": "7px",
+    "pill": "6px",
+    "chip": "12px",
+    "checkbox": "4px"
+  },
+  "icons": {
+    "style": "line",
+    "size": "16px",
+    "dense": "14px",
+    "rail": "18px",
+    "strokeWidth": 1.6,
+    "lineCap": "round",
+    "lineJoin": "round",
+    "statusSymbol": {
+      "inPill": "13px",
+      "inTextAndLists": "14px"
+    }
+  },
+  "appearance": {
+    "options": [
+      "light",
+      "dark",
+      "system"
+    ],
+    "default": "system",
+    "savedOn": "user profile field `appearance` (server), cached in the browser",
+    "storageKeyPrefix": "neway-appearance",
+    "storageKeys": [
+      "neway-appearance:<userId>",
+      "neway-appearance:<userId>:pending",
+      "neway-appearance:last-user",
+      "neway-appearance:device"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "scene": "cdl-read",
+  "title": "CDL read by Muse",
+  "base": "http://127.0.0.1:5180",
+  "mode": "hq",
+  "scale": 2,
+  "recordedAt": "2026-11-03T17:09:02.412Z",
+  "durationSeconds": 23.54,
+  "startSeconds": 0,
+  "waits": [
+    {
+      "from": 10.89,
+      "to": 15.77
+    }
+  ],
+  "failed": null
+}

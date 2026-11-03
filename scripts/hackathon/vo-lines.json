@@ -1,0 +1,141 @@
+{
+  "_comment": "Voice-over of the final film, word for word from HACKATHON-VIDEO-SCRIPT.md (v3). One TTS file per id. 'sub' splits a line into subtitle cards with '|'. lang uz lines are read by an Uzbek neural voice and carry an English subtitle.",
+  "lines": [
+    {
+      "id": "hook1",
+      "text": "Our dispatchers run a hundred and twenty trucks.",
+      "sub": "Our dispatchers run 120 trucks."
+    },
+    {
+      "id": "hook2",
+      "text": "Typing one rate confirmation takes them five to ten minutes. A CDL, two or three. And a missing POD can slip by unnoticed.",
+      "sub": "Typing one rate confirmation takes them 5 to 10 minutes.|A CDL, two or three.|And a missing POD can slip by unnoticed."
+    },
+    {
+      "id": "one",
+      "text": "So we put Meta Muse inside our TMS, as an agent that does the hunting, and the clicking, for them.",
+      "sub": "So we put Meta Muse inside our TMS —|as an agent that does the hunting, and the clicking, for them."
+    },
+    {
+      "id": "hero1",
+      "text": "Why can't load forty-one seventeen be invoiced?",
+      "sub": "Why can't load 4117 be invoiced?"
+    },
+    {
+      "id": "hero2",
+      "text": "Muse checks: the proof of delivery is missing.",
+      "sub": "Muse checks: the proof of delivery is missing."
+    },
+    {
+      "id": "hero3",
+      "text": "I switch from Dry run to Live, and say: fix it.",
+      "sub": "I switch from Dry run to Live and say: fix it."
+    },
+    {
+      "id": "hero4",
+      "text": "Muse drives the app itself. Opens the documents, finds the driver, writes the message...",
+      "sub": "Muse drives the app itself —|opens the documents, finds the driver, writes the message…"
+    },
+    {
+      "id": "hero5",
+      "text": "and stops to ask before it presses Send.",
+      "sub": "…and stops to ask before it presses Send."
+    },
+    {
+      "id": "hero6",
+      "text": "I allow it. Sent.",
+      "sub": "I allow it. Sent."
+    },
+    {
+      "id": "hero7",
+      "text": "Nothing risky happens without a person saying yes.",
+      "sub": "Nothing risky happens without a person saying yes."
+    },
+    {
+      "id": "vis1",
+      "text": "Every load starts with a rate confirmation.",
+      "sub": "Every load starts with a rate confirmation."
+    },
+    {
+      "id": "vis2",
+      "text": "Drop the PDF. Muse fills broker, three stops, reefer temperature and rate, in about seven seconds. Work that takes a dispatcher five to ten minutes.",
+      "sub": "Drop the PDF — Muse fills broker, three stops,|reefer temperature and rate in about seven seconds —|work that takes a dispatcher 5 to 10 minutes."
+    },
+    {
+      "id": "vis3",
+      "text": "Hiring: Muse reads a new driver's CDL in six seconds instead of two or three minutes, and catches that the birth date doesn't match his application.",
+      "sub": "Hiring: Muse reads a new driver's CDL in 6 seconds instead of 2 or 3 minutes —|and catches that the birth date doesn't match his application."
+    },
+    {
+      "id": "voice1",
+      "text": "Most of our drivers speak Uzbek or Russian first. This one just asks out loud.",
+      "sub": "Most of our drivers speak Uzbek or Russian first.|This one just asks out loud."
+    },
+    {
+      "id": "voice2",
+      "text": "Meta's transcription model doesn't know Uzbek. But Muse Spark understood the audio directly, checked his load, and answered him in Uzbek.",
+      "sub": "Meta's transcription model doesn't know Uzbek —|but Muse Spark understood the audio directly,|checked his load, and answered him in Uzbek."
+    },
+    {
+      "id": "uzans",
+      "lang": "uz",
+      "text": "Keyingi pikap L-4114, Charlotte, bugun kunduzi soat 4:09 da, Eastern vaqti bilan. Yuk masofasi 405 mil.",
+      "sub": "Your next pickup: L-4114, Charlotte, today at 4:09 PM Eastern.|The load is 405 miles."
+    },
+    {
+      "id": "pay",
+      "text": "Friday, payroll: Muse prepares every driver's statement, and flags what looks wrong, before anyone gets paid.",
+      "sub": "Friday, payroll: Muse prepares every driver's statement|and flags what looks wrong — before anyone gets paid."
+    },
+    {
+      "id": "brief",
+      "text": "And every morning, Muse checks the whole fleet on its own: a load running late, expired papers, and a truck that bought more fuel in an hour than its tanks can hold.",
+      "sub": "And every morning, Muse checks the whole fleet on its own:|a load running late, expired papers,|and a truck that bought more fuel in an hour than its tanks can hold."
+    },
+    {
+      "id": "how",
+      "text": "Muse never touches the database. It calls our own tools with the user's own permissions. Dry run is on by default, risky presses ask first, and every write is audited.",
+      "sub": "Muse never touches the database.|It calls our own tools with the user's own permissions,|Dry run is on by default, risky presses ask first,|and every write is audited."
+    },
+    {
+      "id": "end1",
+      "text": "Built in thirty hours, on a TMS that already runs two real trucking companies.",
+      "sub": "Built in thirty hours on a TMS|that already runs two real trucking companies."
+    },
+    {
+      "id": "end2",
+      "text": "Rate confirmations: five to ten minutes, down to seven seconds. CDL checks: two or three minutes, down to six seconds.",
+      "sub": "Rate confirmations: 5 to 10 minutes down to 7 seconds.|CDL checks: 2 or 3 minutes down to 6 seconds."
+    },
+    {
+      "id": "end3",
+      "text": "Next: dispatchers spend the whole shift searching for loads. So our next update is a load marketplace, where Muse matches empty trucks with freight. NeWay.",
+      "sub": "Next: dispatchers spend the whole shift searching for loads —|so our next update is a load marketplace where Muse matches empty trucks with freight.|NeWay."
+    },
+    {
+      "id": "s1",
+      "text": "A hundred and twenty trucks. Meet the agent inside our TMS.",
+      "sub": "120 trucks. Meet the agent inside our TMS."
+    },
+    {
+      "id": "s2",
+      "text": "Muse finds the missing POD, messages the driver, and asks before it presses Send.",
+      "sub": "Muse finds the missing POD, messages the driver,|and asks before it presses Send."
+    },
+    {
+      "id": "s3",
+      "text": "A rate confirmation in, the load filled in seven seconds.",
+      "sub": "A rate confirmation in — the load filled in 7 seconds."
+    },
+    {
+      "id": "s4",
+      "text": "Drivers ask in Uzbek. Muse understands.",
+      "sub": "Drivers ask in Uzbek. Muse understands."
+    },
+    {
+      "id": "s5",
+      "text": "NeWay AI, powered by Meta Muse.",
+      "sub": "NeWay AI, powered by Meta Muse."
+    }
+  ]
+}

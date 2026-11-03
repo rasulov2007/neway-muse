@@ -1,0 +1,240 @@
+/*
+ * Overlay and feedback motion. Durations and easing come from tokens.css; the reduced-motion
+ * rule there collapses every animation to ~0ms. Utilities: animate-fade-in, animate-fade-out,
+ * animate-zoom-in, animate-zoom-out, animate-slide-in-right, animate-slide-out-right,
+ * animate-toast-in, animate-toast-out.
+ *
+ * Chart motion lives at the bottom of this file: .chart-fade-in, .chart-tooltip-in and the
+ * hover polish scoped to .chart-plot (the class the design-system charts put on their Recharts
+ * wrapper). Entrance timings that Recharts animates in JS live in Chart/chartTheme.ts.
+ */
+@theme {
+  --animate-fade-in: ds-fade-in var(--duration-base) var(--ease-standard);
+  --animate-fade-out: ds-fade-out var(--duration-base) var(--ease-standard);
+  --animate-zoom-in: ds-zoom-in var(--duration-base) var(--ease-standard);
+  --animate-zoom-out: ds-zoom-out var(--duration-base) var(--ease-standard);
+  --animate-slide-in-right: ds-slide-in-right var(--duration-slow) var(--ease-standard);
+  --animate-slide-out-right: ds-slide-out-right var(--duration-slow) var(--ease-standard);
+  --animate-toast-in: ds-toast-in var(--duration-slow) var(--ease-standard);
+  --animate-toast-out: ds-toast-out var(--duration-base) var(--ease-standard);
+
+  @keyframes ds-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes ds-fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes ds-zoom-in {
+    from {
+      opacity: 0;
+      scale: 0.96;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  @keyframes ds-zoom-out {
+    from {
+      opacity: 1;
+      scale: 1;
+    }
+    to {
+      opacity: 0;
+      scale: 0.96;
+    }
+  }
+  @keyframes ds-slide-in-right {
+    from {
+      translate: 100% 0;
+    }
+    to {
+      translate: 0 0;
+    }
+  }
+  @keyframes ds-slide-out-right {
+    from {
+      translate: 0 0;
+    }
+    to {
+      translate: 100% 0;
+    }
+  }
+  @keyframes ds-toast-in {
+    from {
+      opacity: 0;
+      translate: 0 8px;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+  @keyframes ds-toast-out {
+    from {
+      opacity: 1;
+      translate: var(--radix-toast-swipe-end-x, 0) 0;
+    }
+    to {
+      opacity: 0;
+      translate: 100% 0;
+    }
+  }
+}
+
+/*
+ * Chart motion. Everything here is hover/swap polish and stays inside the token durations; the
+ * longer one-shot entrance animations are driven by Recharts (Chart/chartTheme.ts).
+ * `.chart-plot` marks a design-system chart wrapper, which keeps the Sparkline (a bare tile
+ * decoration, deliberately instant) out of these rules.
+ */
+@keyframes ds-chart-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes ds-chart-tooltip-in {
+  from {
+    opacity: 0;
+    translate: 0 2px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+@keyframes ds-chart-dot-in {
+  from {
+    opacity: 0;
+    scale: 0.6;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+/* Plot wrapper: only remounts when the series set changes, so the swap fades instead of blinking. */
+.chart-fade-in {
+  animation: ds-chart-fade-in var(--duration-base) var(--ease-out) both;
+}
+
+/* Tooltip card, mounted fresh on every hover target. */
+.chart-tooltip-in {
+  animation: ds-chart-tooltip-in var(--duration-fast) var(--ease-out) both;
+}
+
+/* Crosshair / hovered-category band. */
+.chart-plot .recharts-tooltip-cursor {
+  animation: ds-chart-fade-in var(--duration-fast) var(--ease-out) both;
+}
+
+/* Hover marker on a line or area. */
+.chart-plot .recharts-active-dot > circle {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: ds-chart-dot-in var(--duration-fast) var(--ease-out) both;
+}
+
+/* The wash under an area arrives just after the line that Recharts draws in. */
+.chart-plot .recharts-area-area {
+  animation: ds-chart-fade-in var(--duration-slow) var(--ease-out) both;
+}
+
+/*
+ * Live-state motion (Loads, 2026-10-01). Decorative only: every element that carries one of these
+ * classes is aria-hidden, and the colour is always `currentColor`, so the parent sets it from a
+ * token (`text-nw-done-icon`, `text-nw-warning-icon` ...). Under reduced motion they stand still.
+ *
+ * .nw-pulse     — a status symbol that breathes on and off (loads that are waiting or moving).
+ * .nw-live-dot  — a small round dot with a soft ring spreading out of it (the "Live" pill).
+ * .nw-scan-line — a thin bar sweeping along the bottom edge of its `relative overflow-hidden`
+ *                 parent (a needs-attention alert).
+ */
+@keyframes nw-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+@keyframes nw-live-ring {
+  from {
+    opacity: 0.55;
+    scale: 1;
+  }
+  to {
+    opacity: 0;
+    scale: 2.8;
+  }
+}
+@keyframes nw-scan {
+  from {
+    translate: -100% 0;
+  }
+  to {
+    translate: 290% 0;
+  }
+}
+
+.nw-pulse {
+  animation: nw-pulse 1.8s ease-in-out infinite;
+}
+
+.nw-live-dot {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background-color: currentColor;
+}
+.nw-live-dot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: currentColor;
+  animation: nw-live-ring 2s ease-out infinite;
+}
+
+.nw-scan-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  height: 2px;
+  border-radius: 9999px;
+  background-color: currentColor;
+  opacity: 0.75;
+  pointer-events: none;
+  animation: nw-scan 2.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nw-pulse,
+  .nw-live-dot::after,
+  .nw-scan-line {
+    animation: none !important;
+  }
+  .nw-live-dot::after,
+  .nw-scan-line {
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+/* The driver's consent page: the TMS's own Porcelain tokens, light only (see consent.html). */
+@import 'tailwindcss';
+@import '../design-system/porcelain-theme.css';
+@import '../design-system/tokens.css';
+@import '../design-system/motion.css';
+
+@layer base {
+  body {
+    font-family: var(--nw-font);
+    background: var(--nw-bg);
+  }
+  button:not(:disabled),
+  [role='button']:not([aria-disabled='true']) {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,27 @@
+# Optional local infrastructure for NEWAY TMS.
+# Docker is not required to run the Phase 0 foundation; the API does not
+# connect to the database at startup yet.
+#
+#   docker compose -f infra/docker-compose.yml up -d
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: neway-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: neway
+      POSTGRES_USER: neway
+      POSTGRES_PASSWORD: neway
+    ports:
+      - '5432:5432'
+    volumes:
+      - neway-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U neway -d neway']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  neway-postgres-data:

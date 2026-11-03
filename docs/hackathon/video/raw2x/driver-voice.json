@@ -1,0 +1,17 @@
+{
+  "scene": "driver-voice",
+  "title": "Driver voice (Uzbek)",
+  "base": "http://127.0.0.1:5180",
+  "mode": "hq",
+  "scale": 2,
+  "recordedAt": "2026-11-03T17:11:27.016Z",
+  "durationSeconds": 28.14,
+  "startSeconds": 0,
+  "waits": [
+    {
+      "from": 7.89,
+      "to": 18.42
+    }
+  ],
+  "failed": null
+}

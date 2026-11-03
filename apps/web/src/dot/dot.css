@@ -1,0 +1,12 @@
+/* The driver's DOT application page: the TMS's own Porcelain tokens, light only (see dot.html). */
+@import 'tailwindcss';
+@import '../design-system/porcelain-theme.css';
+@import '../design-system/tokens.css';
+@import '../design-system/motion.css';
+
+@layer base {
+  button:not(:disabled),
+  [role='button']:not([aria-disabled='true']) {
+    cursor: pointer;
+  }
+}

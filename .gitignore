@@ -1,0 +1,49 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+*.tsbuildinfo
+
+# environment
+.env
+.env.*
+!.env.example
+
+# test output
+coverage/
+
+# local file storage (STORAGE_DRIVER=local)
+/apps/api/storage/
+
+# logs
+*.log
+
+# editors / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# playwright
+playwright-report/
+test-results/
+
+# TanStack router plugin scratch
+apps/web/.tanstack/
+
+# Tesseract downloads its language model beside the process that ran it.
+*.traineddata
+
+# Broker rate confirmations used to measure the RC reader - business documents, kept local
+apps/api/test/fixtures/rc/
+apps/api/storage-dotapp/
+api-staging.*
+
+apps/api/storage-mobile/
+
+# mobile app (installed on its own, never a root workspace)
+apps/mobile/node_modules/
+apps/mobile/.expo/
+apps/mobile/dist/

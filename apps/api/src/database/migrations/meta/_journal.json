@@ -1,0 +1,580 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1789054403634,
+      "tag": "0000_past_stranger",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1789058291519,
+      "tag": "0001_clumsy_malice",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1789062328441,
+      "tag": "0002_open_human_cannonball",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1789066601159,
+      "tag": "0003_cheerful_bill_hollister",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1789071027142,
+      "tag": "0004_faithful_mentor",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1789142727043,
+      "tag": "0005_blushing_mephistopheles",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1789143960187,
+      "tag": "0006_previous_firedrake",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1789145855511,
+      "tag": "0007_dot_application",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1789147504876,
+      "tag": "0008_hiring_pipeline",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1789161091472,
+      "tag": "0009_hiring_costs",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1789162727803,
+      "tag": "0010_onboarding_templates",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1789217264681,
+      "tag": "0011_auth_sessions",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1789217364681,
+      "tag": "0012_must_change_password",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1789409100705,
+      "tag": "0013_document_extract",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1789500000000,
+      "tag": "0014_user_appearance",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1789600000000,
+      "tag": "0015_stored_files",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1789700000000,
+      "tag": "0016_driver_secondary_phone",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1789800000000,
+      "tag": "0017_truck_optional_details",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1789900000000,
+      "tag": "0018_fleet_work_orders",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1789910000000,
+      "tag": "0019_integration_accounts_many",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1789920000000,
+      "tag": "0020_pti_defects",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "7",
+      "when": 1790006400000,
+      "tag": "0021_work_orders_defect_link",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "7",
+      "when": 1790092800000,
+      "tag": "0022_pm_module",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "7",
+      "when": 1790179200000,
+      "tag": "0023_pm_import",
+      "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "7",
+      "when": 1790265600000,
+      "tag": "0024_pm_appointments",
+      "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "7",
+      "when": 1790352000000,
+      "tag": "0025_truck_driver_assignments",
+      "breakpoints": true
+    },
+    {
+      "idx": 26,
+      "version": "7",
+      "when": 1790438400000,
+      "tag": "0026_driver_payment_details",
+      "breakpoints": true
+    },
+    {
+      "idx": 27,
+      "version": "7",
+      "when": 1790524800000,
+      "tag": "0027_dispatch_board",
+      "breakpoints": true
+    },
+    {
+      "idx": 28,
+      "version": "7",
+      "when": 1790611200000,
+      "tag": "0028_dispatch_ops",
+      "breakpoints": true
+    },
+    {
+      "idx": 29,
+      "version": "7",
+      "when": 1790697600000,
+      "tag": "0029_work_order_driver_charge",
+      "breakpoints": true
+    },
+    {
+      "idx": 30,
+      "version": "7",
+      "when": 1790784000000,
+      "tag": "0030_ditat_link_keys",
+      "breakpoints": true
+    },
+    {
+      "idx": 31,
+      "version": "7",
+      "when": 1790870400000,
+      "tag": "0031_driver_optional_qualification",
+      "breakpoints": true
+    },
+    {
+      "idx": 32,
+      "version": "7",
+      "when": 1790870500000,
+      "tag": "0032_document_link_keys",
+      "breakpoints": true
+    },
+    {
+      "idx": 33,
+      "version": "7",
+      "when": 1790870600000,
+      "tag": "0033_loads_table",
+      "breakpoints": true
+    },
+    {
+      "idx": 34,
+      "version": "7",
+      "when": 1790957000000,
+      "tag": "0034_load_problems",
+      "breakpoints": true
+    },
+    {
+      "idx": 35,
+      "version": "7",
+      "when": 1791100000000,
+      "tag": "0035_accounting_core",
+      "breakpoints": true
+    },
+    {
+      "idx": 36,
+      "version": "7",
+      "when": 1791200000000,
+      "tag": "0036_acct_completions",
+      "breakpoints": true
+    },
+    {
+      "idx": 37,
+      "version": "7",
+      "when": 1791300000000,
+      "tag": "0037_hiring_cost_receipts",
+      "breakpoints": true
+    },
+    {
+      "idx": 38,
+      "version": "7",
+      "when": 1791400000000,
+      "tag": "0038_campaign_spend_and_cost_posting",
+      "breakpoints": true
+    },
+    {
+      "idx": 39,
+      "version": "7",
+      "when": 1791500000000,
+      "tag": "0039_driver_archive",
+      "breakpoints": true
+    },
+    {
+      "idx": 40,
+      "version": "7",
+      "when": 1791600000000,
+      "tag": "0040_platform_admin",
+      "breakpoints": true
+    },
+    {
+      "idx": 41,
+      "version": "7",
+      "when": 1791700000000,
+      "tag": "0041_safety_cases",
+      "breakpoints": true
+    },
+    {
+      "idx": 42,
+      "version": "7",
+      "when": 1791800000000,
+      "tag": "0042_driver_apply_link",
+      "breakpoints": true
+    },
+    {
+      "idx": 43,
+      "version": "7",
+      "when": 1791900000000,
+      "tag": "0043_driver_relations",
+      "breakpoints": true
+    },
+    {
+      "idx": 44,
+      "version": "7",
+      "when": 1792000000000,
+      "tag": "0044_hiring_lead_test_flag",
+      "breakpoints": true
+    },
+    {
+      "idx": 45,
+      "version": "7",
+      "when": 1792100000000,
+      "tag": "0045_driver_relation_test_flag",
+      "breakpoints": true
+    },
+    {
+      "idx": 46,
+      "version": "7",
+      "when": 1792200000000,
+      "tag": "0046_dot_application_links",
+      "breakpoints": true
+    },
+    {
+      "idx": 47,
+      "version": "7",
+      "when": 1792300000000,
+      "tag": "0047_truck_assignment_truth",
+      "breakpoints": true
+    },
+    {
+      "idx": 48,
+      "version": "7",
+      "when": 1792400000000,
+      "tag": "0048_recruiting_rotation_followups",
+      "breakpoints": true
+    },
+    {
+      "idx": 49,
+      "version": "7",
+      "when": 1792500000000,
+      "tag": "0049_driver_application_sessions",
+      "breakpoints": true
+    },
+    {
+      "idx": 50,
+      "version": "7",
+      "when": 1792600000000,
+      "tag": "0050_recruiting_journey",
+      "breakpoints": true
+    },
+    {
+      "idx": 51,
+      "version": "7",
+      "when": 1792700000000,
+      "tag": "0051_recruiting_delivery_checks",
+      "breakpoints": true
+    },
+    {
+      "idx": 52,
+      "version": "7",
+      "when": 1792800000000,
+      "tag": "0052_fleet_expenses",
+      "breakpoints": true
+    },
+    {
+      "idx": 53,
+      "version": "7",
+      "when": 1792900000000,
+      "tag": "0053_violation_type",
+      "breakpoints": true
+    },
+    {
+      "idx": 54,
+      "version": "7",
+      "when": 1793000000000,
+      "tag": "0054_insurance_check_device_links",
+      "breakpoints": true
+    },
+    {
+      "idx": 55,
+      "version": "7",
+      "when": 1793100000000,
+      "tag": "0055_violation_followup",
+      "breakpoints": true
+    },
+    {
+      "idx": 56,
+      "version": "7",
+      "when": 1793200000000,
+      "tag": "0056_consent_safety_questions",
+      "breakpoints": true
+    },
+    {
+      "idx": 57,
+      "version": "7",
+      "when": 1793300000000,
+      "tag": "0057_work_order_payment_terms",
+      "breakpoints": true
+    },
+    {
+      "idx": 58,
+      "version": "7",
+      "when": 1793400000000,
+      "tag": "0058_repair_tire_events",
+      "breakpoints": true
+    },
+    {
+      "idx": 59,
+      "version": "7",
+      "when": 1793500000000,
+      "tag": "0059_claims_v2_driver_charges",
+      "breakpoints": true
+    },
+    {
+      "idx": 60,
+      "version": "7",
+      "when": 1793600000000,
+      "tag": "0060_tire_event_details",
+      "breakpoints": true
+    },
+    {
+      "idx": 61,
+      "version": "7",
+      "when": 1793700000000,
+      "tag": "0061_claim_lines",
+      "breakpoints": true
+    },
+    {
+      "idx": 62,
+      "version": "7",
+      "when": 1793800000000,
+      "tag": "0062_driver_vacations_rotation",
+      "breakpoints": true
+    },
+    {
+      "idx": 63,
+      "version": "7",
+      "when": 1793900000000,
+      "tag": "0063_vacation_dates_review_cost",
+      "breakpoints": true
+    },
+    {
+      "idx": 64,
+      "version": "7",
+      "when": 1794000000000,
+      "tag": "0064_pti_sunday_weeks",
+      "breakpoints": true
+    },
+    {
+      "idx": 65,
+      "version": "7",
+      "when": 1794100000000,
+      "tag": "0065_violation_issued_to_optional",
+      "breakpoints": true
+    },
+    {
+      "idx": 66,
+      "version": "7",
+      "when": 1794200000000,
+      "tag": "0066_company_profile",
+      "breakpoints": true
+    },
+    {
+      "idx": 67,
+      "version": "7",
+      "when": 1794300000000,
+      "tag": "0067_ai_assistant",
+      "breakpoints": true
+    },
+    {
+      "idx": 68,
+      "version": "7",
+      "when": 1794500000000,
+      "tag": "0068_violation_case",
+      "breakpoints": true
+    },
+    {
+      "idx": 69,
+      "version": "7",
+      "when": 1794600000000,
+      "tag": "0069_accidents_v2_core",
+      "breakpoints": true
+    },
+    {
+      "idx": 70,
+      "version": "7",
+      "when": 1794700000000,
+      "tag": "0070_accidents_v2_claims",
+      "breakpoints": true
+    },
+    {
+      "idx": 71,
+      "version": "7",
+      "when": 1794800000000,
+      "tag": "0071_accidents_v2_money",
+      "breakpoints": true
+    },
+    {
+      "idx": 72,
+      "version": "7",
+      "when": 1794900000000,
+      "tag": "0072_accidents_v2_investigation",
+      "breakpoints": true
+    },
+    {
+      "idx": 73,
+      "version": "7",
+      "when": 1795000000000,
+      "tag": "0073_trailer_model",
+      "breakpoints": true
+    },
+    {
+      "idx": 74,
+      "version": "7",
+      "when": 1795100000000,
+      "tag": "0074_driver_teams",
+      "breakpoints": true
+    },
+    {
+      "idx": 75,
+      "version": "7",
+      "when": 1795150000000,
+      "tag": "0075_driver_date_of_birth",
+      "breakpoints": true
+    },
+    {
+      "idx": 76,
+      "version": "7",
+      "when": 1795200000000,
+      "tag": "0076_stored_files_soft_delete",
+      "breakpoints": true
+    },
+    {
+      "idx": 77,
+      "version": "7",
+      "when": 1795250000000,
+      "tag": "0077_self_onboarding",
+      "breakpoints": true
+    },
+    {
+      "idx": 79,
+      "version": "7",
+      "when": 1795350000000,
+      "tag": "0079_driver_application_v2",
+      "breakpoints": true
+    },
+    {
+      "idx": 80,
+      "version": "7",
+      "when": 1795400000000,
+      "tag": "0080_dot_application_bank",
+      "breakpoints": true
+    },
+    {
+      "idx": 81,
+      "version": "7",
+      "when": 1795450000000,
+      "tag": "0081_mobile",
+      "breakpoints": true
+    },
+    {
+      "idx": 82,
+      "version": "7",
+      "when": 1795500000000,
+      "tag": "0082_mobile_m3",
+      "breakpoints": true
+    }
+  ]
+}

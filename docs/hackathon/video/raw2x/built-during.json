@@ -1,0 +1,12 @@
+{
+  "scene": "built-during",
+  "title": "built-during",
+  "base": "http://127.0.0.1:5180",
+  "mode": "hq",
+  "scale": 1,
+  "recordedAt": "2026-11-03T17:20:59.501Z",
+  "durationSeconds": 9.88,
+  "startSeconds": 0,
+  "waits": [],
+  "failed": null
+}

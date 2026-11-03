@@ -1,0 +1,219 @@
+{
+  "model": "muse-spark-1.3",
+  "reasoningEffort": "low",
+  "runs": [
+    {
+      "ranAt": "2026-11-03T13:56:01.914Z",
+      "model": "muse-spark-1.3",
+      "reasoningEffort": "low",
+      "results": [
+        {
+          "kind": "cdl",
+          "file": "cdl-sample-jordan-sampleton.png",
+          "seconds": 4.932,
+          "right": 11,
+          "total": 11,
+          "misses": [],
+          "needsReview": [],
+          "warnings": [
+            "No DOT application on this case to compare the card with."
+          ],
+          "usage": {
+            "promptTokens": 1960,
+            "outputTokens": 518,
+            "reasoningTokens": 275
+          }
+        },
+        {
+          "kind": "cdl",
+          "file": "cdl-sample-alex-rivera-photo.jpg",
+          "seconds": 5.966,
+          "right": 11,
+          "total": 11,
+          "misses": [],
+          "needsReview": [],
+          "warnings": [
+            "The licence expired on 2026-10-15.",
+            "No DOT application on this case to compare the card with."
+          ],
+          "usage": {
+            "promptTokens": 2606,
+            "outputTokens": 617,
+            "reasoningTokens": 386
+          }
+        },
+        {
+          "kind": "cdl",
+          "file": "cdl-sample-jordan-sampleton.pdf",
+          "seconds": 6.128,
+          "right": 11,
+          "total": 11,
+          "misses": [],
+          "needsReview": [],
+          "warnings": [
+            "No DOT application on this case to compare the card with."
+          ],
+          "usage": {
+            "promptTokens": 3640,
+            "outputTokens": 569,
+            "reasoningTokens": 326
+          }
+        },
+        {
+          "kind": "rc",
+          "file": "rc-sample-1-demo-freight.pdf",
+          "model": "muse:muse-spark-1.3",
+          "seconds": 5.459,
+          "right": 31,
+          "total": 31,
+          "misses": [],
+          "warnings": []
+        },
+        {
+          "kind": "rc",
+          "file": "rc-sample-2-example-logistics-reefer.pdf",
+          "model": "muse:muse-spark-1.3",
+          "seconds": 7.125,
+          "right": 41,
+          "total": 41,
+          "misses": [],
+          "warnings": []
+        },
+        {
+          "kind": "rc",
+          "file": "rc-sample-3-sample-haul-flatbed.pdf",
+          "model": "muse:muse-spark-1.3",
+          "seconds": 5.93,
+          "right": 31,
+          "total": 31,
+          "misses": [],
+          "warnings": [
+            "Delivery appointment is FCFS with no set time.",
+            "Delivery street address is not printed."
+          ]
+        },
+        {
+          "kind": "rc",
+          "file": "rc-sample-3-sample-haul-flatbed-photo.jpg",
+          "model": "muse:muse-spark-1.3",
+          "seconds": 9.017,
+          "right": 30,
+          "total": 31,
+          "misses": [
+            "linehaulRate: expected \"\" got \"1975\""
+          ],
+          "warnings": [
+            "Delivery on 2026-11-10 is FCFS with no appointment time."
+          ]
+        }
+      ]
+    },
+    {
+      "ranAt": "2026-11-03T13:56:56.527Z",
+      "model": "muse-spark-1.3",
+      "reasoningEffort": "low",
+      "results": [
+        {
+          "kind": "cdl",
+          "file": "cdl-sample-jordan-sampleton.png",
+          "seconds": 4.396,
+          "right": 11,
+          "total": 11,
+          "misses": [],
+          "needsReview": [],
+          "warnings": [
+            "No DOT application on this case to compare the card with."
+          ],
+          "usage": {
+            "promptTokens": 1960,
+            "outputTokens": 638,
+            "reasoningTokens": 395
+          }
+        },
+        {
+          "kind": "cdl",
+          "file": "cdl-sample-alex-rivera-photo.jpg",
+          "seconds": 4.646,
+          "right": 11,
+          "total": 11,
+          "misses": [],
+          "needsReview": [],
+          "warnings": [
+            "The licence expired on 2026-10-15.",
+            "No DOT application on this case to compare the card with."
+          ],
+          "usage": {
+            "promptTokens": 2606,
+            "outputTokens": 653,
+            "reasoningTokens": 479
+          }
+        },
+        {
+          "kind": "cdl",
+          "file": "cdl-sample-jordan-sampleton.pdf",
+          "seconds": 5.274,
+          "right": 11,
+          "total": 11,
+          "misses": [],
+          "needsReview": [],
+          "warnings": [
+            "No DOT application on this case to compare the card with."
+          ],
+          "usage": {
+            "promptTokens": 3640,
+            "outputTokens": 628,
+            "reasoningTokens": 385
+          }
+        },
+        {
+          "kind": "rc",
+          "file": "rc-sample-1-demo-freight.pdf",
+          "model": "muse:muse-spark-1.3",
+          "seconds": 6.038,
+          "right": 31,
+          "total": 31,
+          "misses": [],
+          "warnings": []
+        },
+        {
+          "kind": "rc",
+          "file": "rc-sample-2-example-logistics-reefer.pdf",
+          "model": "muse:muse-spark-1.3",
+          "seconds": 5.446,
+          "right": 41,
+          "total": 41,
+          "misses": [],
+          "warnings": []
+        },
+        {
+          "kind": "rc",
+          "file": "rc-sample-3-sample-haul-flatbed.pdf",
+          "model": "muse:muse-spark-1.3",
+          "seconds": 7.15,
+          "right": 31,
+          "total": 31,
+          "misses": [],
+          "warnings": [
+            "Delivery on 11/10/2026 is FCFS with no appointment time.",
+            "Delivery street address is not provided."
+          ]
+        },
+        {
+          "kind": "rc",
+          "file": "rc-sample-3-sample-haul-flatbed-photo.jpg",
+          "model": "muse:muse-spark-1.3",
+          "seconds": 5.939,
+          "right": 30,
+          "total": 31,
+          "misses": [
+            "linehaulRate: expected \"\" got \"1975\""
+          ],
+          "warnings": [
+            "Delivery stop on 11/10/2026 is FCFS with no appointment time.",
+            "Delivery street address is not printed."
+          ]
+        }
+      ]
+    }
+  ]
+}

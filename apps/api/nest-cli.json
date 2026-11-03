@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "entryFile": "main",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "tsConfigPath": "tsconfig.build.json",
+    "assets": [
+      { "include": "database/migrations/**/*", "outDir": "dist", "watchAssets": true },
+      { "include": "database/cutover/**/*", "outDir": "dist", "watchAssets": true },
+      { "include": "modules/ai-assistant/knowledge/**/*", "outDir": "dist", "watchAssets": true }
+    ]
+  }
+}

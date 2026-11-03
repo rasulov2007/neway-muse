@@ -1,0 +1,195 @@
+<!doctype html>
+<!--
+  The public driver application (/apply/<slug>): the owner's design, ported verbatim from
+  design/apply/Driver-Application-Mobile.html. A separate entry from index.html on purpose: a driver
+  opening an Instagram ad on a phone loads this page's own small bundle, not the TMS. It has its
+  own look (exempt from Porcelain, see src/apply/apply.css) and stores nothing in the browser.
+  The company's name, short name, logo and consent wording are filled in from the link.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <title>Drive with NWF · Apply</title>
+    <meta name="description" content="Apply to drive with NORTHWIND FREIGHT INC." />
+    <link rel="icon" type="image/png" href="/brand/nwf-logo.png" />
+    <link rel="apple-touch-icon" href="/brand/nwf-logo.png" />
+  </head>
+  <body>
+    <header hidden>
+      <div class="brand">
+        <div class="brand-logo">
+          <img alt="" width="192" height="192" />
+        </div>
+        <div><strong>NORTHWIND FREIGHT INC</strong><small>DRIVER RECRUITING</small></div>
+      </div>
+      <span class="header-note">Your next mile starts here.</span>
+    </header>
+    <main hidden>
+      <section class="intro">
+        <div class="eyebrow">DRIVE WITH NWF</div>
+        <h1 aria-label="A new road. A fresh start!">
+          <span class="headline-line" aria-hidden="true"
+            ><span class="letter-word"
+              ><span class="letter" style="--letter-delay: 0.35s">A</span></span
+            >
+            <span class="letter-word"
+              ><span class="letter" style="--letter-delay: 0.44s">n</span
+              ><span class="letter" style="--letter-delay: 0.53s">e</span
+              ><span class="letter" style="--letter-delay: 0.62s">w</span></span
+            >
+            <span class="letter-word"
+              ><span class="letter" style="--letter-delay: 0.71s">r</span
+              ><span class="letter" style="--letter-delay: 0.8s">o</span
+              ><span class="letter" style="--letter-delay: 0.89s">a</span
+              ><span class="letter" style="--letter-delay: 0.98s">d</span
+              ><span class="letter" style="--letter-delay: 1.07s">.</span></span
+            ></span
+          ><br /><span class="headline-line" aria-hidden="true"
+            ><span class="letter-word"
+              ><span class="letter" style="--letter-delay: 1.76s">A</span></span
+            >
+            <span class="letter-word"
+              ><span class="letter" style="--letter-delay: 1.85s">f</span
+              ><span class="letter" style="--letter-delay: 1.94s">r</span
+              ><span class="letter" style="--letter-delay: 2.03s">e</span
+              ><span class="letter" style="--letter-delay: 2.12s">s</span
+              ><span class="letter" style="--letter-delay: 2.21s">h</span></span
+            >
+            <span class="letter-word"
+              ><span class="letter" style="--letter-delay: 2.3s">s</span
+              ><span class="letter" style="--letter-delay: 2.39s">t</span
+              ><span class="letter" style="--letter-delay: 2.48s">a</span
+              ><span class="letter" style="--letter-delay: 2.57s">r</span
+              ><span class="letter" style="--letter-delay: 2.66s">t</span
+              ><span class="letter finale" style="--letter-delay: 2.75s"
+                ><span class="dot">.</span><span class="bang">!</span
+                ><span class="ring" aria-hidden="true"
+                  ><svg viewBox="0 0 64 48">
+                    <path
+                      d="M22 14q-7 10 0 20M14 9q-12 15 0 30M42 14q7 10 0 20M50 9q12 15 0 30"
+                    /></svg></span></span></span
+          ></span>
+        </h1>
+        <p>Tell us a little about yourself. Our recruiting team will take it from there.</p>
+        <div class="time">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="9" />
+            <path d="M12 7v5l3 2" /></svg
+          ><span id="timer" role="timer">About 30 seconds to apply</span>
+        </div>
+        <div class="rule"></div>
+      </section>
+      <section class="card">
+        <div class="card-head">
+          <h2>Let's meet you.</h2>
+          <span class="count" id="count">0 / 4</span>
+        </div>
+        <div class="progress" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <form id="application">
+          <div class="field">
+            <label for="name">Full name</label
+            ><input
+              id="name"
+              name="name"
+              placeholder="Your first and last name"
+              autocomplete="name"
+              autocapitalize="words"
+              autocorrect="off"
+              spellcheck="false"
+              enterkeyhint="next"
+              required
+              maxlength="100"
+            />
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label
+            ><input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="(555) 000-0000"
+              autocomplete="tel"
+              inputmode="tel"
+              enterkeyhint="next"
+              required
+              maxlength="25"
+              pattern="[+0-9\(\) .\-]{10,25}"
+            />
+          </div>
+          <div class="field">
+            <label for="experience">CDL driving experience</label
+            ><input
+              id="experience"
+              name="experience"
+              placeholder="e.g. 2 years"
+              autocapitalize="sentences"
+              enterkeyhint="next"
+              required
+              maxlength="80"
+            />
+          </div>
+          <fieldset class="field">
+            <legend class="legend">What are you looking for?</legend>
+            <div class="positions">
+              <label><input type="radio" id="position" name="position" value="Company driver" required /><span>Company driver</span></label>
+              <label><input type="radio" name="position" value="Lease owner" /><span>Lease owner</span></label>
+              <label><input type="radio" name="position" value="Owner driver" /><span>Owner driver</span></label>
+            </div>
+          </fieldset>
+          <label class="consent"
+            ><input type="checkbox" required name="consent" /><span
+              >I agree to be contacted by NORTHWIND FREIGHT INC about my application.
+              <a
+                href="https://northwind-freight.example/privacy-policy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Privacy Policy</a
+              ></span
+            ></label
+          ><div class="hp" aria-hidden="true">
+            <label>Website <input name="website" tabindex="-1" autocomplete="off" /></label>
+          </div
+          ><button type="submit" class="submit">Apply now</button>
+          <p class="foot">No documents needed at this step.</p>
+          <div id="result" role="status" aria-live="polite"></div>
+        </form>
+        <section id="success" class="success" hidden role="status" aria-live="polite">
+          <div class="success-icon">
+            <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <path
+                d="M9 20l7 7L31 12"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h2>Your form is complete.</h2>
+          <p id="duration"></p>
+          <button type="button" class="again" id="again">Back to form</button>
+        </section>
+      </section>
+    </main>
+    <footer hidden><span>© 2026 NORTHWIND FREIGHT INC</span><span>NWF · Driver recruiting</span></footer>
+    <main class="notice" id="notice" hidden>
+      <section class="card">
+        <section class="success" role="status" aria-live="polite">
+          <h2 id="notice-title"></h2>
+          <p id="notice-text"></p>
+          <button type="button" class="again" id="notice-retry" hidden>Try again</button>
+        </section>
+      </section>
+    </main>
+    <script type="module" src="/src/apply/main.ts"></script>
+  </body>
+</html>

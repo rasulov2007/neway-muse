@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>How it works</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="card.css">
+<style>
+  .stage { justify-content: center; padding-bottom: 40px; }
+  h2 { font-size: 60px; font-weight: 800; letter-spacing: -0.03em; }
+  .lead { margin-top: 14px; font-size: 26px; color: var(--nw-text-2); font-weight: 500; }
+  .flow { margin-top: 72px; display: grid; grid-template-columns: 380px 90px 520px 90px 560px; align-items: center; }
+  .col { display: flex; flex-direction: column; gap: 22px; }
+  .box { background: var(--nw-panel); border: 1px solid var(--nw-border); border-radius: 10px; padding: 26px 28px; }
+  .box h3 { font-size: 30px; font-weight: 800; letter-spacing: -0.01em; }
+  .box p { margin-top: 10px; font-size: 21px; line-height: 1.45; color: var(--nw-text-2); font-weight: 500; }
+  .tag { display: inline-block; margin-top: 14px; margin-right: 8px; padding: 5px 12px; border-radius: 999px; font-size: 18px; font-weight: 700; background: var(--nw-neutral-bg); border: 1px solid var(--nw-neutral-border); color: var(--nw-text-2); }
+  .api { border: 2px solid var(--nw-accent); box-shadow: var(--nw-shadow-menu); }
+  .api h3 { color: var(--nw-accent-ink); font-size: 36px; }
+  .api ul { margin-top: 18px; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .api li { font-size: 22px; font-weight: 600; color: var(--nw-text); display: flex; gap: 12px; align-items: center; }
+  .api li::before { content: ''; width: 9px; height: 9px; border-radius: 50%; background: var(--nw-accent); flex: none; }
+  .muse { background: var(--nw-accent-tint); border-color: var(--nw-accent); }
+  .muse h3 { color: var(--nw-accent-ink); }
+  .muse .tag { background: var(--nw-panel); border-color: var(--nw-accent); color: var(--nw-accent-ink); }
+
+
+  .arrow { display: flex; justify-content: center; }
+  .arrow svg { width: 70px; height: 32px; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <h2 class="rise d1">How it works</h2>
+  <p class="lead rise d1">Muse never touches the database. It calls NeWay's own tools, with the user's own permissions.</p>
+  <div class="flow">
+    <div class="col">
+      <div class="box rise d2"><h3>Driver app</h3><p>Ask NeWay by voice, in Uzbek, Russian or English</p></div>
+      <div class="box rise d2"><h3>Web TMS</h3><p>NeWay AI chat, Morning brief, drives the screen, RC and CDL upload</p></div>
+    </div>
+    <div class="arrow rise d3"><svg viewBox="0 0 70 32" fill="none" stroke="#0B7A74" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16h58"/><path d="M50 5l12 11-12 11"/></svg></div>
+    <div class="box api rise d4">
+      <h3>NeWay API</h3>
+      <ul>
+        <li>NestJS + PostgreSQL</li>
+        <li>Permission-checked tools, per company</li>
+        <li>Read-only by default, Dry run on</li>
+        <li>Risky presses ask the person first</li>
+        <li>Every write audited</li>
+      </ul>
+    </div>
+    <div class="arrow rise d5"><svg viewBox="0 0 70 32" fill="none" stroke="#0B7A74" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16h58"/><path d="M50 5l12 11-12 11"/></svg></div>
+    <div class="col">
+      <div class="box muse rise d6">
+        <h3>Meta Muse Spark 1.3</h3>
+        <p>Tool calling for questions and screen driving. Vision for rate confirmations and CDLs. Listens to the driver's voice.</p>
+        <span class="tag">tool calling</span><span class="tag">vision</span><span class="tag">audio in</span>
+      </div>
+      <div class="box muse rise d7">
+        <h3>muse-voice-transcribe-1.0</h3>
+        <p>Speech to text when Spark cannot take the audio</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/*
+ * Leaflet chrome on Porcelain tokens (design/porcelain/SPEC.md §7 "Maps", §8 "Third-party
+ * widgets"). Leaflet ships hex for its popups, zoom bar and attribution; everything here re-points
+ * those onto `--nw-*` so the map follows the theme. Scoped under `.nw-map` so nothing leaks.
+ *
+ * Tiles themselves come from the provider (light_all / dark_all); markers are HTML and carry
+ * their own variables in FleetPositionMap.tsx.
+ */
+
+/* Leaflet's panes and controls use z-index 400–1000 inside the map; `isolate` on the wrapper
+   plus z-index 0 here keeps all of that below the app's menus and dialogs (z-50). */
+.nw-map .leaflet-container {
+  z-index: 0;
+  /* Every pane (tiles, markers, popups) lives inside this box and is clipped by it. */
+  position: relative;
+  overflow: hidden;
+  background: var(--nw-bg);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--nw-text);
+}
+
+.nw-map .leaflet-container a {
+  color: var(--nw-accent-ink);
+}
+
+/* Popups: raised surface, strong border, radius 10, menu shadow. */
+.nw-map .leaflet-popup-content-wrapper {
+  background: var(--nw-raised);
+  color: var(--nw-text);
+  border: 1px solid var(--nw-border-strong);
+  border-radius: 10px;
+  box-shadow: var(--nw-shadow-menu);
+}
+.nw-map .leaflet-popup-content {
+  margin: 12px 24px 12px 14px;
+}
+.nw-map .leaflet-popup-tip {
+  background: var(--nw-raised);
+  border: 1px solid var(--nw-border-strong);
+  box-shadow: none;
+}
+.nw-map .leaflet-container a.leaflet-popup-close-button {
+  color: var(--nw-text-3);
+}
+.nw-map .leaflet-container a.leaflet-popup-close-button:hover {
+  color: var(--nw-text);
+}
+
+/* Zoom bar: same recipe as a menu. */
+.nw-map .leaflet-bar {
+  border: 1px solid var(--nw-border-strong);
+  border-radius: 10px;
+  box-shadow: var(--nw-shadow-menu);
+  overflow: hidden;
+}
+.nw-map .leaflet-bar a {
+  background-color: var(--nw-raised);
+  color: var(--nw-text);
+  border-bottom: 1px solid var(--nw-border);
+}
+.nw-map .leaflet-bar a:hover,
+.nw-map .leaflet-bar a:focus {
+  background-color: var(--nw-hover);
+}
+.nw-map .leaflet-bar a:last-child {
+  border-bottom: none;
+}
+.nw-map .leaflet-bar a.leaflet-disabled {
+  background-color: var(--nw-raised);
+  color: var(--nw-text-3);
+}
+.nw-map .leaflet-touch .leaflet-bar a:first-child,
+.nw-map .leaflet-touch .leaflet-bar a:last-child,
+.nw-map .leaflet-bar a:first-child,
+.nw-map .leaflet-bar a:last-child {
+  border-radius: 0;
+}
+.nw-map .leaflet-touch .leaflet-bar {
+  border: 1px solid var(--nw-border-strong);
+}
+
+.nw-map .leaflet-control-attribution {
+  background: var(--nw-panel);
+  color: var(--nw-text-3);
+}

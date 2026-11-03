@@ -1,0 +1,187 @@
+/*
+ * Analytics look (owner, 2026-10-25) — scoped to the Analytics section only.
+ *
+ * The owner chose a reference dashboard style for /reports/analytics: deep green accent, a very
+ * subtle green-tinted canvas gradient, white cards with 18px corners, hairline borders and soft
+ * shadows, a dark-pill segmented control, and green / amber / teal chart series. These are new
+ * `--nw-an-*` tokens so that no component carries a colour of its own and the rest of the
+ * product keeps Porcelain unchanged. Text, status and tooltip colours still come from the
+ * Porcelain `--nw-*` tokens.
+ *
+ * Contrast (WCAG 2.x), measured: accent on card 5.32:1 light / 7.72:1 dark; accent ink on its
+ * tint 6.55:1 / 8.63:1; on-accent 5.32:1 / 7.75:1; series marks on card ≥ 3.45:1 light and
+ * ≥ 7.8:1 dark; active pill text 16.66:1 / 14.83:1.
+ *
+ * Theme scopes match porcelain-theme.css: data-theme on any element, the system fallback before
+ * appearance.js runs, and light values for print.
+ */
+
+:root,
+[data-theme='light'],
+.light {
+  --nw-an-accent: #1f7a4d;
+  --nw-an-accent-hover: #18633e;
+  --nw-an-on-accent: #ffffff;
+  --nw-an-accent-tint: #e4f2ea;
+  --nw-an-accent-ink: #17603c;
+
+  --nw-an-bg: #f4f7f4;
+  --nw-an-bg-gradient:
+    radial-gradient(1100px 520px at 0% 0%, #e6f2ea 0%, rgba(230, 242, 234, 0) 62%),
+    radial-gradient(900px 480px at 100% 0%, #eef5f0 0%, rgba(238, 245, 240, 0) 60%),
+    linear-gradient(180deg, #f6f8f5 0%, #f3f5f2 100%);
+  --nw-an-card: #ffffff;
+  --nw-an-card-border: #e5eae6;
+  --nw-an-shadow-card: 0 1px 2px rgba(16, 40, 28, 0.04), 0 6px 20px rgba(16, 40, 28, 0.05);
+  --nw-an-shadow-card-hover: 0 2px 4px rgba(16, 40, 28, 0.05), 0 12px 28px rgba(16, 40, 28, 0.08);
+
+  --nw-an-pill-track: #ecf0ec;
+  --nw-an-pill-active: #16201f;
+  --nw-an-on-pill-active: #ffffff;
+
+  --nw-an-series-gross: #1f7a4d;
+  --nw-an-series-cost: #c27a12;
+  --nw-an-series-profit: #138a88;
+  --nw-an-series-loss: #c8321f;
+  --nw-an-grid: #e3e8e4;
+  --nw-an-track: #e6ece8;
+
+  --nw-an-wipe-ease: cubic-bezier(0.65, 0, 0.35, 1);
+  --nw-an-wipe-duration: 620ms;
+}
+
+[data-theme='dark'],
+.dark {
+  --nw-an-accent: #4cc38a;
+  --nw-an-accent-hover: #63cf9b;
+  --nw-an-on-accent: #062012;
+  --nw-an-accent-tint: #173126;
+  --nw-an-accent-ink: #86ddb0;
+
+  --nw-an-bg: #101513;
+  --nw-an-bg-gradient:
+    radial-gradient(1100px 520px at 0% 0%, #13241b 0%, rgba(19, 36, 27, 0) 62%),
+    radial-gradient(900px 480px at 100% 0%, #121c18 0%, rgba(18, 28, 24, 0) 60%),
+    linear-gradient(180deg, #111614 0%, #0f1312 100%);
+  --nw-an-card: #171d1b;
+  --nw-an-card-border: #26302c;
+  --nw-an-shadow-card: 0 1px 2px rgba(0, 0, 0, 0.35), 0 6px 20px rgba(0, 0, 0, 0.22);
+  --nw-an-shadow-card-hover: 0 2px 4px rgba(0, 0, 0, 0.4), 0 12px 28px rgba(0, 0, 0, 0.3);
+
+  --nw-an-pill-track: #222a27;
+  --nw-an-pill-active: #e3e9e7;
+  --nw-an-on-pill-active: #121615;
+
+  --nw-an-series-gross: #4cc38a;
+  --nw-an-series-cost: #e0a84e;
+  --nw-an-series-profit: #3fc1c0;
+  --nw-an-series-loss: #e86b5e;
+  --nw-an-grid: #2a3330;
+  --nw-an-track: #26302c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]):not(.light) {
+    --nw-an-accent: #4cc38a;
+    --nw-an-accent-hover: #63cf9b;
+    --nw-an-on-accent: #062012;
+    --nw-an-accent-tint: #173126;
+    --nw-an-accent-ink: #86ddb0;
+    --nw-an-bg: #101513;
+    --nw-an-bg-gradient:
+      radial-gradient(1100px 520px at 0% 0%, #13241b 0%, rgba(19, 36, 27, 0) 62%),
+      radial-gradient(900px 480px at 100% 0%, #121c18 0%, rgba(18, 28, 24, 0) 60%),
+      linear-gradient(180deg, #111614 0%, #0f1312 100%);
+    --nw-an-card: #171d1b;
+    --nw-an-card-border: #26302c;
+    --nw-an-shadow-card: 0 1px 2px rgba(0, 0, 0, 0.35), 0 6px 20px rgba(0, 0, 0, 0.22);
+    --nw-an-shadow-card-hover: 0 2px 4px rgba(0, 0, 0, 0.4), 0 12px 28px rgba(0, 0, 0, 0.3);
+    --nw-an-pill-track: #222a27;
+    --nw-an-pill-active: #e3e9e7;
+    --nw-an-on-pill-active: #121615;
+    --nw-an-series-gross: #4cc38a;
+    --nw-an-series-cost: #e0a84e;
+    --nw-an-series-profit: #3fc1c0;
+    --nw-an-series-loss: #e86b5e;
+    --nw-an-grid: #2a3330;
+    --nw-an-track: #26302c;
+  }
+}
+
+@theme inline {
+  --color-an-accent: var(--nw-an-accent);
+  --color-an-accent-hover: var(--nw-an-accent-hover);
+  --color-an-on-accent: var(--nw-an-on-accent);
+  --color-an-accent-tint: var(--nw-an-accent-tint);
+  --color-an-accent-ink: var(--nw-an-accent-ink);
+  --color-an-bg: var(--nw-an-bg);
+  --color-an-card: var(--nw-an-card);
+  --color-an-card-border: var(--nw-an-card-border);
+  --color-an-pill-track: var(--nw-an-pill-track);
+  --color-an-pill-active: var(--nw-an-pill-active);
+  --color-an-on-pill-active: var(--nw-an-on-pill-active);
+  --color-an-gross: var(--nw-an-series-gross);
+  --color-an-cost: var(--nw-an-series-cost);
+  --color-an-profit: var(--nw-an-series-profit);
+  --color-an-loss: var(--nw-an-series-loss);
+  /* Accessorials split (2026-10-25): the existing series, named for who gets the money, so light
+     and dark follow the series values above and no new colour is introduced. */
+  --color-an-split-driver: var(--nw-an-series-cost);
+  --color-an-split-dispatcher: var(--nw-an-series-profit);
+  --color-an-split-company: var(--nw-an-series-gross);
+  --color-an-grid: var(--nw-an-grid);
+  --color-an-track: var(--nw-an-track);
+  --radius-an-card: 18px;
+  --radius-an-pill: 999px;
+  --shadow-an-card: var(--nw-an-shadow-card);
+  --shadow-an-card-hover: var(--nw-an-shadow-card-hover);
+}
+
+/* The section's canvas: the shell's content area is painted while an Analytics page is in it. */
+main:has(.nw-analytics) {
+  background: var(--nw-an-bg-gradient), var(--nw-an-bg);
+}
+
+/* Cards lift a little on hover; motion is off when the worker asks for less of it. */
+.nw-an-lift {
+  transition:
+    transform 160ms var(--ease-standard),
+    box-shadow 160ms var(--ease-standard);
+}
+.nw-an-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--nw-an-shadow-card-hover);
+}
+@media (prefers-reduced-motion: reduce) {
+  .nw-an-lift,
+  .nw-an-lift:hover {
+    transition: none;
+    transform: none;
+  }
+}
+
+/*
+ * Theme wipe (View Transitions). The new theme grows as a circle from the toggle; the old one
+ * stays still underneath. Without support, or with reduced motion, the theme simply changes.
+ */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-new(root) {
+  animation: nw-an-wipe var(--nw-an-wipe-duration) var(--nw-an-wipe-ease) both;
+}
+@keyframes nw-an-wipe {
+  from {
+    clip-path: circle(0 at var(--nw-an-wipe-x, 50%) var(--nw-an-wipe-y, 0%));
+  }
+  to {
+    clip-path: circle(var(--nw-an-wipe-r, 150vmax) at var(--nw-an-wipe-x, 50%) var(--nw-an-wipe-y, 0%));
+  }
+}
+@media print {
+  main:has(.nw-analytics) {
+    background: none;
+  }
+}

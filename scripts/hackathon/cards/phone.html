@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Driver app</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="card.css">
+<style>
+  .stage { flex-direction: row; gap: 120px; }
+  .side { width: 560px; display: flex; flex-direction: column; gap: 26px; }
+  .kicker { font-size: 22px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--nw-accent-ink); }
+  h2 { font-size: 64px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
+  .q { background: var(--nw-panel); border: 1px solid var(--nw-border); border-radius: 10px; padding: 22px 26px; }
+  .q .lang { font-size: 18px; font-weight: 700; color: var(--nw-text-3); text-transform: uppercase; letter-spacing: 0.1em; }
+  .q .uz { margin-top: 8px; font-size: 32px; font-weight: 700; }
+  .q .en { margin-top: 6px; font-size: 22px; font-weight: 500; color: var(--nw-text-2); }
+  .models { display: flex; flex-direction: column; gap: 10px; font-size: 21px; font-weight: 600; color: var(--nw-text-2); }
+  .models b { color: var(--nw-accent-ink); }
+  .phone { width: 430px; height: 884px; border-radius: 56px; background: var(--nw-text); padding: 20px; box-shadow: var(--nw-shadow-menu); flex: none; }
+  .screen { width: 390px; height: 844px; border-radius: 38px; overflow: hidden; background: var(--nw-panel); }
+  iframe { width: 390px; height: 844px; border: 0; display: block; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="side">
+    <p class="kicker">Driver app · Ask NeWay</p>
+    <h2>Drivers ask in their own language</h2>
+    <div class="q">
+      <div class="lang">Spoken in Uzbek</div>
+      <div class="uz">Keyingi pikap qachon? Necha mil qoldi?</div>
+      <div class="en">When is my next pickup? How many miles are left?</div>
+    </div>
+    <div class="models">
+      <span>Heard by <b>Muse Spark 1.3</b>, straight from the audio</span>
+      <span>Answered in Uzbek from the driver's own load</span>
+    </div>
+  </div>
+  <div class="phone"><div class="screen"><iframe id="app" allow="microphone; autoplay"></iframe></div></div>
+</div>
+<script>
+  document.getElementById('app').src = new URLSearchParams(location.search).get('src') || 'http://localhost:8094/';
+</script>
+</body>
+</html>

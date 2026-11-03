@@ -1,0 +1,5 @@
+<!-- NeWay status symbol: IN MOTION (circle + arrow). Use inline so the theme colors apply. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+  <circle cx="8" cy="8" r="7.5" fill="var(--nw-moving-icon, #2C64B5)"/>
+  <path d="M4.3 8h6.6M8.2 5.2L11 8l-2.8 2.8" fill="none" stroke="var(--nw-status-glyph, #FFFFFF)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

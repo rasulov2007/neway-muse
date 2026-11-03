@@ -1,0 +1,12 @@
+{
+  "scene": "oneline",
+  "title": "oneline",
+  "base": "http://127.0.0.1:5180",
+  "mode": "hq",
+  "scale": 1,
+  "recordedAt": "2026-11-03T17:20:29.448Z",
+  "durationSeconds": 8.91,
+  "startSeconds": 0,
+  "waits": [],
+  "failed": null
+}

@@ -1,0 +1,41 @@
+{
+  "scene": "ai-drives-screen",
+  "title": "NeWay AI drives the screen",
+  "base": "http://127.0.0.1:5180",
+  "mode": "hq",
+  "scale": 2,
+  "recordedAt": "2026-11-03T17:12:41.509Z",
+  "durationSeconds": 78.76,
+  "startSeconds": 0,
+  "waits": [
+    {
+      "from": 8,
+      "to": 23.06
+    },
+    {
+      "from": 37.47,
+      "to": 43.37
+    },
+    {
+      "from": 43.8,
+      "to": 48.29
+    },
+    {
+      "from": 49.6,
+      "to": 51.48
+    },
+    {
+      "from": 52.78,
+      "to": 58.46
+    },
+    {
+      "from": 62.52,
+      "to": 66.43
+    },
+    {
+      "from": 70.67,
+      "to": 73.15
+    }
+  ],
+  "failed": null
+}

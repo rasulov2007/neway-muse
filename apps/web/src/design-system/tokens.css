@@ -1,0 +1,425 @@
+/*
+ * NEWAY TMS design tokens — Porcelain (light + dark).
+ *
+ * Colour is owned by `porcelain-theme.css` (the handoff in design/porcelain/): it defines every
+ * `--nw-*` variable for light, dark, the system fallback and print. This file does two things:
+ *
+ *   1. Maps the product's semantic utility names (bg-surface, text-ink, border-line, bg-primary,
+ *      text-danger-text …) onto those `--nw-*` tokens with `@theme inline`, so every existing
+ *      component follows the theme without being rewritten, and the same utilities render both
+ *      modes because the variable underneath changes with `data-theme`.
+ *   2. Exposes the `nw-*` colour names from SPEC appendix B (bg-nw-panel, text-nw-accent-ink …)
+ *      for new code that wants to speak the design's own vocabulary.
+ *
+ * No hex value belongs here or in a component. If something needs a colour that has no `--nw-*`
+ * token, that is a question for the design owner, not a new value.
+ *
+ * Status tones: the product's six tones map onto Porcelain's five families —
+ *   success → done · info → moving · warning → warning · danger → urgent · neutral → neutral
+ *   violet  → moving (Porcelain has no violet family; recorded in the report as a decision).
+ */
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *, .dark, .dark *));
+
+@theme {
+  /* ---------- Typography (SPEC §5: Manrope, 13px base, identical in both modes) ---------- */
+  --font-sans: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+
+  --text-2xs: 11.5px; /* cell second line, field hints */
+  --text-2xs--line-height: 15.5px;
+  --text-xs: 12px; /* column headers, status pills, chips, field labels */
+  --text-xs--line-height: 16px;
+  --text-sm: 13px; /* body, table cells, buttons, tabs */
+  --text-sm--line-height: 18px;
+  --text-base: 13.5px; /* field values, page tabs */
+  --text-base--line-height: 19px;
+  --text-md: 14px; /* panel and dialog titles */
+  --text-md--line-height: 18px;
+  --text-lg: 15px; /* section titles */
+  --text-lg--line-height: 20px;
+  --text-xl: 17px; /* logo name */
+  --text-xl--line-height: 22px;
+  --text-2xl: 22px; /* page title */
+  --text-2xl--line-height: 26px;
+  --text-3xl: 28px; /* KPI numbers */
+  --text-3xl--line-height: 32px;
+
+  /* Caps label: sidebar group names, list section headers, table eyebrows. */
+  --text-eyebrow: 11px;
+  --text-eyebrow--line-height: 14px;
+  --tracking-eyebrow: 0.07em;
+
+  /* ---------- Radius (SPEC §6) ---------- */
+  --radius-xs: 4px; /* checkboxes */
+  --radius-sm: 6px; /* status pills, counters, segmented items, tooltips */
+  --radius-md: 8px; /* buttons, inputs, nav items, search */
+  --radius-lg: 10px; /* panels, menus, popovers, dialogs */
+  --radius-xl: 12px; /* dashboard number cards, filter chips */
+  --radius-full: 9999px;
+
+  /* ---------- Motion ---------- */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --duration-fast: 100ms;
+  --duration-base: 150ms;
+  --duration-slow: 240ms;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+@theme inline {
+  /* ---------- Semantic names → Porcelain tokens ---------- */
+  --color-app: var(--nw-bg);
+  --color-dashboard: var(--nw-bg);
+  --color-surface: var(--nw-panel);
+  --color-surface-muted: var(--nw-subtle);
+  --color-surface-sunken: var(--nw-subtle);
+  --color-surface-hover: var(--nw-hover);
+  --color-surface-active: var(--nw-selected);
+  --color-surface-raised: var(--nw-raised);
+  --color-sidebar: var(--nw-sidebar);
+  --color-sidebar-hover: var(--nw-hover);
+  --color-line: var(--nw-border-strong); /* inputs, selects, secondary buttons */
+  --color-line-strong: var(--nw-border-strong);
+  --color-line-soft: var(--nw-border); /* panel borders, row rules */
+  --color-overlay: var(--nw-backdrop);
+
+  --color-ink: var(--nw-text);
+  --color-secondary: var(--nw-text-2);
+  --color-muted: var(--nw-text-3);
+  --color-faint: var(--nw-text-3);
+  --color-inverse: var(--nw-on-accent);
+
+  /* The one accent: turquoise. Links and active text use the ink step. */
+  --color-primary: var(--nw-accent);
+  --color-primary-hover: var(--nw-accent-hover);
+  --color-primary-active: var(--nw-accent-hover);
+  --color-primary-soft: var(--nw-accent-tint);
+  --color-primary-soft-hover: var(--nw-accent-tint);
+  --color-primary-border: var(--nw-accent);
+  --color-primary-text: var(--nw-accent-ink);
+  --color-focus: var(--nw-accent);
+
+  --color-success: var(--nw-done-icon);
+  --color-success-soft: var(--nw-done-bg);
+  --color-success-border: var(--nw-done-border);
+  --color-success-text: var(--nw-done-text);
+
+  --color-warning: var(--nw-warning-icon);
+  --color-warning-soft: var(--nw-warning-bg);
+  --color-warning-border: var(--nw-warning-border);
+  --color-warning-text: var(--nw-warning-text);
+
+  --color-danger: var(--nw-danger);
+  --color-danger-hover: var(--nw-danger-hover);
+  --color-danger-soft: var(--nw-urgent-bg);
+  --color-danger-border: var(--nw-urgent-border);
+  --color-danger-text: var(--nw-urgent-text);
+
+  --color-info: var(--nw-moving-icon);
+  --color-info-soft: var(--nw-moving-bg);
+  --color-info-border: var(--nw-moving-border);
+  --color-info-text: var(--nw-moving-text);
+
+  --color-neutral: var(--nw-neutral-icon);
+  --color-neutral-soft: var(--nw-neutral-bg);
+  --color-neutral-border: var(--nw-neutral-border);
+  --color-neutral-text: var(--nw-neutral-text);
+
+  --color-violet: var(--nw-moving-icon);
+  --color-violet-soft: var(--nw-moving-bg);
+  --color-violet-border: var(--nw-moving-border);
+  --color-violet-text: var(--nw-moving-text);
+
+  /* ---------- Porcelain names (SPEC appendix B) ---------- */
+  --color-nw-bg: var(--nw-bg);
+  --color-nw-sidebar: var(--nw-sidebar);
+  --color-nw-panel: var(--nw-panel);
+  --color-nw-subtle: var(--nw-subtle);
+  --color-nw-raised: var(--nw-raised);
+  --color-nw-field: var(--nw-field);
+  --color-nw-segment: var(--nw-segment);
+  --color-nw-border: var(--nw-border);
+  --color-nw-border-strong: var(--nw-border-strong);
+  --color-nw-text: var(--nw-text);
+  --color-nw-text-2: var(--nw-text-2);
+  --color-nw-text-3: var(--nw-text-3);
+  --color-nw-accent: var(--nw-accent);
+  --color-nw-accent-hover: var(--nw-accent-hover);
+  --color-nw-on-accent: var(--nw-on-accent);
+  --color-nw-accent-tint: var(--nw-accent-tint);
+  --color-nw-accent-ink: var(--nw-accent-ink);
+  --color-nw-hover: var(--nw-hover);
+  --color-nw-selected: var(--nw-selected);
+  --color-nw-highlight: var(--nw-highlight);
+  --color-nw-urgent-text: var(--nw-urgent-text);
+  --color-nw-urgent-bg: var(--nw-urgent-bg);
+  --color-nw-urgent-border: var(--nw-urgent-border);
+  --color-nw-urgent-icon: var(--nw-urgent-icon);
+  --color-nw-warning-text: var(--nw-warning-text);
+  --color-nw-warning-bg: var(--nw-warning-bg);
+  --color-nw-warning-border: var(--nw-warning-border);
+  --color-nw-warning-icon: var(--nw-warning-icon);
+  --color-nw-done-text: var(--nw-done-text);
+  --color-nw-done-bg: var(--nw-done-bg);
+  --color-nw-done-border: var(--nw-done-border);
+  --color-nw-done-icon: var(--nw-done-icon);
+  --color-nw-moving-text: var(--nw-moving-text);
+  --color-nw-moving-bg: var(--nw-moving-bg);
+  --color-nw-moving-border: var(--nw-moving-border);
+  --color-nw-moving-icon: var(--nw-moving-icon);
+  --color-nw-neutral-text: var(--nw-neutral-text);
+  --color-nw-neutral-bg: var(--nw-neutral-bg);
+  --color-nw-neutral-border: var(--nw-neutral-border);
+  --color-nw-neutral-icon: var(--nw-neutral-icon);
+  --color-nw-status-glyph: var(--nw-status-glyph);
+  --color-nw-chart-1: var(--nw-chart-1);
+  --color-nw-chart-2: var(--nw-chart-2);
+  --color-nw-chart-grid: var(--nw-chart-grid);
+  --color-nw-chart-band: var(--nw-chart-band);
+  --color-nw-track: var(--nw-track);
+  --color-nw-danger: var(--nw-danger);
+  --color-nw-danger-hover: var(--nw-danger-hover);
+  --color-nw-on-danger: var(--nw-on-danger);
+  --color-nw-tooltip-bg: var(--nw-tooltip-bg);
+  --color-nw-tooltip-text: var(--nw-tooltip-text);
+  --color-nw-backdrop: var(--nw-backdrop);
+  --color-nw-paper: var(--nw-paper);
+  --color-nw-paper-text: var(--nw-paper-text);
+
+  /* ---------- Shadows (SPEC §6: menus/dialogs, the active segment, number cards — nothing else) ---------- */
+  --shadow-xs: none;
+  --shadow-sm: var(--nw-shadow-card);
+  --shadow-md: var(--nw-shadow-menu);
+  --shadow-lg: var(--nw-shadow-menu);
+  --shadow-menu: var(--nw-shadow-menu);
+  --shadow-card: var(--nw-shadow-card);
+  --shadow-segment: var(--nw-shadow-segment);
+  --shadow-focus: 0 0 0 3px var(--nw-accent-tint);
+}
+
+:root {
+  /* ---------- Layout (SPEC §6) ---------- */
+  --sidebar-width: 232px;
+  --sidebar-width-collapsed: 64px;
+  --topbar-height: 56px;
+  --content-max-width: 1600px;
+  --page-padding: 20px 24px 24px;
+  --section-gap: 16px;
+  --card-padding: 16px;
+  --table-row-height: 40px;
+  --table-row-height-dense: 36px;
+  --table-header-height: 34px;
+  --control-height-sm: 28px;
+  --control-height-md: 32px;
+  --control-height-lg: 36px;
+
+  /*
+   * ---------- Charts ----------
+   * Series 1 and 2 are the design's validated pair (gross/revenue, cost). Series 3–6 predate the
+   * Porcelain handoff: the spec allows two series and asks before more, so these remain as they
+   * were and are listed in the report as a decision. Nothing new is added here.
+   */
+  --chart-series-1: var(--nw-chart-1);
+  --chart-series-2: var(--nw-chart-2);
+  --chart-series-3: #e9a13b;
+  --chart-series-4: #e5484d;
+  --chart-series-5: #8e4ec6;
+  --chart-series-6: #7c7b74;
+  --chart-seq-1: var(--nw-accent-tint);
+  --chart-seq-2: var(--nw-accent-tint);
+  --chart-seq-3: var(--nw-chart-1);
+  --chart-seq-4: var(--nw-chart-1);
+  --chart-seq-5: var(--nw-accent);
+  --chart-seq-6: var(--nw-accent);
+  --chart-seq-7: var(--nw-accent-ink);
+  --chart-good: var(--nw-done-icon);
+  --chart-warning: var(--nw-warning-icon);
+  --chart-serious: var(--nw-warning-icon);
+  --chart-critical: var(--nw-urgent-icon);
+  --chart-grid: var(--nw-chart-grid);
+  --chart-axis: var(--nw-text-3);
+  --chart-surface: var(--nw-panel);
+  --chart-band: var(--nw-chart-band);
+}
+
+html {
+  /* rem stays 14px so spacing utilities keep their size; type is set in px by the scale above. */
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  background: var(--nw-bg);
+  color: var(--nw-text);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/*
+ * Responsive foundation (owner, 2026-10-15): the page gutter follows the space there is - tight on
+ * a phone, the SPEC gutter on a laptop, a little more on a large monitor. Breakpoints match
+ * Tailwind's (sm 640, md 768, lg 1024, 2xl 1536) plus 1920 for large displays.
+ */
+@media (max-width: 639px) {
+  :root {
+    --page-padding: 14px 12px 20px;
+  }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  :root {
+    --page-padding: 18px 18px 22px;
+  }
+}
+@media (min-width: 1920px) {
+  :root {
+    --page-padding: 24px 32px 32px;
+  }
+}
+
+/* A phone zooms into any field under 16px when it takes focus; on touch phones fields are 16px. */
+@media (pointer: coarse) and (max-width: 767px) {
+  input:not([type='checkbox']):not([type='radio']):not([type='range']),
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+/*
+ * Display mode (owner, 2026-10-15): a dashboard on a wall screen. No navigation chrome, the page
+ * uses the whole screen, and figures are read from across a room. Turned on by the user only.
+ */
+:root[data-display='on'] .app-sidebar,
+:root[data-display='on'] [data-topbar] {
+  display: none;
+}
+:root[data-display='on'] [data-shell-content] {
+  --shell-sidebar-width: 0px;
+}
+/*
+ * Read from across a room: the type scale and the spacing grow with the screen - the SPEC sizes at
+ * 1920 wide, twice them on a 4K TV. Display mode only; the everyday app keeps its fixed scale.
+ */
+:root[data-display='on'] {
+  font-size: clamp(14px, 0.73vw, 28px);
+  --text-2xs: clamp(11.5px, 0.6vw, 23px);
+  --text-xs: clamp(12px, 0.625vw, 24px);
+  --text-sm: clamp(13px, 0.68vw, 26px);
+  --text-base: clamp(13.5px, 0.7vw, 27px);
+  --text-md: clamp(14px, 0.73vw, 28px);
+  --text-lg: clamp(15px, 0.78vw, 30px);
+  --text-xl: clamp(17px, 0.885vw, 34px);
+  --text-2xl: clamp(22px, 1.15vw, 44px);
+  --text-3xl: clamp(28px, 1.6vw, 60px);
+  --text-eyebrow: clamp(11px, 0.57vw, 22px);
+  --text-2xs--line-height: 1.35;
+  --text-xs--line-height: 1.35;
+  --text-sm--line-height: 1.38;
+  --text-base--line-height: 1.4;
+  --text-md--line-height: 1.3;
+  --text-lg--line-height: 1.33;
+  --text-xl--line-height: 1.3;
+  --text-2xl--line-height: 1.2;
+  --text-3xl--line-height: 1.15;
+  --table-row-height: clamp(40px, 2.1vw, 80px);
+  --topbar-height: clamp(56px, 2.9vw, 112px);
+}
+:root[data-display='on'] body {
+  font-size: var(--text-sm);
+}
+
+/* Numbers line up wherever they are compared. */
+.tabular,
+table th,
+table td,
+.kpi-value {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Caps label: sidebar group names, list section headers, eyebrows (SPEC `.nw-type-caps-label`). */
+.eyebrow {
+  font-size: var(--text-eyebrow);
+  line-height: var(--text-eyebrow--line-height);
+  font-weight: 700;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--nw-text-3);
+}
+
+/* Focus: a 2px accent ring with a 2px offset on buttons and links (SPEC §7). */
+:focus-visible {
+  outline: 2px solid var(--nw-accent);
+  outline-offset: 2px;
+}
+
+/* Text fields draw their own focus (accent border + tint halo), so no second ring. */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+.input-bare:focus-visible {
+  outline: none;
+}
+
+/* Thin, quiet scrollbars inside panels */
+.scroll-quiet {
+  scrollbar-width: thin;
+  scrollbar-color: var(--nw-border-strong) transparent;
+}
+.scroll-quiet::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scroll-quiet::-webkit-scrollbar-thumb {
+  background: var(--nw-border-strong);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+
+/*
+ * System appearance has its own look (owner, 2026-09-30): the rail in Deep teal #075c57 with white
+ * words and a white selected pill, while the page stays light. Light keeps the white rail and Dark
+ * the dark one, so the three choices look different. The data-appearance attribute is set before the first
+ * paint by appearance.js. The rail re-reads the tokens its items already use - no component colour.
+ */
+:root[data-appearance='system'][data-theme='light'] .app-sidebar {
+  --nw-sidebar: #075c57;
+  --nw-text: #ffffff;
+  --nw-text-2: rgba(255, 255, 255, 0.9);
+  --nw-text-3: rgba(255, 255, 255, 0.66);
+  --nw-border: rgba(255, 255, 255, 0.14);
+  --nw-hover: rgba(255, 255, 255, 0.1);
+  --nw-accent-tint: #ffffff;
+  --nw-accent-ink: #075c57;
+  --nw-accent: #0b7a74;
+}
+
+/* The sidebar rail scrolls without showing a bar. */
+.app-sidebar * {
+  scrollbar-width: none;
+}
+.app-sidebar *::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,447 @@
+/* NeWay · Porcelain theme · light + dark
+   GENERATED from porcelain-tokens.json. The light and dark values appear more than once below
+   (theme blocks, the system fallback and the print block). Keep them identical if you edit by hand.
+
+   How switching works:
+   - appearance.js puts data-theme="light|dark" on <html> and toggles the .dark class to match.
+   - The same selectors work on any element, so a wrapper with data-theme="light" keeps a
+     document preview light inside a dark page.
+   - Never set .dark and data-theme="light" on the same element.
+   Every color in the app should come from these variables. Don't add colors outside this file. */
+
+:root,
+[data-theme="light"],
+.light {
+  color-scheme: light;
+  /* Surfaces */
+  --nw-bg: #F3F5F4;
+  --nw-sidebar: #FAFBFA;
+  --nw-panel: #FFFFFF;
+  --nw-subtle: #F6F8F7;
+  --nw-raised: #FFFFFF;
+  --nw-field: #FFFFFF;
+  --nw-segment: #E9EDEB;
+
+  /* Lines */
+  --nw-border: #E2E7E5;
+  --nw-border-strong: #CCD5D2;
+
+  /* Text */
+  --nw-text: #16201F;
+  --nw-text-2: #4B5856;
+  --nw-text-3: #66736F;
+
+  /* Accent */
+  --nw-accent: #0B7A74;
+  --nw-accent-hover: #096660;
+  --nw-on-accent: #FFFFFF;
+  --nw-accent-tint: #E0F1EF;
+  --nw-accent-ink: #075C57;
+
+  /* States */
+  --nw-hover: #F3F7F6;
+  --nw-selected: #EDF7F5;
+  --nw-highlight: #EDF7F5;
+
+  /* Status: urgent */
+  --nw-urgent-text: #B42318;
+  --nw-urgent-bg: #FDEDEB;
+  --nw-urgent-border: #F5C8C2;
+  --nw-urgent-icon: #C8321F;
+
+  /* Status: warning */
+  --nw-warning-text: #8A4B00;
+  --nw-warning-bg: #FFF4DE;
+  --nw-warning-border: #F2D7A0;
+  --nw-warning-icon: #B86E00;
+
+  /* Status: done */
+  --nw-done-text: #1D6A36;
+  --nw-done-bg: #E7F5EC;
+  --nw-done-border: #BCDFC8;
+  --nw-done-icon: #238044;
+
+  /* Status: in motion */
+  --nw-moving-text: #1F4E8F;
+  --nw-moving-bg: #E9F0FB;
+  --nw-moving-border: #C7D7F0;
+  --nw-moving-icon: #2C64B5;
+
+  /* Status: neutral */
+  --nw-neutral-text: #4B5856;
+  --nw-neutral-bg: #EEF2F1;
+  --nw-neutral-border: #D9E0DE;
+  --nw-neutral-icon: #6F7C79;
+
+  /* Status: all */
+  --nw-status-glyph: #FFFFFF;
+
+  /* Charts */
+  --nw-chart-1: #12938A;
+  --nw-chart-2: #8A63CF;
+  --nw-chart-grid: #EAEFED;
+  --nw-chart-band: #F1F6F5;
+  --nw-track: #DCE5E2;
+
+  /* Added for the build */
+  --nw-danger: #B42318;
+  --nw-danger-hover: #951D14;
+  --nw-on-danger: #FFFFFF;
+  --nw-tooltip-bg: #16201F;
+  --nw-tooltip-text: #FFFFFF;
+  --nw-backdrop: rgba(22, 32, 31, 0.40);
+  --nw-paper: #FFFFFF;
+  --nw-paper-text: #16201F;
+  --nw-input-border-strict: #89918E;
+
+  /* Elevation */
+  --nw-shadow-menu: 0 1px 2px rgba(22, 32, 31, 0.05), 0 6px 20px rgba(22, 32, 31, 0.07);
+  --nw-shadow-card: 0 1px 2px rgba(0, 0, 0, 0.03);
+  --nw-shadow-segment: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"],
+.dark {
+  color-scheme: dark;
+  /* Surfaces */
+  --nw-bg: #121615;
+  --nw-sidebar: #0F1312;
+  --nw-panel: #181D1C;
+  --nw-subtle: #1C2221;
+  --nw-raised: #1F2625;
+  --nw-field: #141918;
+  --nw-segment: #28302E;
+
+  /* Lines */
+  --nw-border: #2A3230;
+  --nw-border-strong: #3A4441;
+
+  /* Text */
+  --nw-text: #E3E9E7;
+  --nw-text-2: #AAB6B3;
+  --nw-text-3: #8D9996;
+
+  /* Accent */
+  --nw-accent: #45BDB3;
+  --nw-accent-hover: #5CCAC0;
+  --nw-on-accent: #062321;
+  --nw-accent-tint: #17302D;
+  --nw-accent-ink: #7FD6CD;
+
+  /* States */
+  --nw-hover: #1D2423;
+  --nw-selected: #1A2E2B;
+  --nw-highlight: #253230;
+
+  /* Status: urgent */
+  --nw-urgent-text: #F2A097;
+  --nw-urgent-bg: #2C1C1A;
+  --nw-urgent-border: #4E2B27;
+  --nw-urgent-icon: #E86B5E;
+
+  /* Status: warning */
+  --nw-warning-text: #E8C57C;
+  --nw-warning-bg: #29231A;
+  --nw-warning-border: #4D4020;
+  --nw-warning-icon: #D8A443;
+
+  /* Status: done */
+  --nw-done-text: #92D2A8;
+  --nw-done-bg: #16261F;
+  --nw-done-border: #28453A;
+  --nw-done-icon: #4DB77A;
+
+  /* Status: in motion */
+  --nw-moving-text: #A2C0F0;
+  --nw-moving-bg: #172233;
+  --nw-moving-border: #2A3D5E;
+  --nw-moving-icon: #6B9BE6;
+
+  /* Status: neutral */
+  --nw-neutral-text: #AAB6B3;
+  --nw-neutral-bg: #1F2524;
+  --nw-neutral-border: #323B39;
+  --nw-neutral-icon: #8D9996;
+
+  /* Status: all */
+  --nw-status-glyph: #0F1312;
+
+  /* Charts */
+  --nw-chart-1: #2FA59C;
+  --nw-chart-2: #8E78DA;
+  --nw-chart-grid: #252C2B;
+  --nw-chart-band: #1C2322;
+  --nw-track: #2A3230;
+
+  /* Added for the build */
+  --nw-danger: #E86B5E;
+  --nw-danger-hover: #F2A097;
+  --nw-on-danger: #121615;
+  --nw-tooltip-bg: #E3E9E7;
+  --nw-tooltip-text: #181D1C;
+  --nw-backdrop: rgba(0, 0, 0, 0.60);
+  --nw-paper: #FFFFFF;
+  --nw-paper-text: #16201F;
+  --nw-input-border-strict: #67706D;
+
+  /* Elevation */
+  --nw-shadow-menu: 0 1px 2px rgba(0, 0, 0, 0.40), 0 8px 24px rgba(0, 0, 0, 0.28);
+  --nw-shadow-card: none;
+  --nw-shadow-segment: 0 1px 2px rgba(0, 0, 0, 0.30);
+}
+
+/* Before appearance.js runs (or without JavaScript), follow the computer's setting. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]):not(.light) {
+    color-scheme: dark;
+    /* Surfaces */
+    --nw-bg: #121615;
+    --nw-sidebar: #0F1312;
+    --nw-panel: #181D1C;
+    --nw-subtle: #1C2221;
+    --nw-raised: #1F2625;
+    --nw-field: #141918;
+    --nw-segment: #28302E;
+
+    /* Lines */
+    --nw-border: #2A3230;
+    --nw-border-strong: #3A4441;
+
+    /* Text */
+    --nw-text: #E3E9E7;
+    --nw-text-2: #AAB6B3;
+    --nw-text-3: #8D9996;
+
+    /* Accent */
+    --nw-accent: #45BDB3;
+    --nw-accent-hover: #5CCAC0;
+    --nw-on-accent: #062321;
+    --nw-accent-tint: #17302D;
+    --nw-accent-ink: #7FD6CD;
+
+    /* States */
+    --nw-hover: #1D2423;
+    --nw-selected: #1A2E2B;
+    --nw-highlight: #253230;
+
+    /* Status: urgent */
+    --nw-urgent-text: #F2A097;
+    --nw-urgent-bg: #2C1C1A;
+    --nw-urgent-border: #4E2B27;
+    --nw-urgent-icon: #E86B5E;
+
+    /* Status: warning */
+    --nw-warning-text: #E8C57C;
+    --nw-warning-bg: #29231A;
+    --nw-warning-border: #4D4020;
+    --nw-warning-icon: #D8A443;
+
+    /* Status: done */
+    --nw-done-text: #92D2A8;
+    --nw-done-bg: #16261F;
+    --nw-done-border: #28453A;
+    --nw-done-icon: #4DB77A;
+
+    /* Status: in motion */
+    --nw-moving-text: #A2C0F0;
+    --nw-moving-bg: #172233;
+    --nw-moving-border: #2A3D5E;
+    --nw-moving-icon: #6B9BE6;
+
+    /* Status: neutral */
+    --nw-neutral-text: #AAB6B3;
+    --nw-neutral-bg: #1F2524;
+    --nw-neutral-border: #323B39;
+    --nw-neutral-icon: #8D9996;
+
+    /* Status: all */
+    --nw-status-glyph: #0F1312;
+
+    /* Charts */
+    --nw-chart-1: #2FA59C;
+    --nw-chart-2: #8E78DA;
+    --nw-chart-grid: #252C2B;
+    --nw-chart-band: #1C2322;
+    --nw-track: #2A3230;
+
+    /* Added for the build */
+    --nw-danger: #E86B5E;
+    --nw-danger-hover: #F2A097;
+    --nw-on-danger: #121615;
+    --nw-tooltip-bg: #E3E9E7;
+    --nw-tooltip-text: #181D1C;
+    --nw-backdrop: rgba(0, 0, 0, 0.60);
+    --nw-paper: #FFFFFF;
+    --nw-paper-text: #16201F;
+    --nw-input-border-strict: #67706D;
+
+    /* Elevation */
+    --nw-shadow-menu: 0 1px 2px rgba(0, 0, 0, 0.40), 0 8px 24px rgba(0, 0, 0, 0.28);
+    --nw-shadow-card: none;
+    --nw-shadow-segment: 0 1px 2px rgba(0, 0, 0, 0.30);
+  }
+}
+
+/* Printouts are always light, whatever the screen shows. */
+@media print {
+  :root, [data-theme], .dark, .light {
+    color-scheme: light;
+    /* Surfaces */
+    --nw-bg: #F3F5F4;
+    --nw-sidebar: #FAFBFA;
+    --nw-panel: #FFFFFF;
+    --nw-subtle: #F6F8F7;
+    --nw-raised: #FFFFFF;
+    --nw-field: #FFFFFF;
+    --nw-segment: #E9EDEB;
+
+    /* Lines */
+    --nw-border: #E2E7E5;
+    --nw-border-strong: #CCD5D2;
+
+    /* Text */
+    --nw-text: #16201F;
+    --nw-text-2: #4B5856;
+    --nw-text-3: #66736F;
+
+    /* Accent */
+    --nw-accent: #0B7A74;
+    --nw-accent-hover: #096660;
+    --nw-on-accent: #FFFFFF;
+    --nw-accent-tint: #E0F1EF;
+    --nw-accent-ink: #075C57;
+
+    /* States */
+    --nw-hover: #F3F7F6;
+    --nw-selected: #EDF7F5;
+    --nw-highlight: #EDF7F5;
+
+    /* Status: urgent */
+    --nw-urgent-text: #B42318;
+    --nw-urgent-bg: #FDEDEB;
+    --nw-urgent-border: #F5C8C2;
+    --nw-urgent-icon: #C8321F;
+
+    /* Status: warning */
+    --nw-warning-text: #8A4B00;
+    --nw-warning-bg: #FFF4DE;
+    --nw-warning-border: #F2D7A0;
+    --nw-warning-icon: #B86E00;
+
+    /* Status: done */
+    --nw-done-text: #1D6A36;
+    --nw-done-bg: #E7F5EC;
+    --nw-done-border: #BCDFC8;
+    --nw-done-icon: #238044;
+
+    /* Status: in motion */
+    --nw-moving-text: #1F4E8F;
+    --nw-moving-bg: #E9F0FB;
+    --nw-moving-border: #C7D7F0;
+    --nw-moving-icon: #2C64B5;
+
+    /* Status: neutral */
+    --nw-neutral-text: #4B5856;
+    --nw-neutral-bg: #EEF2F1;
+    --nw-neutral-border: #D9E0DE;
+    --nw-neutral-icon: #6F7C79;
+
+    /* Status: all */
+    --nw-status-glyph: #FFFFFF;
+
+    /* Charts */
+    --nw-chart-1: #12938A;
+    --nw-chart-2: #8A63CF;
+    --nw-chart-grid: #EAEFED;
+    --nw-chart-band: #F1F6F5;
+    --nw-track: #DCE5E2;
+
+    /* Added for the build */
+    --nw-danger: #B42318;
+    --nw-danger-hover: #951D14;
+    --nw-on-danger: #FFFFFF;
+    --nw-tooltip-bg: #16201F;
+    --nw-tooltip-text: #FFFFFF;
+    --nw-backdrop: rgba(22, 32, 31, 0.40);
+    --nw-paper: #FFFFFF;
+    --nw-paper-text: #16201F;
+    --nw-input-border-strict: #89918E;
+
+    /* Elevation */
+    --nw-shadow-menu: 0 1px 2px rgba(22, 32, 31, 0.05), 0 6px 20px rgba(22, 32, 31, 0.07);
+    --nw-shadow-card: 0 1px 2px rgba(0, 0, 0, 0.03);
+    --nw-shadow-segment: 0 1px 2px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* ---------- Typography, spacing and radius (identical in both modes) ---------- */
+:root {
+  --nw-font: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --nw-sidebar-width: 232px;  /* Sidebar */
+  --nw-rail-width: 64px;  /* Collapsed menu */
+  --nw-topbar-height: 56px;  /* Top bar and sidebar logo row */
+  --nw-page-padding: 20px 24px 24px;  /* Page content padding */
+  --nw-gap: 16px;  /* Between page blocks */
+  --nw-gap-group: 10px;  /* Heading to content inside a group */
+  --nw-panel-padding: 16px;  /* Panel body */
+  --nw-panel-header-height: 48px;  /* Panel header minimum height (padding 12px 16px) */
+  --nw-kpi-card-padding: 16px 18px 14px;  /* Dashboard number card */
+  --nw-header-row-height: 34px;  /* Table header row */
+  --nw-row-height: 40px;  /* Table row, one line */
+  --nw-row-height-2line: 54px;  /* Table row, two lines */
+  --nw-cell-padding-x: 10px;  /* Table cell side padding */
+  --nw-control-height: 32px;  /* Buttons, date-range button, nav items */
+  --nw-control-height-sm: 28px;  /* Small buttons */
+  --nw-input-height: 36px;  /* Inputs and selects */
+  --nw-search-height: 34px;  /* Top bar search */
+  --nw-chip-height: 24px;  /* Filter chips */
+  --nw-pill-height: 22px;  /* Status pills */
+  --nw-counter-height: 20px;  /* Counts in nav items */
+  --nw-checkbox-size: 16px;  /* Checkboxes */
+  --nw-icon-size: 16px;  /* Line icons (14px dense, 18px in the collapsed menu) */
+  --nw-avatar-size: 30px;  /* Avatars (28px in lists) */
+  --nw-radius-panel: 10px;  /* Panels, menus, popovers, dialogs, dropdown lists */
+  --nw-radius-kpi: 12px;  /* Dashboard number cards */
+  --nw-radius-segment: 9px;  /* Segmented control track, collapsed-menu items */
+  --nw-radius-control: 8px;  /* Buttons, inputs, nav items, search */
+  --nw-radius-control-sm: 7px;  /* Small buttons */
+  --nw-radius-pill: 6px;  /* Status pills, counters, segmented items, tooltips */
+  --nw-radius-chip: 12px;  /* Filter chips */
+  --nw-radius-checkbox: 4px;  /* Checkboxes */
+}
+
+html {
+  font-family: var(--nw-font);
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: var(--nw-bg);
+  color: var(--nw-text);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Type styles. Use these classes (or copy their properties); they set every property, so nothing is lost. */
+.nw-type-page-title { font-family: var(--nw-font); font-size: 22px; font-weight: 700; line-height: 1.2; letter-spacing: -0.015em; }  /* Page titles */
+.nw-type-kpi { font-family: var(--nw-font); font-size: 28px; font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; }  /* Big numbers on dashboard cards */
+.nw-type-section-title { font-family: var(--nw-font); font-size: 15px; font-weight: 700; line-height: 1.3; letter-spacing: -0.005em; }  /* Headings above a group of panels */
+.nw-type-panel-title { font-family: var(--nw-font); font-size: 14px; font-weight: 700; line-height: 1.3; letter-spacing: 0; }  /* Card, panel and dialog titles */
+.nw-type-body { font-family: var(--nw-font); font-size: 13px; font-weight: 500; line-height: 1.4; letter-spacing: 0; }  /* Default UI text and table cells (use 400 for long paragraphs) */
+.nw-type-field { font-family: var(--nw-font); font-size: 13.5px; font-weight: 500; line-height: 1.4; letter-spacing: 0; }  /* Values inside inputs and selects */
+.nw-type-page-tab { font-family: var(--nw-font); font-size: 13.5px; font-weight: 600; line-height: 1.3; letter-spacing: 0; }  /* Page-level tabs */
+.nw-type-tab { font-family: var(--nw-font); font-size: 13px; font-weight: 600; line-height: 1.3; letter-spacing: 0; }  /* Tabs inside panels */
+.nw-type-button { font-family: var(--nw-font); font-size: 13px; font-weight: 600; line-height: 1; letter-spacing: 0; }  /* Buttons */
+.nw-type-button-sm { font-family: var(--nw-font); font-size: 12.5px; font-weight: 600; line-height: 1; letter-spacing: 0; }  /* Small buttons, segmented control items */
+.nw-type-column-header { font-family: var(--nw-font); font-size: 12px; font-weight: 600; line-height: 1.3; letter-spacing: 0; }  /* Table column headers, field labels */
+.nw-type-status { font-family: var(--nw-font); font-size: 12px; font-weight: 600; line-height: 1; letter-spacing: 0; }  /* Status pills and filter chips */
+.nw-type-meta { font-family: var(--nw-font); font-size: 12.5px; font-weight: 500; line-height: 1.4; letter-spacing: 0; }  /* Secondary lines, page subtitles (12px for card footers and tooltips) */
+.nw-type-cell-second-line { font-family: var(--nw-font); font-size: 11.5px; font-weight: 500; line-height: 1.35; letter-spacing: 0; }  /* Second line inside table cells, field hints */
+.nw-type-counter { font-family: var(--nw-font); font-size: 11px; font-weight: 700; line-height: 1; letter-spacing: 0; }  /* Counts in nav items and tabs (800 in the tiny bubble on the collapsed menu) */
+.nw-type-caps-label { font-family: var(--nw-font); font-size: 11px; font-weight: 700; line-height: 1.3; letter-spacing: 0.07em; text-transform: uppercase; }  /* Sidebar group names, list section headers */
+
+/* Numbers line up wherever they are compared. Put this after any rule that uses the font shorthand. */
+table, .nw-num, .nw-type-kpi { font-variant-numeric: tabular-nums; }
+
+/* Document previews and printable pages stay white in both modes. */
+.nw-paper { background: var(--nw-paper); color: var(--nw-paper-text); }

@@ -1,0 +1,5 @@
+<!-- NeWay status symbol: NEUTRAL (ring + dash). Use inline so the theme colors apply. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+  <circle cx="8" cy="8" r="6.4" fill="none" stroke="var(--nw-neutral-icon, #6F7C79)" stroke-width="1.8"/>
+  <path d="M5.3 8h5.4" stroke="var(--nw-neutral-icon, #6F7C79)" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

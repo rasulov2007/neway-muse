@@ -1,0 +1,39 @@
+{
+  "name": "neway-tms",
+  "version": "0.1.0",
+  "private": true,
+  "description": "NEWAY TMS - transportation management system monorepo",
+  "workspaces": [
+    "packages/*",
+    "apps/api",
+    "apps/web"
+  ],
+  "engines": {
+    "node": ">=24.0.0",
+    "npm": ">=11.0.0"
+  },
+  "scripts": {
+    "prepare": "npm run build -w packages/shared",
+    "dev": "run-p --print-label dev:shared dev:api dev:web",
+    "dev:shared": "npm run dev -w packages/shared",
+    "dev:api": "npm run dev -w apps/api",
+    "dev:web": "npm run dev -w apps/web",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "db:start": "powershell -NoProfile -ExecutionPolicy Bypass -File infra/scripts/db.ps1 start",
+    "db:stop": "powershell -NoProfile -ExecutionPolicy Bypass -File infra/scripts/db.ps1 stop",
+    "db:status": "powershell -NoProfile -ExecutionPolicy Bypass -File infra/scripts/db.ps1 status",
+    "db:psql": "powershell -NoProfile -ExecutionPolicy Bypass -File infra/scripts/db.ps1 psql",
+    "db:logs": "powershell -NoProfile -ExecutionPolicy Bypass -File infra/scripts/db.ps1 logs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite-socket": "0.2.18",
+    "ffmpeg-static": "^5.3.0",
+    "npm-run-all2": "9.0.3",
+    "prettier": "3.9.6"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "scene": "ai-driver-pay",
+  "title": "Driver pay",
+  "base": "http://127.0.0.1:5180",
+  "mode": "hq",
+  "scale": 2,
+  "recordedAt": "2026-11-03T17:28:30.564Z",
+  "durationSeconds": 45.26,
+  "startSeconds": 0,
+  "waits": [
+    {
+      "from": 9.21,
+      "to": 31.26
+    }
+  ],
+  "failed": null
+}

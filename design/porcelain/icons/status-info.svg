@@ -1,0 +1,6 @@
+<!-- NeWay status symbol: INFO (circle + i). Use inline so the theme colors apply. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+  <circle cx="8" cy="8" r="7.5" fill="var(--nw-neutral-icon, #6F7C79)"/>
+  <rect x="7.15" y="7" width="1.7" height="4.8" rx=".85" fill="var(--nw-status-glyph, #FFFFFF)"/>
+  <circle cx="8" cy="4.7" r="1.05" fill="var(--nw-status-glyph, #FFFFFF)"/>
+</svg>

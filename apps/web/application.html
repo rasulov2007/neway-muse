@@ -1,0 +1,23 @@
+<!doctype html>
+<!--
+  The DOT driver application v2 (/application/#token=…, owner brief 2026-10-27). Its own Vite entry
+  like consent.html and dot.html, drawn with the approved prototype's own look
+  (docs/driver-application/prototype.html), not Porcelain. The token rides in the fragment, so it
+  never reaches a server log; no referrer is sent anywhere and search engines are asked not to index it.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="referrer" content="no-referrer" />
+    <link rel="icon" href="data:," />
+    <title>Driver Application</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/application/main.tsx"></script>
+  </body>
+</html>

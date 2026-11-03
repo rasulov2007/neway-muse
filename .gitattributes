@@ -1,0 +1,4 @@
+# Byte-exact files: a PDF carries byte offsets, so a line-ending rewrite corrupts it.
+*.pdf binary
+*.png binary
+*.jpg binary

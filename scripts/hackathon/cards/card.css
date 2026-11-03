@@ -1,0 +1,45 @@
+/* Video cards for the hackathon film. Colours are the Porcelain light tokens
+   (apps/web/src/design-system/porcelain-theme.css), copied as custom properties. */
+:root {
+  --nw-bg: #F3F5F4;
+  --nw-panel: #FFFFFF;
+  --nw-subtle: #F6F8F7;
+  --nw-border: #E2E7E5;
+  --nw-border-strong: #CCD5D2;
+  --nw-text: #16201F;
+  --nw-text-2: #4B5856;
+  --nw-text-3: #66736F;
+  --nw-accent: #0B7A74;
+  --nw-accent-tint: #E0F1EF;
+  --nw-accent-ink: #075C57;
+  --nw-moving-text: #1F4E8F;
+  --nw-moving-bg: #E9F0FB;
+  --nw-moving-border: #C7D7F0;
+  --nw-warning-text: #8A4B00;
+  --nw-warning-bg: #FFF4DE;
+  --nw-warning-border: #F2D7A0;
+  --nw-neutral-bg: #EEF2F1;
+  --nw-neutral-border: #D9E0DE;
+  --nw-chart-2: #8A63CF;
+  --nw-shadow-menu: 0 1px 2px rgba(22, 32, 31, 0.05), 0 6px 20px rgba(22, 32, 31, 0.07);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1920px; height: 1080px; overflow: hidden; }
+body {
+  background: var(--nw-bg);
+  color: var(--nw-text);
+  font-family: 'Manrope', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.stage { width: 1920px; height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; }
+.brand { display: inline-flex; align-items: center; gap: 18px; }
+.mark { width: 72px; height: 72px; border-radius: 18px; background: var(--nw-accent); display: flex; align-items: center; justify-content: center; }
+.mark svg { width: 40px; height: 40px; }
+.foot { position: absolute; bottom: 56px; left: 0; right: 0; text-align: center; font-size: 20px; color: var(--nw-text-3); font-weight: 500; }
+
+/* Motion starts when record.mjs adds .go (after the fonts are in). */
+.rise { opacity: 0; transform: translateY(18px); transition: opacity 700ms ease, transform 700ms ease; }
+.go .rise { opacity: 1; transform: none; }
+.go .d1 { transition-delay: 150ms; } .go .d2 { transition-delay: 450ms; } .go .d3 { transition-delay: 800ms; }
+.go .d4 { transition-delay: 1150ms; } .go .d5 { transition-delay: 1500ms; } .go .d6 { transition-delay: 1850ms; }
+.go .d7 { transition-delay: 2200ms; } .go .d8 { transition-delay: 2550ms; }

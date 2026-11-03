@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>What is next</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="card.css">
+<style>
+  .kicker { font-size: 24px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--nw-accent-ink); }
+  h2 { margin-top: 22px; font-size: 92px; font-weight: 800; letter-spacing: -0.035em; line-height: 1.02; text-align: center; }
+  .sub { margin-top: 28px; font-size: 36px; font-weight: 600; color: var(--nw-text-2); text-align: center; }
+  .sub b { color: var(--nw-accent); font-weight: 800; }
+  .match { margin-top: 60px; display: flex; align-items: center; gap: 26px; }
+  .pill { background: var(--nw-panel); border: 1px solid var(--nw-border); border-radius: 10px; padding: 20px 28px; font-size: 26px; font-weight: 700; display: flex; flex-direction: column; gap: 4px; min-width: 340px; }
+  .pill small { font-size: 19px; font-weight: 600; color: var(--nw-text-3); }
+  .link { display: flex; align-items: center; gap: 10px; color: var(--nw-accent-ink); font-weight: 800; font-size: 22px; background: var(--nw-accent-tint); border: 1px solid var(--nw-accent); padding: 10px 18px; border-radius: 999px; }
+  .also { margin-top: 70px; display: flex; gap: 20px; align-items: center; }
+  .also .lbl { font-size: 22px; font-weight: 700; color: var(--nw-text-3); text-transform: uppercase; letter-spacing: 0.1em; }
+  .chip { font-size: 25px; font-weight: 700; padding: 12px 22px; border-radius: 10px; background: var(--nw-subtle); border: 1px solid var(--nw-border); color: var(--nw-text); }
+  .chip span { color: var(--nw-accent); margin: 0 8px; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <p class="kicker rise d1">Next big update</p>
+  <h2 class="rise d2">Load marketplace</h2>
+  <p class="sub rise d3"><b>Muse</b> matches empty trucks with freight</p>
+  <div class="match rise d4">
+    <div class="pill">Truck 1112 · empty <small>Newark, NJ · free at 2 PM · reefer</small></div>
+    <div class="link">Muse match</div>
+    <div class="pill">Load to Charlotte, NC <small>picks up 18 mi away · today 4 PM</small></div>
+  </div>
+  <div class="also rise d5">
+    <span class="lbl">Also next</span>
+    <span class="chip">Accident photo<span>→</span>claim</span>
+    <span class="chip">Fuel receipt<span>→</span>driver pay</span>
+  </div>
+</div>
+</body>
+</html>
